@@ -36,11 +36,11 @@ use_collision = true
 size = Vector3(1, 1.1, 1)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor" unique_id=1029170695]
-transform = Transform3D(112.56961, 0, 0, 0, 1, 0, 0, 0, 108.24001, 0, 0, 0)
+transform = Transform3D(112.56961, 0, 0, 0, 1, 0, 0, 0, 108.24002, 0, 1.1920929e-07, 0)
 shape = SubResource("BoxShape3D_me6wu")
 
 [node name="RigidBody3D" type="RigidBody3D" parent="Floor" unique_id=714171098]
-transform = Transform3D(112.56961, 0, 0, 0, 1, 0, 0, 0, 108.24002, 0, 0, 0)
+transform = Transform3D(112.56961, 0, 0, 0, 1, 0, 0, 0, 108.24002, 0, -5.6213045, 0)
 
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=2063702856]
 transform = Transform3D(8.55, 0, 0, 0, 13.020002, 0, 0, 0, 7.182, 0, 6.9, 5.9000006)
@@ -70,11 +70,11 @@ transform = Transform3D(0.6666667, 0, 0, 0, 0.99999994, 0, 0, 0, 0.52631575, 1.5
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
 
 [node name="KrankenIt" type="CharacterBody3D" parent="." unique_id=1279029600]
-transform = Transform3D(0.16317599, 0.92875654, -0.3328437, -0.059391182, 0.34600058, 0.93635267, 0.9848078, -0.13302228, 0.11161893, -26.800001, 17.300001, 0)
+transform = Transform3D(0.16317599, 0.92875654, -0.3328437, -0.059391182, 0.34600058, 0.93635267, 0.9848078, -0.13302228, 0.11161893, -26.800001, 19.000002, 0)
 script = ExtResource("1_me6wu")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="KrankenIt" unique_id=307466223]
-transform = Transform3D(1.1533326, -0.33140278, 3.7915044, 6.5644565, 1.9306839, -0.5121321, -2.352541, 5.2248464, 0.429732, 2.064053, -0.06702423, -17.999863)
+transform = Transform3D(1.1533325, -0.1325611, 3.7915044, 6.5644546, 0.7722735, -0.5121321, -2.3525407, 2.0899374, 0.429732, 0.11571026, 0.63550377, -16.994665)
 shape = SubResource("BoxShape3D_8o51m")
 
 [node name="Viewer" type="Node3D" parent="KrankenIt" unique_id=188639741]
