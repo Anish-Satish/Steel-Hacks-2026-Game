@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfjqk86fjryoy"
-path.s3tc="res://.godot/imported/StonePavement_NORMAL.png-a07e8ceb45a24e9553490e4d43ebd38a.s3tc.ctex"
+path.s3tc="res://.godot/imported/StonePavement_NORMAL.png-2287ad215e81c2e4c2a81913435f5a0e.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/LandScape/textures/StonePavement_NORMAL.png"
-dest_files=["res://.godot/imported/StonePavement_NORMAL.png-a07e8ceb45a24e9553490e4d43ebd38a.s3tc.ctex"]
+source_file="res://Assets/LandScape/Textures/StonePavement_NORMAL.png"
+dest_files=["res://.godot/imported/StonePavement_NORMAL.png-2287ad215e81c2e4c2a81913435f5a0e.s3tc.ctex"]
 
 [params]
 

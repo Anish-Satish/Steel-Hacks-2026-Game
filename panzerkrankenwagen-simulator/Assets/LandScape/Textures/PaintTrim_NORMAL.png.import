@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwyld5y36vjtd"
-path.s3tc="res://.godot/imported/PaintTrim_NORMAL.png-1ba9da7c8657c44311264992f6f9f7c9.s3tc.ctex"
+path.s3tc="res://.godot/imported/PaintTrim_NORMAL.png-93e67c5133945b5ad34ff54922394abf.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/LandScape/textures/PaintTrim_NORMAL.png"
-dest_files=["res://.godot/imported/PaintTrim_NORMAL.png-1ba9da7c8657c44311264992f6f9f7c9.s3tc.ctex"]
+source_file="res://Assets/LandScape/Textures/PaintTrim_NORMAL.png"
+dest_files=["res://.godot/imported/PaintTrim_NORMAL.png-93e67c5133945b5ad34ff54922394abf.s3tc.ctex"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmpv127bdd1lx"
-path.s3tc="res://.godot/imported/BrickWall_ROUGHNESS.png-32777ae5d7ae3539cf065a59610008a5.s3tc.ctex"
+path.s3tc="res://.godot/imported/BrickWall_ROUGHNESS.png-f9d928cb8678a17667977ac9f2423f36.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/LandScape/textures/BrickWall_ROUGHNESS.png"
-dest_files=["res://.godot/imported/BrickWall_ROUGHNESS.png-32777ae5d7ae3539cf065a59610008a5.s3tc.ctex"]
+source_file="res://Assets/LandScape/Textures/BrickWall_ROUGHNESS.png"
+dest_files=["res://.godot/imported/BrickWall_ROUGHNESS.png-f9d928cb8678a17667977ac9f2423f36.s3tc.ctex"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6e8t1o4cihis"
-path.s3tc="res://.godot/imported/MetalTrimv2_Base Color.png-8edc47da51f01a08bfb785da6a7314e9.s3tc.ctex"
+path.s3tc="res://.godot/imported/MetalTrimv2_Base Color.png-a09ba0fe3289445a3ba0bb7095c10643.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/LandScape/textures/MetalTrimv2_Base Color.png"
-dest_files=["res://.godot/imported/MetalTrimv2_Base Color.png-8edc47da51f01a08bfb785da6a7314e9.s3tc.ctex"]
+source_file="res://Assets/LandScape/Textures/MetalTrimv2_Base Color.png"
+dest_files=["res://.godot/imported/MetalTrimv2_Base Color.png-a09ba0fe3289445a3ba0bb7095c10643.s3tc.ctex"]
 
 [params]
 

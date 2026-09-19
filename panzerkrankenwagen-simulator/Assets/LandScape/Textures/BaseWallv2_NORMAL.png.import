@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bac015yvjp0f8"
-path.s3tc="res://.godot/imported/BaseWallv2_NORMAL.png-5969144929164f44cb5a14607525f258.s3tc.ctex"
+path.s3tc="res://.godot/imported/BaseWallv2_NORMAL.png-e1224d11a0e37057a840b4fcdaa30c62.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/LandScape/textures/BaseWallv2_NORMAL.png"
-dest_files=["res://.godot/imported/BaseWallv2_NORMAL.png-5969144929164f44cb5a14607525f258.s3tc.ctex"]
+source_file="res://Assets/LandScape/Textures/BaseWallv2_NORMAL.png"
+dest_files=["res://.godot/imported/BaseWallv2_NORMAL.png-e1224d11a0e37057a840b4fcdaa30c62.s3tc.ctex"]
 
 [params]
 

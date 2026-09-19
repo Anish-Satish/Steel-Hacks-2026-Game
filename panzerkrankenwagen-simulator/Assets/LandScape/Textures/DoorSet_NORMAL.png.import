@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cub7c47c5to1p"
-path.s3tc="res://.godot/imported/DoorSet_NORMAL.png-20aeca510377e493e48d2a6f24a303ac.s3tc.ctex"
+path.s3tc="res://.godot/imported/DoorSet_NORMAL.png-c21eea8f957363d2b65acad940bf3ceb.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/LandScape/textures/DoorSet_NORMAL.png"
-dest_files=["res://.godot/imported/DoorSet_NORMAL.png-20aeca510377e493e48d2a6f24a303ac.s3tc.ctex"]
+source_file="res://Assets/LandScape/Textures/DoorSet_NORMAL.png"
+dest_files=["res://.godot/imported/DoorSet_NORMAL.png-c21eea8f957363d2b65acad940bf3ceb.s3tc.ctex"]
 
 [params]
 
