@@ -1,0 +1,138 @@
+[gd_scene format=3 uid="uid://c5hg16t152gqq"]
+
+[ext_resource type="Script" uid="uid://cnnotgalln2rr" path="res://UI/PauseMenue.cs" id="1_mdrnr"]
+[ext_resource type="FontFile" uid="uid://bnbej77on1gtb" path="res://Text Font/Lora-Bold.ttf" id="2_feebj"]
+[ext_resource type="FontFile" uid="uid://rhvjxovrcxk3" path="res://Text Font/Lora-BoldItalic.ttf" id="3_hbxfq"]
+[ext_resource type="Theme" uid="uid://bijfgyw6b5srj" path="res://Themes/PauseMenue.tres" id="4_hjhe4"]
+[ext_resource type="Texture2D" uid="uid://mrpqejkvibq8" path="res://Test/icon.svg" id="5_02nia"]
+[ext_resource type="AudioStream" uid="uid://biu7wxnbai2mb" path="res://Assets/Audio/SFX/By the GODS There's a Psychopath on the Lose.mp3" id="6_wwtp4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cyyxd"]
+bg_color = Color(0, 0, 0, 0.49019608)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nnijs"]
+bg_color = Color(0, 0, 0, 0.19607843)
+border_color = Color(0.8, 0.8, 0.8, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v1clv"]
+bg_color = Color(0, 0, 0, 0.78431374)
+
+[sub_resource type="Theme" id="Theme_qo4bq"]
+Button/colors/font_color = Color(0.9067628, 0.5386255, 0.4879586, 1)
+Button/font_sizes/font_size = 64
+Button/fonts/font = ExtResource("2_feebj")
+Button/styles/hover = SubResource("StyleBoxFlat_cyyxd")
+Button/styles/normal = SubResource("StyleBoxFlat_nnijs")
+Button/styles/pressed = SubResource("StyleBoxFlat_v1clv")
+Label/colors/font_color = Color(0.21052638, 0.6449666, 0.87122655, 1)
+Label/font_sizes/font_size = 108
+Label/fonts/font = ExtResource("3_hbxfq")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1biq3"]
+bg_color = Color(0, 0, 0, 0.49019608)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ia116"]
+bg_color = Color(0, 0, 0, 0.19607843)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qvvui"]
+
+[sub_resource type="Theme" id="Theme_lcv0e"]
+Button/colors/font_color = Color(0.84313726, 0.039215688, 0.039215688, 1)
+Button/font_sizes/font_size = 64
+Button/fonts/font = ExtResource("2_feebj")
+Button/styles/hover = SubResource("StyleBoxFlat_cyyxd")
+Button/styles/normal = SubResource("StyleBoxFlat_nnijs")
+Button/styles/pressed = SubResource("StyleBoxFlat_v1clv")
+Label/colors/font_color = Color(0.21052638, 0.6449666, 0.87122655, 1)
+Label/font_sizes/font_size = 108
+Label/fonts/font = ExtResource("3_hbxfq")
+MenuButton/font_sizes/font_size = 64
+MenuButton/styles/hover = SubResource("StyleBoxFlat_1biq3")
+MenuButton/styles/normal = SubResource("StyleBoxFlat_ia116")
+MenuButton/styles/pressed = SubResource("StyleBoxFlat_qvvui")
+
+[sub_resource type="Theme" id="Theme_ia116"]
+Button/icons/icon = ExtResource("5_02nia")
+
+[node name="PauseMenue" type="Control" unique_id=432328082]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mdrnr")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button Container" type="HSplitContainer" parent="." unique_id=1677250741]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.75308645
+anchor_right = 1.0
+anchor_bottom = 0.88117284
+offset_left = 50.0
+offset_top = -3.0517578e-05
+offset_right = -52.0
+grow_horizontal = 2
+grow_vertical = 0
+split_offsets = PackedInt32Array(106, 212)
+split_offset = 106
+metadata/_edit_use_anchors_ = true
+
+[node name="Restart" type="Button" parent="Button Container" unique_id=266421116]
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 10
+theme = SubResource("Theme_qo4bq")
+text = "RESTART"
+
+[node name="Resume" type="Button" parent="Button Container" unique_id=455018911]
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 10
+theme = ExtResource("4_hjhe4")
+text = "RESUME"
+
+[node name="Quit" type="Button" parent="Button Container" unique_id=1573859724]
+layout_mode = 2
+size_flags_horizontal = 10
+size_flags_vertical = 10
+theme = SubResource("Theme_lcv0e")
+text = "QUIT
+"
+
+[node name="Paused" type="Label" parent="." unique_id=2074371539]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.31510416
+anchor_top = 0.30864197
+anchor_right = 0.6848958
+anchor_bottom = 0.5231481
+offset_bottom = 3.0517578e-05
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_hjhe4")
+text = "PAUSED"
+metadata/_edit_use_anchors_ = true
+
+[node name="CHANGE THIS YOU BLOODY WANKER" type="Button" parent="." unique_id=1740485744]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.8819444
+anchor_right = 1.0
+anchor_bottom = 0.20987654
+offset_left = 128.0
+offset_bottom = -128.0
+grow_horizontal = 0
+theme = SubResource("Theme_ia116")
+metadata/_edit_use_anchors_ = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1330322467]
+stream = ExtResource("6_wwtp4")
+volume_db = 10.0
+autoplay = true
+
+[connection signal="pressed" from="Button Container/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="Button Container/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="Button Container/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="CHANGE THIS YOU BLOODY WANKER" to="." method="_on_settings_pressed"]

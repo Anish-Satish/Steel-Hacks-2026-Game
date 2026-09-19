@@ -22,6 +22,7 @@ public partial class VBoxContainer : Godot.VBoxContainer
 	public void _on_options_pressed()
 	{
 		GetTree().Root.AddChild(Main.getOptionsScene);
+		GetTree().Root.RemoveChild(Main.getMainScene);
 	}
 	public void _on_quit_pressed()
 	{
