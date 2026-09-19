@@ -1,47 +1,21 @@
 extends Camera3D
 
-
-@export var min_distance = 2.0
-@export var max_distance = 4.0
-@export var angle_v_adjust = 0.0
-
-@export var height = 1.5
-var collision_exception = []
-
+@export var distance: float = 4.0
+@export var height: float = 2
+@export var look_height: float = 0.5
 
 func _ready():
-	# Find collision exceptions for ray.
-	var node = self
-	while(node):
-		if (node is RigidBody3D):
-			collision_exception.append(node.get_rid())
-			break
-		else:
-			node = node.get_parent()
-
-	# This detaches the camera transform from the parent spatial node.
-	set_as_top_level(true)
-
+	top_level = true
 
 func _physics_process(_delta):
-	var target = get_parent().get_global_transform().origin
-	var pos = get_global_transform().origin
+	var target = get_parent().global_position
 
-	var from_target = pos - target
+	# Vehicle's forward direction is -Z, so +Z is behind it.
+	var behind = get_parent().global_transform.basis.z.normalized()
 
-	# Check ranges.
-	if from_target.length() < min_distance:
-		from_target = from_target.normalized() * min_distance
-	elif from_target.length() > max_distance:
-		from_target = from_target.normalized() * max_distance
+	var target_position = target + behind * distance
+	target_position.y += height
 
-	from_target.y = height
+	global_position = target_position
 
-	pos = target + from_target
-
-	look_at_from_position(pos, target, Vector3.UP)
-
-	# Turn a little up or down
-	var t = get_transform()
-	t.basis = Basis(t.basis[0], deg_to_rad(angle_v_adjust)) * t.basis
-	set_transform(t)
+	look_at(target + Vector3.UP * look_height, Vector3.UP)

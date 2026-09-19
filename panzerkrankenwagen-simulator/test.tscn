@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://b3wncfrkaahr"]
+
+[ext_resource type="PackedScene" uid="uid://d07xuaapnq4h4" path="res://ambulance.tscn" id="1_37kl0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1qdkp"]
+size = Vector3(100, 2, 100)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gt21u"]
+size = Vector3(100, 2, 100)
+
+[node name="Main" type="Node3D" unique_id=659674451]
+
+[node name="Ground" type="StaticBody3D" parent="." unique_id=840320346]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground" unique_id=1685300932]
+shape = SubResource("BoxShape3D_1qdkp")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground" unique_id=150603545]
+mesh = SubResource("BoxMesh_gt21u")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=706759650]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 18, 0)
+shadow_enabled = true
+
+[node name="Ambulance" parent="." unique_id=2084350540 instance=ExtResource("1_37kl0")]
