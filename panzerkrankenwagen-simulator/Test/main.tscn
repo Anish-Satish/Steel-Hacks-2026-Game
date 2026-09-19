@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://diveobd23ul5u"]
 
 [ext_resource type="Script" uid="uid://btgpqjvq2c1cb" path="res://Test/kranken_it.gd" id="1_me6wu"]
-[ext_resource type="PackedScene" uid="uid://d1nkph2t78dx" path="res://Assets/Car 08/Car8_1.blend" id="2_uixho"]
+[ext_resource type="PackedScene" uid="uid://d1nkph2t78dx" path="res://Assets/Cars/Car 08/Car8_1.blend" id="2_uixho"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_lkwfi"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
