@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dye3cmk22ncup"
-path="res://.godot/imported/Little Bush.FBX-94abe5d43fd615065cd7c6db68107c21.scn"
+uid="uid://dh68c0tfa3xqj"
+path="res://.godot/imported/DeadTree.FBX-db7dd04c257a826cc3c316faa9419acc.scn"
 
 [deps]
 
-source_file="res://Assets/LandScape/Nature/Little Bush.FBX"
-dest_files=["res://.godot/imported/Little Bush.FBX-94abe5d43fd615065cd7c6db68107c21.scn"]
+source_file="res://Assets/Nature/DeadTree.FBX"
+dest_files=["res://.godot/imported/DeadTree.FBX-db7dd04c257a826cc3c316faa9419acc.scn"]
 
 [params]
 

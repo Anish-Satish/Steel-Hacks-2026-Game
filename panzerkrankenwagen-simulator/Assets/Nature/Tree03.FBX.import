@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://nx7ewx1r1v0n"
-path="res://.godot/imported/Campfire.FBX-d477b10830123c026140589a94cd5954.scn"
+uid="uid://cwlyaitpyq1jx"
+path="res://.godot/imported/Tree03.FBX-49958e033fe9bb8a8450c60879decc13.scn"
 
 [deps]
 
-source_file="res://Assets/LandScape/Nature/Campfire.FBX"
-dest_files=["res://.godot/imported/Campfire.FBX-d477b10830123c026140589a94cd5954.scn"]
+source_file="res://Assets/Nature/Tree03.FBX"
+dest_files=["res://.godot/imported/Tree03.FBX-49958e033fe9bb8a8450c60879decc13.scn"]
 
 [params]
 

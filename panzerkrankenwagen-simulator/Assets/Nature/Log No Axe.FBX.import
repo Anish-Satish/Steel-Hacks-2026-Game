@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://drebsb563akun"
-path="res://.godot/imported/RockWall.FBX-cba1e80f1c576a7ab2cda22598c86bc8.scn"
+uid="uid://co1mpr45wdi6r"
+path="res://.godot/imported/Log No Axe.FBX-5600461eca42eeb3e7e1c4ab1a9e870a.scn"
 
 [deps]
 
-source_file="res://Assets/LandScape/Nature/RockWall.FBX"
-dest_files=["res://.godot/imported/RockWall.FBX-cba1e80f1c576a7ab2cda22598c86bc8.scn"]
+source_file="res://Assets/Nature/Log No Axe.FBX"
+dest_files=["res://.godot/imported/Log No Axe.FBX-5600461eca42eeb3e7e1c4ab1a9e870a.scn"]
 
 [params]
 

@@ -25,19 +25,18 @@
 [ext_resource type="Script" uid="uid://btgpqjvq2c1cb" path="res://Test/kranken_it.gd" id="22_y3bce"]
 [ext_resource type="PackedScene" uid="uid://b6f3ri7jukrti" path="res://Assets/LandScape/MedicalSign.blend" id="23_hvubb"]
 [ext_resource type="PackedScene" uid="uid://d1nkph2t78dx" path="res://Assets/Cars/Car 08/Car8_1.blend" id="23_u3yai"]
-[ext_resource type="PackedScene" uid="uid://cpurse66hqtal" path="res://Assets/LandScape/Nature/Tree01.FBX" id="24_oaehd"]
 [ext_resource type="AudioStream" uid="uid://dkpaef68vbybl" path="res://Assets/Audio/Music/music.wav" id="24_u3yai"]
-[ext_resource type="PackedScene" uid="uid://cwlyaitpyq1jx" path="res://Assets/LandScape/Nature/Tree03.FBX" id="25_f8y3u"]
-[ext_resource type="PackedScene" uid="uid://dca4x5t26fc8d" path="res://Assets/LandScape/Nature/Tree02.FBX" id="26_0k1o5"]
+[ext_resource type="PackedScene" uid="uid://cwlyaitpyq1jx" path="res://Assets/Nature/Tree03.FBX" id="25_f8y3u"]
+[ext_resource type="PackedScene" uid="uid://dca4x5t26fc8d" path="res://Assets/Nature/Tree02.FBX" id="26_0k1o5"]
 [ext_resource type="AudioStream" uid="uid://bf7tg4w6v6lca" path="res://Assets/Audio/SFX/Siren.mp3" id="26_aoqsc"]
-[ext_resource type="PackedScene" uid="uid://oiapr104gwi4" path="res://Assets/LandScape/Nature/LargeRock.FBX" id="27_k1ecl"]
-[ext_resource type="PackedScene" uid="uid://dh68c0tfa3xqj" path="res://Assets/LandScape/Nature/DeadTree.FBX" id="28_8kok0"]
-[ext_resource type="PackedScene" uid="uid://hclyr281rcbk" path="res://Assets/LandScape/Nature/Tree04.FBX" id="29_lrhm2"]
-[ext_resource type="PackedScene" uid="uid://dye3cmk22ncup" path="res://Assets/LandScape/Nature/Little Bush.FBX" id="30_td4uw"]
-[ext_resource type="PackedScene" uid="uid://co1mpr45wdi6r" path="res://Assets/LandScape/Nature/Log No Axe.FBX" id="31_r5f7e"]
-[ext_resource type="PackedScene" uid="uid://cshihd4oj81f3" path="res://Assets/LandScape/Nature/Small Rock.FBX" id="32_wp8k7"]
-[ext_resource type="PackedScene" uid="uid://drebsb563akun" path="res://Assets/LandScape/Nature/RockWall.FBX" id="33_na3no"]
-[ext_resource type="PackedScene" uid="uid://nx7ewx1r1v0n" path="res://Assets/LandScape/Nature/Campfire.FBX" id="34_07udg"]
+[ext_resource type="PackedScene" uid="uid://oiapr104gwi4" path="res://Assets/Nature/LargeRock.FBX" id="27_k1ecl"]
+[ext_resource type="PackedScene" uid="uid://dh68c0tfa3xqj" path="res://Assets/Nature/DeadTree.FBX" id="28_8kok0"]
+[ext_resource type="PackedScene" uid="uid://hclyr281rcbk" path="res://Assets/Nature/Tree04.FBX" id="29_lrhm2"]
+[ext_resource type="PackedScene" uid="uid://dye3cmk22ncup" path="res://Assets/Nature/Little Bush.FBX" id="30_td4uw"]
+[ext_resource type="PackedScene" uid="uid://co1mpr45wdi6r" path="res://Assets/Nature/Log No Axe.FBX" id="31_r5f7e"]
+[ext_resource type="PackedScene" uid="uid://cshihd4oj81f3" path="res://Assets/Nature/Small Rock.FBX" id="32_wp8k7"]
+[ext_resource type="PackedScene" uid="uid://drebsb563akun" path="res://Assets/Nature/RockWall.FBX" id="33_na3no"]
+[ext_resource type="PackedScene" uid="uid://nx7ewx1r1v0n" path="res://Assets/Nature/Campfire.FBX" id="34_07udg"]
 [ext_resource type="PackedScene" uid="uid://3xm2n5pfmh1o" path="res://Assets/LandScape/Grass.blend" id="39_4wtct"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_v7sqt"]
@@ -45859,14 +45858,14 @@ transform = Transform3D(1.1550009, -1.7484559e-06, 3.1472202e-05, 2.019468e-08, 
 [node name="Bushes and Trees31" type="Node3D" parent="Terrain/TreesN\'At" unique_id=447016507]
 transform = Transform3D(-1.9875358, 0, -0.22293805, 0, 2, 0, 0.22293805, 0, -1.9875358, 172.39804, 0, -42.12157)
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees31" unique_id=451927703 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees31" unique_id=451927703]
 transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees31/Tree01" unique_id=2044881967]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
 shape = SubResource("CylinderShape3D_ehfxi")
 
-[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees31" unique_id=2143963738 instance=ExtResource("24_oaehd")]
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees31" unique_id=2143963738]
 transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees31/Tree05" unique_id=6307476]
@@ -45934,14 +45933,14 @@ shape = SubResource("BoxShape3D_uwa5t")
 [node name="Bushes and Trees30" type="Node3D" parent="Terrain/TreesN\'At" unique_id=331430319]
 transform = Transform3D(-1.9875358, 0, -0.22293805, 0, 2, 0, 0.22293805, 0, -1.9875358, 101.78357, 0, -37.094498)
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees30" unique_id=287031010 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees30" unique_id=287031010]
 transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees30/Tree01" unique_id=160849510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
 shape = SubResource("CylinderShape3D_ehfxi")
 
-[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees30" unique_id=858202589 instance=ExtResource("24_oaehd")]
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees30" unique_id=858202589]
 transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees30/Tree05" unique_id=2031224484]
@@ -46009,14 +46008,14 @@ shape = SubResource("BoxShape3D_uwa5t")
 [node name="Bushes and Trees29" type="Node3D" parent="Terrain/TreesN\'At" unique_id=364913248]
 transform = Transform3D(-1.9875358, 0, -0.22293805, 0, 2, 0, 0.22293805, 0, -1.9875358, 161.56381, 0, -106.927414)
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees29" unique_id=329150807 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees29" unique_id=329150807]
 transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees29/Tree01" unique_id=2078895551]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
 shape = SubResource("CylinderShape3D_ehfxi")
 
-[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees29" unique_id=573166417 instance=ExtResource("24_oaehd")]
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees29" unique_id=573166417]
 transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees29/Tree05" unique_id=312219047]
@@ -46084,14 +46083,14 @@ shape = SubResource("BoxShape3D_uwa5t")
 [node name="Bushes and Trees28" type="Node3D" parent="Terrain/TreesN\'At" unique_id=404389114]
 transform = Transform3D(-1.4531493, 0, -1.3741751, 0, 2, 0, 1.3741751, 0, -1.4531493, 62.73825, 0, -110.43387)
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees28" unique_id=481957788 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees28" unique_id=481957788]
 transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees28/Tree01" unique_id=3845082]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
 shape = SubResource("CylinderShape3D_ehfxi")
 
-[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees28" unique_id=1118910130 instance=ExtResource("24_oaehd")]
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees28" unique_id=1118910130]
 transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees28/Tree05" unique_id=1955937697]
@@ -46159,14 +46158,14 @@ shape = SubResource("BoxShape3D_uwa5t")
 [node name="Bushes and Trees27" type="Node3D" parent="Terrain/TreesN\'At" unique_id=278669212]
 transform = Transform3D(-1.4531493, 0, -1.3741751, 0, 2, 0, 1.3741751, 0, -1.4531493, 62.73825, 0, -53.301414)
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees27" unique_id=580832658 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees27" unique_id=580832658]
 transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees27/Tree01" unique_id=1694400497]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
 shape = SubResource("CylinderShape3D_ehfxi")
 
-[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees27" unique_id=1783187010 instance=ExtResource("24_oaehd")]
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees27" unique_id=1783187010]
 transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees27/Tree05" unique_id=1897486008]
@@ -46234,14 +46233,14 @@ shape = SubResource("BoxShape3D_uwa5t")
 [node name="Bushes and Trees26" type="Node3D" parent="Terrain/TreesN\'At" unique_id=1233475871]
 transform = Transform3D(-0.7265746, 0, -0.6870875, 0, 1, 0, 0.6870875, 0, -0.7265746, -69.32141, 0, 15.239357)
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees26" unique_id=1380478088 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees26" unique_id=1380478088]
 transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees26/Tree01" unique_id=832350932]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
 shape = SubResource("CylinderShape3D_ehfxi")
 
-[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees26" unique_id=883657 instance=ExtResource("24_oaehd")]
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees26" unique_id=883657]
 transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees26/Tree05" unique_id=740626610]
@@ -46309,14 +46308,14 @@ shape = SubResource("BoxShape3D_uwa5t")
 [node name="Bushes and Trees25" type="Node3D" parent="Terrain/TreesN\'At" unique_id=441499342]
 transform = Transform3D(0.9819586, 0, -0.18909542, 0, 1, 0, 0.18909542, 0, 0.9819586, -53.907524, 0, 1.9261551)
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees25" unique_id=1618755843 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees25" unique_id=1618755843]
 transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees25/Tree01" unique_id=1714869383]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
 shape = SubResource("CylinderShape3D_ehfxi")
 
-[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees25" unique_id=607701905 instance=ExtResource("24_oaehd")]
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees25" unique_id=607701905]
 transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees25/Tree05" unique_id=248396699]
@@ -46384,14 +46383,14 @@ shape = SubResource("BoxShape3D_uwa5t")
 [node name="Bushes and Trees24" type="Node3D" parent="Terrain/TreesN\'At" unique_id=547570091]
 transform = Transform3D(0.9819586, 0, -0.18909542, 0, 1, 0, 0.18909542, 0, 0.9819586, 68.95698, 0, 1.9261551)
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees24" unique_id=1859249568 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees24" unique_id=1859249568]
 transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees24/Tree01" unique_id=904745169]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
 shape = SubResource("CylinderShape3D_ehfxi")
 
-[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees24" unique_id=1376838724 instance=ExtResource("24_oaehd")]
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees24" unique_id=1376838724]
 transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees24/Tree05" unique_id=468212132]
@@ -46459,14 +46458,14 @@ shape = SubResource("BoxShape3D_uwa5t")
 [node name="Bushes and Trees23" type="Node3D" parent="Terrain/TreesN\'At" unique_id=1556610127]
 transform = Transform3D(0.9819586, 0, -0.18909542, 0, 1, 0, 0.18909542, 0, 0.9819586, 57.18216, 0, 77.576805)
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees23" unique_id=2121157588 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees23" unique_id=2121157588]
 transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees23/Tree01" unique_id=1074090594]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
 shape = SubResource("CylinderShape3D_ehfxi")
 
-[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees23" unique_id=2038158901 instance=ExtResource("24_oaehd")]
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees23" unique_id=2038158901]
 transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees23/Tree05" unique_id=1413251937]
@@ -46534,14 +46533,14 @@ shape = SubResource("BoxShape3D_uwa5t")
 [node name="Bushes and Trees22" type="Node3D" parent="Terrain/TreesN\'At" unique_id=1153456741]
 transform = Transform3D(0.9819586, 0, -0.18909542, 0, 1, 0, 0.18909542, 0, 0.9819586, 107.863434, 0, 88.03073)
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees22" unique_id=1663179072 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees22" unique_id=1663179072]
 transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees22/Tree01" unique_id=1006960313]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
 shape = SubResource("CylinderShape3D_ehfxi")
 
-[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees22" unique_id=560026738 instance=ExtResource("24_oaehd")]
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees22" unique_id=560026738]
 transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees22/Tree05" unique_id=934649947]
@@ -46609,14 +46608,14 @@ shape = SubResource("BoxShape3D_uwa5t")
 [node name="Bushes and Trees21" type="Node3D" parent="Terrain/TreesN\'At" unique_id=798529339]
 transform = Transform3D(0.16504762, 0, 0.98628557, 0, 1, 0, -0.98628557, 0, 0.16504762, 163.34482, 0, 128.76968)
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees21" unique_id=466590955 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees21" unique_id=466590955]
 transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees21/Tree01" unique_id=2134713505]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
 shape = SubResource("CylinderShape3D_ehfxi")
 
-[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees21" unique_id=1620783252 instance=ExtResource("24_oaehd")]
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees21" unique_id=1620783252]
 transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees21/Tree05" unique_id=85627971]
@@ -46684,14 +46683,14 @@ shape = SubResource("BoxShape3D_uwa5t")
 [node name="Bushes and Trees20" type="Node3D" parent="Terrain/TreesN\'At" unique_id=1756882355]
 transform = Transform3D(0.16504762, 0, 0.98628557, 0, 1, 0, -0.98628557, 0, 0.16504762, 103.10544, 0, 128.76968)
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees20" unique_id=1950418446 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees20" unique_id=1950418446]
 transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees20/Tree01" unique_id=1831080389]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
 shape = SubResource("CylinderShape3D_ehfxi")
 
-[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees20" unique_id=2140348265 instance=ExtResource("24_oaehd")]
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees20" unique_id=2140348265]
 transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees20/Tree05" unique_id=264252249]
@@ -46759,14 +46758,14 @@ shape = SubResource("BoxShape3D_uwa5t")
 [node name="Bushes and Trees19" type="Node3D" parent="Terrain/TreesN\'At" unique_id=1029641727]
 transform = Transform3D(0.16504762, 0, 0.98628557, 0, 1, 0, -0.98628557, 0, 0.16504762, 9.824585, 0, -51.52273)
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees19" unique_id=395245825 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees19" unique_id=395245825]
 transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees19/Tree01" unique_id=213732728]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
 shape = SubResource("CylinderShape3D_ehfxi")
 
-[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees19" unique_id=635239034 instance=ExtResource("24_oaehd")]
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees19" unique_id=635239034]
 transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees19/Tree05" unique_id=589650469]
@@ -46834,14 +46833,14 @@ shape = SubResource("BoxShape3D_uwa5t")
 [node name="Bushes and Trees18" type="Node3D" parent="Terrain/TreesN\'At" unique_id=151761616]
 transform = Transform3D(0.16504762, 0, 0.98628557, 0, 1, 0, -0.98628557, 0, 0.16504762, 57.882286, 0, 5.306614)
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees18" unique_id=123146626 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees18" unique_id=123146626]
 transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees18/Tree01" unique_id=1067866427]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
 shape = SubResource("CylinderShape3D_ehfxi")
 
-[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees18" unique_id=2144513280 instance=ExtResource("24_oaehd")]
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees18" unique_id=2144513280]
 transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees18/Tree05" unique_id=1208707916]
@@ -46909,14 +46908,14 @@ shape = SubResource("BoxShape3D_uwa5t")
 [node name="Bushes and Trees17" type="Node3D" parent="Terrain/TreesN\'At" unique_id=2107655634]
 transform = Transform3D(0.16504762, 0, 0.98628557, 0, 1, 0, -0.98628557, 0, 0.16504762, 94.102806, 0, 5.306614)
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees17" unique_id=742125377 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees17" unique_id=742125377]
 transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees17/Tree01" unique_id=814294729]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
 shape = SubResource("CylinderShape3D_ehfxi")
 
-[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees17" unique_id=1518118805 instance=ExtResource("24_oaehd")]
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees17" unique_id=1518118805]
 transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees17/Tree05" unique_id=463053987]
@@ -46984,14 +46983,14 @@ shape = SubResource("BoxShape3D_uwa5t")
 [node name="Bushes and Trees16" type="Node3D" parent="Terrain/TreesN\'At" unique_id=1768898907]
 transform = Transform3D(0.16504762, 0, 0.98628557, 0, 1, 0, -0.98628557, 0, 0.16504762, 94.102806, 0, 23.962833)
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees16" unique_id=53741754 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees16" unique_id=53741754]
 transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees16/Tree01" unique_id=421355508]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
 shape = SubResource("CylinderShape3D_ehfxi")
 
-[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees16" unique_id=332616819 instance=ExtResource("24_oaehd")]
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees16" unique_id=332616819]
 transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees16/Tree05" unique_id=447546036]
@@ -47059,14 +47058,14 @@ shape = SubResource("BoxShape3D_uwa5t")
 [node name="Bushes and Trees15" type="Node3D" parent="Terrain/TreesN\'At" unique_id=92307735]
 transform = Transform3D(0.99588436, 0, -0.09063257, 0, 1, 0, 0.09063257, 0, 0.99588436, 85.306, 0, 23.962833)
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees15" unique_id=768066937 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees15" unique_id=768066937]
 transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees15/Tree01" unique_id=2047405328]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
 shape = SubResource("CylinderShape3D_ehfxi")
 
-[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees15" unique_id=439962539 instance=ExtResource("24_oaehd")]
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees15" unique_id=439962539]
 transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees15/Tree05" unique_id=1626756018]
@@ -47134,14 +47133,14 @@ shape = SubResource("BoxShape3D_uwa5t")
 [node name="Bushes and Trees14" type="Node3D" parent="Terrain/TreesN\'At" unique_id=1353964040]
 transform = Transform3D(0.99588436, 0, -0.09063257, 0, 1, 0, 0.09063257, 0, 0.99588436, 57.973373, 0, 32.256874)
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees14" unique_id=1889176509 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees14" unique_id=1889176509]
 transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees14/Tree01" unique_id=1693576377]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
 shape = SubResource("CylinderShape3D_ehfxi")
 
-[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees14" unique_id=949220082 instance=ExtResource("24_oaehd")]
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees14" unique_id=949220082]
 transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees14/Tree05" unique_id=851306424]
@@ -47209,14 +47208,14 @@ shape = SubResource("BoxShape3D_uwa5t")
 [node name="Bushes and Trees13" type="Node3D" parent="Terrain/TreesN\'At" unique_id=93232975]
 transform = Transform3D(0.99588436, 0, -0.09063257, 0, 1, 0, 0.09063257, 0, 0.99588436, 57.973373, 0, 97.47103)
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees13" unique_id=462055782 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees13" unique_id=462055782]
 transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees13/Tree01" unique_id=319202532]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
 shape = SubResource("CylinderShape3D_ehfxi")
 
-[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees13" unique_id=107693701 instance=ExtResource("24_oaehd")]
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees13" unique_id=107693701]
 transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees13/Tree05" unique_id=1888485535]
@@ -47284,14 +47283,14 @@ shape = SubResource("BoxShape3D_uwa5t")
 [node name="Bushes and Trees12" type="Node3D" parent="Terrain/TreesN\'At" unique_id=915985129]
 transform = Transform3D(0.44775903, 0, 0.8941542, 0, 1, 0, -0.8941542, 0, 0.44775903, 85.061615, 0, 97.47103)
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees12" unique_id=1510473188 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees12" unique_id=1510473188]
 transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees12/Tree01" unique_id=1583022273]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
 shape = SubResource("CylinderShape3D_ehfxi")
 
-[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees12" unique_id=781035380 instance=ExtResource("24_oaehd")]
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees12" unique_id=781035380]
 transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees12/Tree05" unique_id=18722645]
@@ -47359,7 +47358,7 @@ shape = SubResource("BoxShape3D_uwa5t")
 [node name="Bushes and Trees11" type="Node3D" parent="Terrain/TreesN\'At" unique_id=1388035069]
 transform = Transform3D(0.44775903, 0, 0.8941542, 0, 1, 0, -0.8941542, 0, 0.44775903, 85.061615, 0, -109.87742)
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees11" unique_id=1825988574 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees11" unique_id=1825988574]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 52.722725, 1.3961334, 9.230774)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees11/Tree01" unique_id=1108642913]
@@ -47417,7 +47416,7 @@ shape = SubResource("BoxShape3D_uwa5t")
 [node name="Bushes and Trees10" type="Node3D" parent="Terrain/TreesN\'At" unique_id=1790670177]
 transform = Transform3D(0.44775903, 0, 0.8941542, 0, 1, 0, -0.8941542, 0, 0.44775903, -72.289474, 0, 12.606026)
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees10" unique_id=784793097 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees10" unique_id=784793097]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 52.722725, 1.3961334, 9.230774)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees10/Tree01" unique_id=1507777260]
@@ -47475,7 +47474,7 @@ shape = SubResource("BoxShape3D_uwa5t")
 [node name="Bushes and Trees9" type="Node3D" parent="Terrain/TreesN\'At" unique_id=1833937283]
 transform = Transform3D(0.44775903, 0, 0.8941542, 0, 1, 0, -0.8941542, 0, 0.44775903, -39.59184, 0, 12.606026)
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees9" unique_id=555008464 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees9" unique_id=555008464]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 52.722725, 1.3961334, 9.230774)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees9/Tree01" unique_id=29147046]
@@ -47533,7 +47532,7 @@ shape = SubResource("BoxShape3D_uwa5t")
 [node name="Bushes and Trees8" type="Node3D" parent="Terrain/TreesN\'At" unique_id=344799188]
 transform = Transform3D(0.7716245, 0, -0.6360782, 0, 1, 0, 0.6360782, 0, 0.7716245, -84.93351, 0, -30.562054)
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees8" unique_id=1507049156 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees8" unique_id=1507049156]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 52.722725, 1.3961334, 9.230774)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees8/Tree01" unique_id=934665671]
@@ -47591,7 +47590,7 @@ shape = SubResource("BoxShape3D_uwa5t")
 [node name="Bushes and Trees7" type="Node3D" parent="Terrain/TreesN\'At" unique_id=318438343]
 transform = Transform3D(0.7716245, 0, -0.6360782, 0, 1, 0, 0.6360782, 0, 0.7716245, 52.902565, 0, 34.94475)
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees7" unique_id=1009292170 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees7" unique_id=1009292170]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 52.722725, 1.3961334, 9.230774)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees7/Tree01" unique_id=564544048]
@@ -47649,7 +47648,7 @@ shape = SubResource("BoxShape3D_uwa5t")
 [node name="Bushes and Trees6" type="Node3D" parent="Terrain/TreesN\'At" unique_id=208752230]
 transform = Transform3D(0.7716245, 0, -0.6360782, 0, 1, 0, 0.6360782, 0, 0.7716245, 90.24533, 0, 9.261444)
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees6" unique_id=1122288037 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees6" unique_id=1122288037]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 52.722725, 1.3961334, 9.230774)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees6/Tree01" unique_id=1060632281]
@@ -47707,7 +47706,7 @@ shape = SubResource("BoxShape3D_uwa5t")
 [node name="Bushes and Trees5" type="Node3D" parent="Terrain/TreesN\'At" unique_id=1812102144]
 transform = Transform3D(0.17364822, 0, -0.9848077, 0, 1, 0, 0.9848077, 0, 0.17364822, 90.24533, 0, -74.806114)
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees5" unique_id=1912301235 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees5" unique_id=1912301235]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 52.722725, 1.3961334, 9.230774)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees5/Tree01" unique_id=347191661]
@@ -47765,7 +47764,7 @@ shape = SubResource("BoxShape3D_uwa5t")
 [node name="Bushes and Trees4" type="Node3D" parent="Terrain/TreesN\'At" unique_id=1959160319]
 transform = Transform3D(0.17364822, 0, -0.9848077, 0, 1, 0, 0.9848077, 0, 0.17364822, -96.51718, 0, -57.670334)
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees4" unique_id=1405220012 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees4" unique_id=1405220012]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 52.722725, 1.3961334, 9.230774)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees4/Tree01" unique_id=561435422]
@@ -47823,7 +47822,7 @@ shape = SubResource("BoxShape3D_uwa5t")
 [node name="Bushes and Trees3" type="Node3D" parent="Terrain/TreesN\'At" unique_id=522825356]
 transform = Transform3D(0.17364822, 0, -0.9848077, 0, 1, 0, 0.9848077, 0, 0.17364822, -3.104065, 0, -17.158272)
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees3" unique_id=1172350371 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees3" unique_id=1172350371]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 52.722725, 1.3961334, 9.230774)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees3/Tree01" unique_id=661266934]
@@ -47880,7 +47879,7 @@ shape = SubResource("BoxShape3D_uwa5t")
 
 [node name="Bushes and Trees2" type="Node3D" parent="Terrain/TreesN\'At" unique_id=1610199562]
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees2" unique_id=1761474232 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees2" unique_id=1761474232]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 52.722725, 1.3961334, 9.230774)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees2/Tree01" unique_id=1560208981]
@@ -47937,7 +47936,7 @@ shape = SubResource("BoxShape3D_uwa5t")
 
 [node name="Bushes and Trees(OG)" type="Node3D" parent="Terrain/TreesN\'At" unique_id=631346557]
 
-[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees(OG)" unique_id=1020523472 instance=ExtResource("24_oaehd")]
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees(OG)" unique_id=1020523472]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 39.151566, 1.3961334, 65.50808)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees(OG)/Tree01" unique_id=520835129]

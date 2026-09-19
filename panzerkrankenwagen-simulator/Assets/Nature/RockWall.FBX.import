@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://oiapr104gwi4"
-path="res://.godot/imported/LargeRock.FBX-653f98486d1b19d33bab1a8a19afdb67.scn"
+uid="uid://drebsb563akun"
+path="res://.godot/imported/RockWall.FBX-e980bed6f4dfc3566f43eb2e8dbdfc6a.scn"
 
 [deps]
 
-source_file="res://Assets/LandScape/Nature/LargeRock.FBX"
-dest_files=["res://.godot/imported/LargeRock.FBX-653f98486d1b19d33bab1a8a19afdb67.scn"]
+source_file="res://Assets/Nature/RockWall.FBX"
+dest_files=["res://.godot/imported/RockWall.FBX-e980bed6f4dfc3566f43eb2e8dbdfc6a.scn"]
 
 [params]
 

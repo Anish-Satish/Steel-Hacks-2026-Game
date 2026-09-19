@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cshihd4oj81f3"
-path="res://.godot/imported/Small Rock.FBX-5af4a3e615e47fcc8425a424d41a6ec7.scn"
+uid="uid://nx7ewx1r1v0n"
+path="res://.godot/imported/Campfire.FBX-8a444b3ddebf9d0260fbc3493713a2e4.scn"
 
 [deps]
 
-source_file="res://Assets/LandScape/Nature/Small Rock.FBX"
-dest_files=["res://.godot/imported/Small Rock.FBX-5af4a3e615e47fcc8425a424d41a6ec7.scn"]
+source_file="res://Assets/Nature/Campfire.FBX"
+dest_files=["res://.godot/imported/Campfire.FBX-8a444b3ddebf9d0260fbc3493713a2e4.scn"]
 
 [params]
 

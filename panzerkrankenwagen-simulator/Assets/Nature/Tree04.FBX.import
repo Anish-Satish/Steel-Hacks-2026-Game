@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dh68c0tfa3xqj"
-path="res://.godot/imported/DeadTree.FBX-91bda0f3b0e81d6e3fbb6f3b0c424ee7.scn"
+uid="uid://hclyr281rcbk"
+path="res://.godot/imported/Tree04.FBX-e606a9790095b5b78ddad04f93c323f3.scn"
 
 [deps]
 
-source_file="res://Assets/LandScape/Nature/DeadTree.FBX"
-dest_files=["res://.godot/imported/DeadTree.FBX-91bda0f3b0e81d6e3fbb6f3b0c424ee7.scn"]
+source_file="res://Assets/Nature/Tree04.FBX"
+dest_files=["res://.godot/imported/Tree04.FBX-e606a9790095b5b78ddad04f93c323f3.scn"]
 
 [params]
 

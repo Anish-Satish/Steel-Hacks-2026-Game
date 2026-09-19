@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dca4x5t26fc8d"
-path="res://.godot/imported/Tree02.FBX-a32a5df5392a24bcca4269bfacf03bb6.scn"
+uid="uid://cshihd4oj81f3"
+path="res://.godot/imported/Small Rock.FBX-e85e2cf1f43e00060d9b8ddda1c04308.scn"
 
 [deps]
 
-source_file="res://Assets/LandScape/Nature/Tree02.FBX"
-dest_files=["res://.godot/imported/Tree02.FBX-a32a5df5392a24bcca4269bfacf03bb6.scn"]
+source_file="res://Assets/Nature/Small Rock.FBX"
+dest_files=["res://.godot/imported/Small Rock.FBX-e85e2cf1f43e00060d9b8ddda1c04308.scn"]
 
 [params]
 

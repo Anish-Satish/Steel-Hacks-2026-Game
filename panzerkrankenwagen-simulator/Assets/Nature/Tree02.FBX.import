@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://co1mpr45wdi6r"
-path="res://.godot/imported/Log No Axe.FBX-d27ab5e2349a97b5b6f33e61d1716238.scn"
+uid="uid://dca4x5t26fc8d"
+path="res://.godot/imported/Tree02.FBX-d2bbeeec40fd6e7f4cd40d96f058612a.scn"
 
 [deps]
 
-source_file="res://Assets/LandScape/Nature/Log No Axe.FBX"
-dest_files=["res://.godot/imported/Log No Axe.FBX-d27ab5e2349a97b5b6f33e61d1716238.scn"]
+source_file="res://Assets/Nature/Tree02.FBX"
+dest_files=["res://.godot/imported/Tree02.FBX-d2bbeeec40fd6e7f4cd40d96f058612a.scn"]
 
 [params]
 
