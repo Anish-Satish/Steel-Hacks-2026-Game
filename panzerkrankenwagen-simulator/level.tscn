@@ -26,7 +26,18 @@
 [ext_resource type="PackedScene" uid="uid://b6f3ri7jukrti" path="res://Assets/LandScape/MedicalSign.blend" id="23_hvubb"]
 [ext_resource type="PackedScene" uid="uid://d1nkph2t78dx" path="res://Assets/Cars/Car 08/Car8_1.blend" id="23_u3yai"]
 [ext_resource type="AudioStream" uid="uid://dkpaef68vbybl" path="res://Assets/Audio/Music/music.wav" id="24_u3yai"]
+[ext_resource type="PackedScene" uid="uid://cwlyaitpyq1jx" path="res://Assets/Nature/Tree03.FBX" id="25_f8y3u"]
+[ext_resource type="PackedScene" uid="uid://dca4x5t26fc8d" path="res://Assets/Nature/Tree02.FBX" id="26_0k1o5"]
 [ext_resource type="AudioStream" uid="uid://bf7tg4w6v6lca" path="res://Assets/Audio/SFX/Siren.mp3" id="26_aoqsc"]
+[ext_resource type="PackedScene" uid="uid://oiapr104gwi4" path="res://Assets/Nature/LargeRock.FBX" id="27_k1ecl"]
+[ext_resource type="PackedScene" uid="uid://dh68c0tfa3xqj" path="res://Assets/Nature/DeadTree.FBX" id="28_8kok0"]
+[ext_resource type="PackedScene" uid="uid://hclyr281rcbk" path="res://Assets/Nature/Tree04.FBX" id="29_lrhm2"]
+[ext_resource type="PackedScene" uid="uid://dye3cmk22ncup" path="res://Assets/Nature/Little Bush.FBX" id="30_td4uw"]
+[ext_resource type="PackedScene" uid="uid://co1mpr45wdi6r" path="res://Assets/Nature/Log No Axe.FBX" id="31_r5f7e"]
+[ext_resource type="PackedScene" uid="uid://cshihd4oj81f3" path="res://Assets/Nature/Small Rock.FBX" id="32_wp8k7"]
+[ext_resource type="PackedScene" uid="uid://drebsb563akun" path="res://Assets/Nature/RockWall.FBX" id="33_na3no"]
+[ext_resource type="PackedScene" uid="uid://nx7ewx1r1v0n" path="res://Assets/Nature/Campfire.FBX" id="34_07udg"]
+[ext_resource type="PackedScene" uid="uid://3xm2n5pfmh1o" path="res://Assets/LandScape/Grass.blend" id="39_4wtct"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_v7sqt"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -24630,6 +24641,29 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_5rn6r")
 
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ehfxi"]
+radius = 0.14208984
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_abt3y"]
+radius = 0.234375
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_44x3u"]
+height = 1.765625
+radius = 0.1796875
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ehfxi"]
+size = Vector3(0.58187866, 0.45324707, 0.5461426)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_uwa5t"]
+height = 1.7832031
+radius = 0.21777344
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uwa5t"]
+size = Vector3(0.68725586, 0.48876953, 0.30218506)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_44x3u"]
+size = Vector3(1.8510742, 0.8018799, 0.22357178)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_fj6e6"]
 size = Vector3(0.7, 1, 0.7)
 
@@ -45795,6 +45829,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.7, 2.2, -13.1)
 [node name="Road1" parent="Terrain/Road" unique_id=1494225728 instance=ExtResource("1_yjxuc")]
 transform = Transform3D(10, 2.627245e-13, 1.0231815e-13, -2.149258e-15, 1, -1.2789769e-14, -2.842171e-14, -2.842171e-14, 1.35, -14.197549, -2.1990001, 29.118002)
 
+[node name="Road8" parent="Terrain/Road" unique_id=1821729832 instance=ExtResource("1_yjxuc")]
+transform = Transform3D(10, 2.627245e-13, 1.0231815e-13, -2.149258e-15, 1, -1.2789769e-14, -2.842171e-14, -2.842171e-14, 1.35, 47.212563, -2.1990001, 29.118002)
+
+[node name="Road9" parent="Terrain/Road" unique_id=1962121728 instance=ExtResource("1_yjxuc")]
+transform = Transform3D(10, 2.627245e-13, 1.0231815e-13, -2.149258e-15, 1, -1.2789769e-14, -2.842171e-14, -2.842171e-14, 1.35, 100.63934, -2.1990001, 29.118002)
+
 [node name="Road2" parent="Terrain/Road" unique_id=1650244305 instance=ExtResource("1_yjxuc")]
 transform = Transform3D(1.155, -1.7484552e-06, 1.7484555e-05, 2.0194662e-08, 1, -1.7484556e-06, -3.0291986e-08, 2.6226837e-07, 15, -75.7178, -2.2008274, 68.44835)
 
@@ -45812,6 +45852,2154 @@ transform = Transform3D(4.455, 2.8899696e-13, 1.4181297e-13, -9.574945e-16, 1.1,
 
 [node name="Road7" parent="Terrain/Road" unique_id=92618326 instance=ExtResource("1_yjxuc")]
 transform = Transform3D(1.1550009, -1.7484559e-06, 3.1472202e-05, 2.019468e-08, 1.0000004, -3.14722e-06, -3.029201e-08, 2.6226846e-07, 27, 16.58221, -2.2008274, 27.548351)
+
+[node name="TreesN\'At" type="Node" parent="Terrain" unique_id=1926523480]
+
+[node name="Bushes and Trees31" type="Node3D" parent="Terrain/TreesN\'At" unique_id=447016507]
+transform = Transform3D(-1.9875358, 0, -0.22293805, 0, 2, 0, 0.22293805, 0, -1.9875358, 172.39804, 0, -42.12157)
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees31" unique_id=451927703]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees31/Tree01" unique_id=2044881967]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees31" unique_id=2143963738]
+transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees31/Tree05" unique_id=6307476]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees31" unique_id=1511329616 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 56.008904, 0, -0.7407303)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees31/Tree03" unique_id=1628215409]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees31" unique_id=451449114 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees31/Tree02" unique_id=1572604961]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees31" unique_id=635628375 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 11.149433, 1.3490176, 10.138641)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees31/LargeRock" unique_id=730307555]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees31" unique_id=2085239809 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees31/DeadTree" unique_id=2013890441]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees31" unique_id=1379897888 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees31/Tree04" unique_id=1364936095]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree06" parent="Terrain/TreesN\'At/Bushes and Trees31" unique_id=1166704628 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 48.308384, 0, -8.6753845)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees31/Tree06" unique_id=878672053]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees31" unique_id=1928805352 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Little Bush2" parent="Terrain/TreesN\'At/Bushes and Trees31" unique_id=183375205 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 24.012344, 1.5400181, -1.6355896)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees31" unique_id=474227490 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees31" unique_id=1919722525 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees31/Small Rock" unique_id=2039477985]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees30" type="Node3D" parent="Terrain/TreesN\'At" unique_id=331430319]
+transform = Transform3D(-1.9875358, 0, -0.22293805, 0, 2, 0, 0.22293805, 0, -1.9875358, 101.78357, 0, -37.094498)
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees30" unique_id=287031010]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees30/Tree01" unique_id=160849510]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees30" unique_id=858202589]
+transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees30/Tree05" unique_id=2031224484]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees30" unique_id=794180744 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 56.008904, 0, -0.7407303)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees30/Tree03" unique_id=1378399844]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees30" unique_id=1042021963 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees30/Tree02" unique_id=1269380267]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees30" unique_id=1553875245 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 11.304844, 1.3490176, 8.753115)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees30/LargeRock" unique_id=539980883]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees30" unique_id=834044387 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees30/DeadTree" unique_id=1441541274]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees30" unique_id=272416869 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees30/Tree04" unique_id=1607192241]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree06" parent="Terrain/TreesN\'At/Bushes and Trees30" unique_id=571678263 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 48.308384, 0, -8.6753845)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees30/Tree06" unique_id=1176573966]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees30" unique_id=485705718 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Little Bush2" parent="Terrain/TreesN\'At/Bushes and Trees30" unique_id=1909626531 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 24.012344, 1.5400181, -1.6355896)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees30" unique_id=897817997 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees30" unique_id=140777979 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees30/Small Rock" unique_id=1182675625]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees29" type="Node3D" parent="Terrain/TreesN\'At" unique_id=364913248]
+transform = Transform3D(-1.9875358, 0, -0.22293805, 0, 2, 0, 0.22293805, 0, -1.9875358, 161.56381, 0, -106.927414)
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees29" unique_id=329150807]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees29/Tree01" unique_id=2078895551]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees29" unique_id=573166417]
+transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees29/Tree05" unique_id=312219047]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees29" unique_id=133062680 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 56.008904, 0, -0.7407303)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees29/Tree03" unique_id=1482959738]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees29" unique_id=54669662 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees29/Tree02" unique_id=491428386]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees29" unique_id=1716830818 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 11.149433, 1.3490176, 10.138641)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees29/LargeRock" unique_id=1973356752]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees29" unique_id=1186179007 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees29/DeadTree" unique_id=110389206]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees29" unique_id=166371274 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees29/Tree04" unique_id=26943303]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree06" parent="Terrain/TreesN\'At/Bushes and Trees29" unique_id=468939447 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 48.308384, 0, -8.6753845)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees29/Tree06" unique_id=334042481]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees29" unique_id=1714695509 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Little Bush2" parent="Terrain/TreesN\'At/Bushes and Trees29" unique_id=103648784 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 24.012344, 1.5400181, -1.6355896)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees29" unique_id=214775886 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees29" unique_id=2099503913 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees29/Small Rock" unique_id=444641271]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees28" type="Node3D" parent="Terrain/TreesN\'At" unique_id=404389114]
+transform = Transform3D(-1.4531493, 0, -1.3741751, 0, 2, 0, 1.3741751, 0, -1.4531493, 62.73825, 0, -110.43387)
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees28" unique_id=481957788]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees28/Tree01" unique_id=3845082]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees28" unique_id=1118910130]
+transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees28/Tree05" unique_id=1955937697]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees28" unique_id=594909445 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 56.008904, 0, -0.7407303)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees28/Tree03" unique_id=284207272]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees28" unique_id=1886720222 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees28/Tree02" unique_id=1151175343]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees28" unique_id=1482119041 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 11.149433, 1.3490176, 10.138641)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees28/LargeRock" unique_id=2128137791]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees28" unique_id=734590457 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees28/DeadTree" unique_id=721985507]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees28" unique_id=1563413562 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees28/Tree04" unique_id=772957411]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree06" parent="Terrain/TreesN\'At/Bushes and Trees28" unique_id=306822287 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 48.308384, 0, -8.6753845)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees28/Tree06" unique_id=884887641]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees28" unique_id=1204179675 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Little Bush2" parent="Terrain/TreesN\'At/Bushes and Trees28" unique_id=1836663663 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 24.012344, 1.5400181, -1.6355896)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees28" unique_id=528381313 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees28" unique_id=791965352 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees28/Small Rock" unique_id=1641115621]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees27" type="Node3D" parent="Terrain/TreesN\'At" unique_id=278669212]
+transform = Transform3D(-1.4531493, 0, -1.3741751, 0, 2, 0, 1.3741751, 0, -1.4531493, 62.73825, 0, -53.301414)
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees27" unique_id=580832658]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees27/Tree01" unique_id=1694400497]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees27" unique_id=1783187010]
+transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees27/Tree05" unique_id=1897486008]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees27" unique_id=1164796553 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 56.008904, 0, -0.7407303)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees27/Tree03" unique_id=856695835]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees27" unique_id=321411032 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees27/Tree02" unique_id=202080469]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees27" unique_id=404797714 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 11.149433, 1.3490176, 10.138641)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees27/LargeRock" unique_id=750126962]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees27" unique_id=1208203392 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees27/DeadTree" unique_id=1765001693]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees27" unique_id=913192520 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees27/Tree04" unique_id=1826755343]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree06" parent="Terrain/TreesN\'At/Bushes and Trees27" unique_id=268692149 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 48.308384, 0, -8.6753845)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees27/Tree06" unique_id=664609586]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees27" unique_id=1807906325 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Little Bush2" parent="Terrain/TreesN\'At/Bushes and Trees27" unique_id=1567804759 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 24.012344, 1.5400181, -1.6355896)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees27" unique_id=206252114 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees27" unique_id=427720394 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees27/Small Rock" unique_id=623625611]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees26" type="Node3D" parent="Terrain/TreesN\'At" unique_id=1233475871]
+transform = Transform3D(-0.7265746, 0, -0.6870875, 0, 1, 0, 0.6870875, 0, -0.7265746, -69.32141, 0, 15.239357)
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees26" unique_id=1380478088]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees26/Tree01" unique_id=832350932]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees26" unique_id=883657]
+transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees26/Tree05" unique_id=740626610]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees26" unique_id=1362648211 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 56.008904, 0, -0.7407303)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees26/Tree03" unique_id=1765623420]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees26" unique_id=1451932271 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees26/Tree02" unique_id=1463607410]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees26" unique_id=1166993501 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 11.149433, 1.3490176, 10.138641)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees26/LargeRock" unique_id=1762115471]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees26" unique_id=948185529 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees26/DeadTree" unique_id=1829966898]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees26" unique_id=2112743078 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees26/Tree04" unique_id=541598713]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree06" parent="Terrain/TreesN\'At/Bushes and Trees26" unique_id=1851449922 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 48.308384, 0, -8.6753845)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees26/Tree06" unique_id=210159183]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees26" unique_id=2087319735 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Little Bush2" parent="Terrain/TreesN\'At/Bushes and Trees26" unique_id=470420505 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 24.012344, 1.5400181, -1.6355896)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees26" unique_id=364281891 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees26" unique_id=1605367506 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees26/Small Rock" unique_id=2100194807]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees25" type="Node3D" parent="Terrain/TreesN\'At" unique_id=441499342]
+transform = Transform3D(0.9819586, 0, -0.18909542, 0, 1, 0, 0.18909542, 0, 0.9819586, -53.907524, 0, 1.9261551)
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees25" unique_id=1618755843]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees25/Tree01" unique_id=1714869383]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees25" unique_id=607701905]
+transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees25/Tree05" unique_id=248396699]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees25" unique_id=397706996 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 56.008904, 0, -0.7407303)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees25/Tree03" unique_id=1399950375]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees25" unique_id=1249073465 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees25/Tree02" unique_id=802076164]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees25" unique_id=1189614388 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 11.149433, 1.3490176, 10.138641)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees25/LargeRock" unique_id=2145273948]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees25" unique_id=707070533 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees25/DeadTree" unique_id=722219303]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees25" unique_id=1898991398 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees25/Tree04" unique_id=1457677579]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree06" parent="Terrain/TreesN\'At/Bushes and Trees25" unique_id=730112881 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 48.308384, 0, -8.6753845)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees25/Tree06" unique_id=920580236]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees25" unique_id=1410471377 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Little Bush2" parent="Terrain/TreesN\'At/Bushes and Trees25" unique_id=270596906 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 24.012344, 1.5400181, -1.6355896)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees25" unique_id=1818402644 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees25" unique_id=2134647334 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees25/Small Rock" unique_id=56268591]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees24" type="Node3D" parent="Terrain/TreesN\'At" unique_id=547570091]
+transform = Transform3D(0.9819586, 0, -0.18909542, 0, 1, 0, 0.18909542, 0, 0.9819586, 68.95698, 0, 1.9261551)
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees24" unique_id=1859249568]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees24/Tree01" unique_id=904745169]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees24" unique_id=1376838724]
+transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees24/Tree05" unique_id=468212132]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees24" unique_id=631859332 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 56.008904, 0, -0.7407303)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees24/Tree03" unique_id=15657876]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees24" unique_id=1983591618 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees24/Tree02" unique_id=35260364]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees24" unique_id=736910165 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 11.149433, 1.3490176, 10.138641)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees24/LargeRock" unique_id=65959241]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees24" unique_id=1921046352 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees24/DeadTree" unique_id=317455439]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees24" unique_id=267968940 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees24/Tree04" unique_id=1460110369]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree06" parent="Terrain/TreesN\'At/Bushes and Trees24" unique_id=198150162 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 48.308384, 0, -8.6753845)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees24/Tree06" unique_id=2021484255]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees24" unique_id=1909254739 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Little Bush2" parent="Terrain/TreesN\'At/Bushes and Trees24" unique_id=116165166 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 24.012344, 1.5400181, -1.6355896)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees24" unique_id=1169829342 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees24" unique_id=1857086703 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees24/Small Rock" unique_id=142774811]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees23" type="Node3D" parent="Terrain/TreesN\'At" unique_id=1556610127]
+transform = Transform3D(0.9819586, 0, -0.18909542, 0, 1, 0, 0.18909542, 0, 0.9819586, 57.18216, 0, 77.576805)
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees23" unique_id=2121157588]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees23/Tree01" unique_id=1074090594]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees23" unique_id=2038158901]
+transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees23/Tree05" unique_id=1413251937]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees23" unique_id=1290990572 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 56.008904, 0, -0.7407303)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees23/Tree03" unique_id=2060349016]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees23" unique_id=308415565 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees23/Tree02" unique_id=1182569488]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees23" unique_id=1069100196 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 11.149433, 1.3490176, 10.138641)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees23/LargeRock" unique_id=125287116]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees23" unique_id=1857321012 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees23/DeadTree" unique_id=350144806]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees23" unique_id=269332295 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees23/Tree04" unique_id=1423009911]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree06" parent="Terrain/TreesN\'At/Bushes and Trees23" unique_id=319152490 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 48.308384, 0, -8.6753845)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees23/Tree06" unique_id=1714166153]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees23" unique_id=591340893 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Little Bush2" parent="Terrain/TreesN\'At/Bushes and Trees23" unique_id=1767213015 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 24.012344, 1.5400181, -1.6355896)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees23" unique_id=1048261650 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees23" unique_id=922501249 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees23/Small Rock" unique_id=786184380]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees22" type="Node3D" parent="Terrain/TreesN\'At" unique_id=1153456741]
+transform = Transform3D(0.9819586, 0, -0.18909542, 0, 1, 0, 0.18909542, 0, 0.9819586, 107.863434, 0, 88.03073)
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees22" unique_id=1663179072]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees22/Tree01" unique_id=1006960313]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees22" unique_id=560026738]
+transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees22/Tree05" unique_id=934649947]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees22" unique_id=867589708 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 56.008904, 0, -0.7407303)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees22/Tree03" unique_id=1426724964]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees22" unique_id=832614387 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees22/Tree02" unique_id=1105803584]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees22" unique_id=576612257 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 11.149433, 1.3490176, 10.138641)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees22/LargeRock" unique_id=1476619090]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees22" unique_id=1498893231 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees22/DeadTree" unique_id=1388420912]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees22" unique_id=1335881350 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees22/Tree04" unique_id=2039715376]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree06" parent="Terrain/TreesN\'At/Bushes and Trees22" unique_id=17200749 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 48.308384, 0, -8.6753845)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees22/Tree06" unique_id=1432259129]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees22" unique_id=594297918 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Little Bush2" parent="Terrain/TreesN\'At/Bushes and Trees22" unique_id=176324625 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 24.012344, 1.5400181, -1.6355896)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees22" unique_id=674679601 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees22" unique_id=1877510024 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees22/Small Rock" unique_id=691481513]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees21" type="Node3D" parent="Terrain/TreesN\'At" unique_id=798529339]
+transform = Transform3D(0.16504762, 0, 0.98628557, 0, 1, 0, -0.98628557, 0, 0.16504762, 163.34482, 0, 128.76968)
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees21" unique_id=466590955]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees21/Tree01" unique_id=2134713505]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees21" unique_id=1620783252]
+transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees21/Tree05" unique_id=85627971]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees21" unique_id=753515254 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 56.008904, 0, -0.7407303)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees21/Tree03" unique_id=1324471059]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees21" unique_id=713848162 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees21/Tree02" unique_id=579113959]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees21" unique_id=1987267796 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 11.149433, 1.3490176, 10.138641)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees21/LargeRock" unique_id=715917089]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees21" unique_id=623736087 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees21/DeadTree" unique_id=1667613618]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees21" unique_id=1513999566 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees21/Tree04" unique_id=161196194]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree06" parent="Terrain/TreesN\'At/Bushes and Trees21" unique_id=559742837 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 48.308384, 0, -8.6753845)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees21/Tree06" unique_id=2054066758]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees21" unique_id=110290420 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Little Bush2" parent="Terrain/TreesN\'At/Bushes and Trees21" unique_id=1191816001 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 24.012344, 1.5400181, -1.6355896)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees21" unique_id=1875338117 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees21" unique_id=263532431 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees21/Small Rock" unique_id=1486369763]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees20" type="Node3D" parent="Terrain/TreesN\'At" unique_id=1756882355]
+transform = Transform3D(0.16504762, 0, 0.98628557, 0, 1, 0, -0.98628557, 0, 0.16504762, 103.10544, 0, 128.76968)
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees20" unique_id=1950418446]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees20/Tree01" unique_id=1831080389]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees20" unique_id=2140348265]
+transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees20/Tree05" unique_id=264252249]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees20" unique_id=1745722495 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 56.008904, 0, -0.7407303)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees20/Tree03" unique_id=141927403]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees20" unique_id=768254026 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees20/Tree02" unique_id=1027775654]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees20" unique_id=640258138 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 11.149433, 1.3490176, 10.138641)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees20/LargeRock" unique_id=1976440683]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees20" unique_id=281861847 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees20/DeadTree" unique_id=1609841488]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees20" unique_id=1077942781 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees20/Tree04" unique_id=687714360]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree06" parent="Terrain/TreesN\'At/Bushes and Trees20" unique_id=378039041 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 48.308384, 0, -8.6753845)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees20/Tree06" unique_id=1623914011]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees20" unique_id=2122807943 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Little Bush2" parent="Terrain/TreesN\'At/Bushes and Trees20" unique_id=415892436 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 24.012344, 1.5400181, -1.6355896)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees20" unique_id=994411920 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees20" unique_id=361403361 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees20/Small Rock" unique_id=1061539092]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees19" type="Node3D" parent="Terrain/TreesN\'At" unique_id=1029641727]
+transform = Transform3D(0.16504762, 0, 0.98628557, 0, 1, 0, -0.98628557, 0, 0.16504762, 9.824585, 0, -51.52273)
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees19" unique_id=395245825]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees19/Tree01" unique_id=213732728]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees19" unique_id=635239034]
+transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees19/Tree05" unique_id=589650469]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees19" unique_id=1306187292 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 56.008904, 0, -0.7407303)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees19/Tree03" unique_id=713852826]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees19" unique_id=1822755140 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees19/Tree02" unique_id=1546476788]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees19" unique_id=1526756771 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 11.149433, 1.3490176, 10.138641)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees19/LargeRock" unique_id=1744155284]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees19" unique_id=666426198 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees19/DeadTree" unique_id=496751503]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees19" unique_id=1896221129 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees19/Tree04" unique_id=1274902821]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree06" parent="Terrain/TreesN\'At/Bushes and Trees19" unique_id=2020838807 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 48.308384, 0, -8.6753845)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees19/Tree06" unique_id=2132476062]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees19" unique_id=1453124448 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Little Bush2" parent="Terrain/TreesN\'At/Bushes and Trees19" unique_id=1224448135 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 24.012344, 1.5400181, -1.6355896)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees19" unique_id=1917272147 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees19" unique_id=1476825555 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees19/Small Rock" unique_id=39567327]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees18" type="Node3D" parent="Terrain/TreesN\'At" unique_id=151761616]
+transform = Transform3D(0.16504762, 0, 0.98628557, 0, 1, 0, -0.98628557, 0, 0.16504762, 57.882286, 0, 5.306614)
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees18" unique_id=123146626]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees18/Tree01" unique_id=1067866427]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees18" unique_id=2144513280]
+transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees18/Tree05" unique_id=1208707916]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees18" unique_id=1568912409 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 56.008904, 0, -0.7407303)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees18/Tree03" unique_id=2136568067]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees18" unique_id=953584073 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees18/Tree02" unique_id=155142694]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees18" unique_id=905065161 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 11.149433, 1.3490176, 10.138641)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees18/LargeRock" unique_id=587147945]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees18" unique_id=1817552696 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees18/DeadTree" unique_id=1659245004]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees18" unique_id=1590957249 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees18/Tree04" unique_id=1653559185]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree06" parent="Terrain/TreesN\'At/Bushes and Trees18" unique_id=2064355875 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 48.308384, 0, -8.6753845)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees18/Tree06" unique_id=2125549538]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees18" unique_id=499644686 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Little Bush2" parent="Terrain/TreesN\'At/Bushes and Trees18" unique_id=227946730 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 24.012344, 1.5400181, -1.6355896)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees18" unique_id=714991443 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees18" unique_id=233937361 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees18/Small Rock" unique_id=539062787]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees17" type="Node3D" parent="Terrain/TreesN\'At" unique_id=2107655634]
+transform = Transform3D(0.16504762, 0, 0.98628557, 0, 1, 0, -0.98628557, 0, 0.16504762, 94.102806, 0, 5.306614)
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees17" unique_id=742125377]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees17/Tree01" unique_id=814294729]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees17" unique_id=1518118805]
+transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees17/Tree05" unique_id=463053987]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees17" unique_id=2058158207 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 56.008904, 0, -0.7407303)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees17/Tree03" unique_id=1471086355]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees17" unique_id=236913116 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees17/Tree02" unique_id=1327716189]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees17" unique_id=1950967254 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 11.149433, 1.3490176, 10.138641)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees17/LargeRock" unique_id=795915672]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees17" unique_id=1918004925 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees17/DeadTree" unique_id=1991029209]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees17" unique_id=154929303 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees17/Tree04" unique_id=1287591264]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree06" parent="Terrain/TreesN\'At/Bushes and Trees17" unique_id=1286115756 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 48.308384, 0, -8.6753845)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees17/Tree06" unique_id=569237848]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees17" unique_id=356165893 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Little Bush2" parent="Terrain/TreesN\'At/Bushes and Trees17" unique_id=1707889937 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 24.012344, 1.5400181, -1.6355896)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees17" unique_id=696514738 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees17" unique_id=833148006 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees17/Small Rock" unique_id=1548239583]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees16" type="Node3D" parent="Terrain/TreesN\'At" unique_id=1768898907]
+transform = Transform3D(0.16504762, 0, 0.98628557, 0, 1, 0, -0.98628557, 0, 0.16504762, 94.102806, 0, 23.962833)
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees16" unique_id=53741754]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees16/Tree01" unique_id=421355508]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees16" unique_id=332616819]
+transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees16/Tree05" unique_id=447546036]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees16" unique_id=1679374721 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 56.008904, 0, -0.7407303)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees16/Tree03" unique_id=315501000]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees16" unique_id=2093673219 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees16/Tree02" unique_id=191437582]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees16" unique_id=415045576 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 11.149433, 1.3490176, 10.138641)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees16/LargeRock" unique_id=2116228648]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees16" unique_id=1264750548 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees16/DeadTree" unique_id=756465148]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees16" unique_id=1396642553 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees16/Tree04" unique_id=196704493]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree06" parent="Terrain/TreesN\'At/Bushes and Trees16" unique_id=228886510 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 48.308384, 0, -8.6753845)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees16/Tree06" unique_id=931269647]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees16" unique_id=944875717 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Little Bush2" parent="Terrain/TreesN\'At/Bushes and Trees16" unique_id=271975649 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 24.012344, 1.5400181, -1.6355896)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees16" unique_id=869224030 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees16" unique_id=989095052 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees16/Small Rock" unique_id=679183654]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees15" type="Node3D" parent="Terrain/TreesN\'At" unique_id=92307735]
+transform = Transform3D(0.99588436, 0, -0.09063257, 0, 1, 0, 0.09063257, 0, 0.99588436, 85.306, 0, 23.962833)
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees15" unique_id=768066937]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees15/Tree01" unique_id=2047405328]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees15" unique_id=439962539]
+transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees15/Tree05" unique_id=1626756018]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees15" unique_id=1729633297 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 56.008904, 0, -0.7407303)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees15/Tree03" unique_id=141461169]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees15" unique_id=1537167326 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees15/Tree02" unique_id=1533573690]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees15" unique_id=876365276 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 11.149433, 1.3490176, 10.138641)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees15/LargeRock" unique_id=1728359801]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees15" unique_id=261787568 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees15/DeadTree" unique_id=262521238]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees15" unique_id=452745127 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees15/Tree04" unique_id=1086565395]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree06" parent="Terrain/TreesN\'At/Bushes and Trees15" unique_id=1251251511 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 48.308384, 0, -8.6753845)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees15/Tree06" unique_id=390829377]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees15" unique_id=354900238 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Little Bush2" parent="Terrain/TreesN\'At/Bushes and Trees15" unique_id=682440658 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 24.012344, 1.5400181, -1.6355896)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees15" unique_id=850125361 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees15" unique_id=451393830 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees15/Small Rock" unique_id=1823538603]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees14" type="Node3D" parent="Terrain/TreesN\'At" unique_id=1353964040]
+transform = Transform3D(0.99588436, 0, -0.09063257, 0, 1, 0, 0.09063257, 0, 0.99588436, 57.973373, 0, 32.256874)
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees14" unique_id=1889176509]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees14/Tree01" unique_id=1693576377]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees14" unique_id=949220082]
+transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees14/Tree05" unique_id=851306424]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees14" unique_id=1778879427 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 56.008904, 0, -0.7407303)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees14/Tree03" unique_id=1355266870]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees14" unique_id=1064836984 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees14/Tree02" unique_id=115869760]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees14" unique_id=57371956 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 11.149433, 1.3490176, 10.138641)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees14/LargeRock" unique_id=652975892]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees14" unique_id=870334712 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees14/DeadTree" unique_id=1308857701]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees14" unique_id=1141692784 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees14/Tree04" unique_id=1492646316]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree06" parent="Terrain/TreesN\'At/Bushes and Trees14" unique_id=1105707928 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 48.308384, 0, -8.6753845)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees14/Tree06" unique_id=1708085720]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees14" unique_id=1757864924 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Little Bush2" parent="Terrain/TreesN\'At/Bushes and Trees14" unique_id=1653460821 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 24.012344, 1.5400181, -1.6355896)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees14" unique_id=986175615 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees14" unique_id=52309524 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees14/Small Rock" unique_id=239432456]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees13" type="Node3D" parent="Terrain/TreesN\'At" unique_id=93232975]
+transform = Transform3D(0.99588436, 0, -0.09063257, 0, 1, 0, 0.09063257, 0, 0.99588436, 57.973373, 0, 97.47103)
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees13" unique_id=462055782]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees13/Tree01" unique_id=319202532]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees13" unique_id=107693701]
+transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees13/Tree05" unique_id=1888485535]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees13" unique_id=1070758686 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 56.008904, 0, -0.7407303)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees13/Tree03" unique_id=2041849963]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees13" unique_id=931415236 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees13/Tree02" unique_id=166646749]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees13" unique_id=1340017789 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 11.149433, 1.3490176, 10.138641)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees13/LargeRock" unique_id=600893585]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees13" unique_id=1280314944 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees13/DeadTree" unique_id=585441994]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees13" unique_id=595947580 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees13/Tree04" unique_id=251422126]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree06" parent="Terrain/TreesN\'At/Bushes and Trees13" unique_id=672441688 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 48.308384, 0, -8.6753845)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees13/Tree06" unique_id=384384583]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees13" unique_id=1465988346 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Little Bush2" parent="Terrain/TreesN\'At/Bushes and Trees13" unique_id=2026042419 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 24.012344, 1.5400181, -1.6355896)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees13" unique_id=1898773388 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees13" unique_id=1256384291 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees13/Small Rock" unique_id=251663969]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees12" type="Node3D" parent="Terrain/TreesN\'At" unique_id=915985129]
+transform = Transform3D(0.44775903, 0, 0.8941542, 0, 1, 0, -0.8941542, 0, 0.44775903, 85.061615, 0, 97.47103)
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees12" unique_id=1510473188]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 47.583214, 1.3961334, -1.0325851)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees12/Tree01" unique_id=1583022273]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree05" parent="Terrain/TreesN\'At/Bushes and Trees12" unique_id=781035380]
+transform = Transform3D(5, 0, -9.536743e-07, 0, 5, 0, 9.536743e-07, 0, 5, 53.22013, 1.3961334, -3.2845764)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees12/Tree05" unique_id=18722645]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees12" unique_id=583275700 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 56.008904, 0, -0.7407303)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees12/Tree03" unique_id=1899376467]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees12" unique_id=228000147 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees12/Tree02" unique_id=86504973]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees12" unique_id=1119809408 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 11.149433, 1.3490176, 10.138641)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees12/LargeRock" unique_id=881862757]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees12" unique_id=279358448 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees12/DeadTree" unique_id=1137536741]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees12" unique_id=1513176394 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees12/Tree04" unique_id=305629477]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree06" parent="Terrain/TreesN\'At/Bushes and Trees12" unique_id=1935784963 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, -4.7683716e-07, 0, 5, 0, 4.7683716e-07, 0, 5, 48.308384, 0, -8.6753845)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees12/Tree06" unique_id=1338522949]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees12" unique_id=63966703 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Little Bush2" parent="Terrain/TreesN\'At/Bushes and Trees12" unique_id=1930594913 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, -2.3841858e-07, 0, 5, 0, 2.3841858e-07, 0, 5, 24.012344, 1.5400181, -1.6355896)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees12" unique_id=782042015 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees12" unique_id=114096531 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees12/Small Rock" unique_id=1445557412]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees11" type="Node3D" parent="Terrain/TreesN\'At" unique_id=1388035069]
+transform = Transform3D(0.44775903, 0, 0.8941542, 0, 1, 0, -0.8941542, 0, 0.44775903, 85.061615, 0, -109.87742)
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees11" unique_id=1825988574]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 52.722725, 1.3961334, 9.230774)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees11/Tree01" unique_id=1108642913]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees11" unique_id=1099417135 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.230293, 0, 13.445335)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees11/Tree03" unique_id=713023477]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees11" unique_id=254278192 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees11/Tree02" unique_id=1235402943]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees11" unique_id=966579699 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 15.716833, 1.3490176, 19.25951)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees11/LargeRock" unique_id=1892413879]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees11" unique_id=266302776 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees11/DeadTree" unique_id=1764320371]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees11" unique_id=511730141 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees11/Tree04" unique_id=1641602964]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees11" unique_id=1060697841 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees11" unique_id=1305296808 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees11" unique_id=798819692 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees11/Small Rock" unique_id=1272551562]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees10" type="Node3D" parent="Terrain/TreesN\'At" unique_id=1790670177]
+transform = Transform3D(0.44775903, 0, 0.8941542, 0, 1, 0, -0.8941542, 0, 0.44775903, -72.289474, 0, 12.606026)
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees10" unique_id=784793097]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 52.722725, 1.3961334, 9.230774)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees10/Tree01" unique_id=1507777260]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees10" unique_id=681002412 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.230293, 0, 13.445335)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees10/Tree03" unique_id=594159425]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees10" unique_id=1425280374 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees10/Tree02" unique_id=1245777840]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees10" unique_id=1656096855 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 15.716833, 1.3490176, 19.25951)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees10/LargeRock" unique_id=602329296]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees10" unique_id=50175742 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees10/DeadTree" unique_id=1950484155]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees10" unique_id=569487887 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees10/Tree04" unique_id=682599955]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees10" unique_id=600563102 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees10" unique_id=1634854718 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees10" unique_id=1414341203 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees10/Small Rock" unique_id=17610329]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees9" type="Node3D" parent="Terrain/TreesN\'At" unique_id=1833937283]
+transform = Transform3D(0.44775903, 0, 0.8941542, 0, 1, 0, -0.8941542, 0, 0.44775903, -39.59184, 0, 12.606026)
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees9" unique_id=555008464]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 52.722725, 1.3961334, 9.230774)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees9/Tree01" unique_id=29147046]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees9" unique_id=1748098727 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.230293, 0, 13.445335)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees9/Tree03" unique_id=1437242593]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees9" unique_id=1171102505 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees9/Tree02" unique_id=423329885]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees9" unique_id=1533194512 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 15.716833, 1.3490176, 19.25951)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees9/LargeRock" unique_id=30092632]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees9" unique_id=1700447501 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees9/DeadTree" unique_id=1334260233]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees9" unique_id=2068841120 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees9/Tree04" unique_id=1402565511]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees9" unique_id=2133005388 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees9" unique_id=1503858340 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees9" unique_id=202934262 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees9/Small Rock" unique_id=925795600]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees8" type="Node3D" parent="Terrain/TreesN\'At" unique_id=344799188]
+transform = Transform3D(0.7716245, 0, -0.6360782, 0, 1, 0, 0.6360782, 0, 0.7716245, -84.93351, 0, -30.562054)
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees8" unique_id=1507049156]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 52.722725, 1.3961334, 9.230774)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees8/Tree01" unique_id=934665671]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees8" unique_id=90644067 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.230293, 0, 13.445335)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees8/Tree03" unique_id=2081317749]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees8" unique_id=1546103082 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees8/Tree02" unique_id=814642751]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees8" unique_id=213087002 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 15.716833, 1.3490176, 19.25951)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees8/LargeRock" unique_id=973290494]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees8" unique_id=786373469 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees8/DeadTree" unique_id=1284502502]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees8" unique_id=446973352 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees8/Tree04" unique_id=403089790]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees8" unique_id=582602470 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees8" unique_id=155370218 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees8" unique_id=1354634228 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees8/Small Rock" unique_id=1501855976]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees7" type="Node3D" parent="Terrain/TreesN\'At" unique_id=318438343]
+transform = Transform3D(0.7716245, 0, -0.6360782, 0, 1, 0, 0.6360782, 0, 0.7716245, 52.902565, 0, 34.94475)
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees7" unique_id=1009292170]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 52.722725, 1.3961334, 9.230774)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees7/Tree01" unique_id=564544048]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees7" unique_id=1660600315 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.230293, 0, 13.445335)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees7/Tree03" unique_id=1247953395]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees7" unique_id=1841527526 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees7/Tree02" unique_id=1751653892]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees7" unique_id=1686974384 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 15.716833, 1.3490176, 19.25951)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees7/LargeRock" unique_id=1855070270]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees7" unique_id=718984005 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees7/DeadTree" unique_id=645804980]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees7" unique_id=1040037264 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees7/Tree04" unique_id=1383095059]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees7" unique_id=1663477204 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees7" unique_id=1454146464 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees7" unique_id=303769082 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees7/Small Rock" unique_id=844648342]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees6" type="Node3D" parent="Terrain/TreesN\'At" unique_id=208752230]
+transform = Transform3D(0.7716245, 0, -0.6360782, 0, 1, 0, 0.6360782, 0, 0.7716245, 90.24533, 0, 9.261444)
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees6" unique_id=1122288037]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 52.722725, 1.3961334, 9.230774)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees6/Tree01" unique_id=1060632281]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees6" unique_id=1961572120 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.230293, 0, 13.445335)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees6/Tree03" unique_id=46728591]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees6" unique_id=1292733104 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees6/Tree02" unique_id=1732913319]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees6" unique_id=453467693 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 15.716833, 1.3490176, 19.25951)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees6/LargeRock" unique_id=2117866526]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees6" unique_id=1141939430 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees6/DeadTree" unique_id=448098540]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees6" unique_id=1573276898 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees6/Tree04" unique_id=1911383345]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees6" unique_id=1989393408 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees6" unique_id=1713562632 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees6" unique_id=544013411 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees6/Small Rock" unique_id=350107652]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees5" type="Node3D" parent="Terrain/TreesN\'At" unique_id=1812102144]
+transform = Transform3D(0.17364822, 0, -0.9848077, 0, 1, 0, 0.9848077, 0, 0.17364822, 90.24533, 0, -74.806114)
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees5" unique_id=1912301235]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 52.722725, 1.3961334, 9.230774)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees5/Tree01" unique_id=347191661]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees5" unique_id=964549292 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.230293, 0, 13.445335)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees5/Tree03" unique_id=1340544406]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees5" unique_id=707207525 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees5/Tree02" unique_id=469070224]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees5" unique_id=679038502 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 15.716833, 1.3490176, 19.25951)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees5/LargeRock" unique_id=1059072541]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees5" unique_id=1332986979 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees5/DeadTree" unique_id=834972692]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees5" unique_id=1200501741 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees5/Tree04" unique_id=635465473]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees5" unique_id=2090500914 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees5" unique_id=576966332 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees5" unique_id=1045477716 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees5/Small Rock" unique_id=1943661157]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees4" type="Node3D" parent="Terrain/TreesN\'At" unique_id=1959160319]
+transform = Transform3D(0.17364822, 0, -0.9848077, 0, 1, 0, 0.9848077, 0, 0.17364822, -96.51718, 0, -57.670334)
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees4" unique_id=1405220012]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 52.722725, 1.3961334, 9.230774)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees4/Tree01" unique_id=561435422]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees4" unique_id=1873549841 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.230293, 0, 13.445335)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees4/Tree03" unique_id=685794841]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees4" unique_id=465893191 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees4/Tree02" unique_id=1451896222]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees4" unique_id=990398569 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 15.716833, 1.3490176, 19.25951)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees4/LargeRock" unique_id=1742795416]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees4" unique_id=1481287309 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees4/DeadTree" unique_id=488769613]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees4" unique_id=786275906 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees4/Tree04" unique_id=273647297]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees4" unique_id=892719244 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees4" unique_id=937755702 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees4" unique_id=819462952 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees4/Small Rock" unique_id=2043933365]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees3" type="Node3D" parent="Terrain/TreesN\'At" unique_id=522825356]
+transform = Transform3D(0.17364822, 0, -0.9848077, 0, 1, 0, 0.9848077, 0, 0.17364822, -3.104065, 0, -17.158272)
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees3" unique_id=1172350371]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 52.722725, 1.3961334, 9.230774)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees3/Tree01" unique_id=661266934]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees3" unique_id=343172277 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.230293, 0, 13.445335)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees3/Tree03" unique_id=1700627939]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees3" unique_id=165143879 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees3/Tree02" unique_id=1396756019]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees3" unique_id=743649053 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 15.716833, 1.3490176, 19.25951)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees3/LargeRock" unique_id=1053588598]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees3" unique_id=1512887168 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees3/DeadTree" unique_id=689566377]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees3" unique_id=1145325220 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees3/Tree04" unique_id=1696614833]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees3" unique_id=561912859 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees3" unique_id=1058835814 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees3" unique_id=339817044 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees3/Small Rock" unique_id=1198999240]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees2" type="Node3D" parent="Terrain/TreesN\'At" unique_id=1610199562]
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees2" unique_id=1761474232]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 52.722725, 1.3961334, 9.230774)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees2/Tree01" unique_id=1560208981]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees2" unique_id=1471372416 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.230293, 0, 13.445335)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees2/Tree03" unique_id=1688185854]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees2" unique_id=731535868 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.26184, 0, 4.601118)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees2/Tree02" unique_id=225188835]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees2" unique_id=336029723 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 15.716833, 1.3490176, 19.25951)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees2/LargeRock" unique_id=240871268]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees2" unique_id=760856255 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30.348366, 1.5879881, 7.7900543)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees2/DeadTree" unique_id=96549565]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees2" unique_id=1355495442 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.523613, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees2/Tree04" unique_id=1746450885]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees2" unique_id=1923855387 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.443954, 1.5400181, 7.2141266)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees2" unique_id=108323073 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 57.008698, 1.9386597, 5.0983505)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees2" unique_id=520038360 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 22.376438, 1.1976042, 10.536438)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees2/Small Rock" unique_id=1596707123]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
+
+[node name="Bushes and Trees(OG)" type="Node3D" parent="Terrain/TreesN\'At" unique_id=631346557]
+
+[node name="Tree01" parent="Terrain/TreesN\'At/Bushes and Trees(OG)" unique_id=1020523472]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 39.151566, 1.3961334, 65.50808)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees(OG)/Tree01" unique_id=520835129]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
+shape = SubResource("CylinderShape3D_ehfxi")
+
+[node name="Tree03" parent="Terrain/TreesN\'At/Bushes and Trees(OG)" unique_id=846971442 instance=ExtResource("25_f8y3u")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 132.2246, 0, 107.98922)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees(OG)/Tree03" unique_id=679871559]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4760456, 0, -7.57835)
+shape = SubResource("CylinderShape3D_abt3y")
+
+[node name="Tree02" parent="Terrain/TreesN\'At/Bushes and Trees(OG)" unique_id=282172955 instance=ExtResource("26_0k1o5")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 33.45601, 0, 21.937181)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees(OG)/Tree02" unique_id=1718502391]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.686404, 0.1171875, -7.628723)
+shape = SubResource("CylinderShape3D_44x3u")
+
+[node name="LargeRock" parent="Terrain/TreesN\'At/Bushes and Trees(OG)" unique_id=837355479 instance=ExtResource("27_k1ecl")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -2.0470886, 1.3490176, 42.01709)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees(OG)/LargeRock" unique_id=444796332]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82066286, -0.16722369, -7.6244526)
+shape = SubResource("BoxShape3D_ehfxi")
+
+[node name="RockWall" parent="Terrain/TreesN\'At/Bushes and Trees(OG)" unique_id=708548561 instance=ExtResource("33_na3no")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 88.87248, 2.6431766, 48.615494)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees(OG)/RockWall" unique_id=1307438518]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5185623, -0.09906006, -7.573166)
+shape = SubResource("BoxShape3D_44x3u")
+
+[node name="DeadTree" parent="Terrain/TreesN\'At/Bushes and Trees(OG)" unique_id=284196113 instance=ExtResource("28_8kok0")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 102.695915, 1.5879881, 47.908173)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees(OG)/DeadTree" unique_id=2143844182]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0680237, 0, -7.57819)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Tree04" parent="Terrain/TreesN\'At/Bushes and Trees(OG)" unique_id=1525707882 instance=ExtResource("29_lrhm2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 96.26283, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees(OG)/Tree04" unique_id=958504968]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3349085, 0.20919919, -7.59103)
+shape = SubResource("CylinderShape3D_uwa5t")
+
+[node name="Campfire" parent="Terrain/TreesN\'At/Bushes and Trees(OG)" unique_id=2003877303 instance=ExtResource("34_07udg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 101.93742, 1.8568697, 73.649)
+
+[node name="Little Bush" parent="Terrain/TreesN\'At/Bushes and Trees(OG)" unique_id=75697440 instance=ExtResource("30_td4uw")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 52.540535, 1.5400181, 0)
+
+[node name="Log No Axe" parent="Terrain/TreesN\'At/Bushes and Trees(OG)" unique_id=388249613 instance=ExtResource("31_r5f7e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 85.23485, 1.9386597, 0)
+
+[node name="Small Rock" parent="Terrain/TreesN\'At/Bushes and Trees(OG)" unique_id=1717520839 instance=ExtResource("32_wp8k7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 50.280575, 1.1976042, 71.871346)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/TreesN\'At/Bushes and Trees(OG)/Small Rock" unique_id=708270134]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
+shape = SubResource("BoxShape3D_uwa5t")
 
 [node name="KrankenIt" type="CharacterBody3D" parent="." unique_id=185640023]
 transform = Transform3D(-0.859294, -0.4950922, 0.12844276, -0.059391182, 0.34600058, 0.93635267, -0.5080222, 0.7969738, -0.32672033, 13.300001, 19.000002, 0)
@@ -66147,6 +68335,9 @@ transform = Transform3D(4.455, 2.8899696e-13, 1.4181297e-13, -9.574945e-16, 1.1,
 
 [node name="Road7" parent="Terrain2/Road" unique_id=1373296395 instance=ExtResource("1_yjxuc")]
 transform = Transform3D(1.1550002, -1.7484555e-06, 2.0981468e-05, 2.0194667e-08, 1.0000001, -2.0981468e-06, -3.0291993e-08, 2.622684e-07, 18, 16.582207, -2.2008274, 58.64835)
+
+[node name="Road8" parent="Terrain2/Road" unique_id=1693073685 instance=ExtResource("1_yjxuc")]
+transform = Transform3D(1.1550002, -1.7484555e-06, 2.0981468e-05, 2.0194667e-08, 1.0000001, -2.0981468e-06, -3.0291993e-08, 2.622684e-07, 18, 163.21118, -2.2008274, -70.17298)
 
 [node name="Build11_grp4" type="Node3D" parent="Terrain2" unique_id=1193456747]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -83.30002, 0, 104.70001)
@@ -87404,12 +89595,6 @@ metadata/extras = {
 }
 }
 
-[node name="MedicalSign" parent="Terrain3/Section2/Build11_grp4" unique_id=264193204 instance=ExtResource("23_hvubb")]
-transform = Transform3D(-3.278354e-08, 0, 0.75, 0, 0.75, 0, -0.75, 0, -3.278354e-08, -51.329636, 10.880145, -30.548473)
-
-[node name="MedicalSign2" parent="Terrain3/Section2/Build11_grp4" unique_id=1740502591 instance=ExtResource("23_hvubb")]
-transform = Transform3D(0.75, 0, -1.3113416e-07, 0, 0.75, 0, 1.3113416e-07, 0, 0.75, -46.86451, 10.688485, -22.928381)
-
 [node name="Window5_grp_031" type="Node3D" parent="Terrain3/Section2/Build11_grp4" unique_id=457665006]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 9, -2)
 metadata/extras = {
@@ -87464,11 +89649,17 @@ transform = Transform3D(7.799999, 2.8899695e-12, 6.5033417e-13, -1.8440634e-15, 
 [node name="Road5" parent="Terrain3/Road" unique_id=1238424746 instance=ExtResource("1_yjxuc")]
 transform = Transform3D(13.012999, 2.8899696e-13, 7.090648e-14, -2.7968295e-15, 1.1, -8.86331e-15, -3.6985165e-14, -3.126388e-14, 0.93555, 10.302451, -2.1990001, 109.717995)
 
+[node name="Road8" parent="Terrain3/Road" unique_id=117960954 instance=ExtResource("1_yjxuc")]
+transform = Transform3D(13.012999, 2.8899696e-13, 7.1054274e-14, -2.7968295e-15, 1.1, -8.86331e-15, -5.684342e-14, -3.126388e-14, 0.93555, 61.849487, -2.1990001, 109.717995)
+
+[node name="Road9" parent="Terrain3/Road" unique_id=1416322096 instance=ExtResource("1_yjxuc")]
+transform = Transform3D(13.012999, 2.8899696e-13, 7.1054274e-14, -2.7968295e-15, 1.1, -8.86331e-15, -5.684342e-14, -3.126388e-14, 0.93555, 137.99803, -2.1990001, 48.307877)
+
 [node name="Road6" parent="Terrain3/Road" unique_id=153317406 instance=ExtResource("1_yjxuc")]
 transform = Transform3D(4.455, 2.8899696e-13, 1.4181297e-13, -9.574945e-16, 1.1, -1.772662e-14, -1.2661871e-14, -3.126388e-14, 1.8711, -15.39755, -2.1990001, 101.31799)
 
 [node name="Road7" parent="Terrain3/Road" unique_id=7787244 instance=ExtResource("1_yjxuc")]
 transform = Transform3D(1.1550006, -1.7484557e-06, 2.2030541e-05, 2.0194673e-08, 1.0000002, -2.203054e-06, -3.0292004e-08, 2.6226843e-07, 18.9, 16.582207, -2.2008274, 62.84836)
 
-[node name="MedicalSign" parent="Terrain3" unique_id=1068099043 instance=ExtResource("23_hvubb")]
-transform = Transform3D(-3.278354e-08, 0, 0.75, 0, 0.75, 0, -0.75, 0, -3.278354e-08, -83.429634, 8.980145, 224.95157)
+[node name="Grass" parent="." unique_id=701079013 instance=ExtResource("39_4wtct")]
+transform = Transform3D(125, 0, 0, 0, 1, 0, 0, 0, 150, 28.255943, -0.19333076, -34.79955)
