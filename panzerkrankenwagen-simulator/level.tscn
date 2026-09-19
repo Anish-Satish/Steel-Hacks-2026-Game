@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://bpfh2yine3mdv"]
 
 [ext_resource type="Texture2D" uid="uid://dsceb20klb6v6" path="res://Assets/LandScape/Textures/StonePavement_Base Color.png" id="1_ait7k"]
+[ext_resource type="PackedScene" uid="uid://fkriycdiyuud" path="res://Assets/LandScape/Road.blend" id="1_yjxuc"]
 [ext_resource type="Texture2D" uid="uid://bx2gehw0lj77o" path="res://Assets/LandScape/Textures/StonePavement_ROUGHNESS.png" id="2_42xju"]
 [ext_resource type="Texture2D" uid="uid://bfjqk86fjryoy" path="res://Assets/LandScape/Textures/StonePavement_NORMAL.png" id="3_v7sqt"]
 [ext_resource type="Texture2D" uid="uid://3hnrny3g4726" path="res://Assets/LandScape/Textures/DoorSet_Base Color.png" id="4_ilwjd"]
@@ -22,8 +23,10 @@
 [ext_resource type="Texture2D" uid="uid://c3aigo1wfulr8" path="res://Assets/LandScape/Textures/RoofPVC_ROUGHNESS.png" id="20_ilwjd"]
 [ext_resource type="Texture2D" uid="uid://bf836kbeqvw6o" path="res://Assets/LandScape/Textures/RoofPVC_NORMAL.png" id="21_y3bce"]
 [ext_resource type="Script" uid="uid://btgpqjvq2c1cb" path="res://Test/kranken_it.gd" id="22_y3bce"]
+[ext_resource type="PackedScene" uid="uid://b6f3ri7jukrti" path="res://Assets/LandScape/MedicalSign.blend" id="23_hvubb"]
 [ext_resource type="PackedScene" uid="uid://d1nkph2t78dx" path="res://Assets/Cars/Car 08/Car8_1.blend" id="23_u3yai"]
 [ext_resource type="AudioStream" uid="uid://dkpaef68vbybl" path="res://Assets/Audio/Music/music.wav" id="24_u3yai"]
+[ext_resource type="AudioStream" uid="uid://bf7tg4w6v6lca" path="res://Assets/Audio/SFX/Siren.mp3" id="26_aoqsc"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_v7sqt"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -24641,6 +24644,15 @@ shadow_enabled = true
 
 [node name="Terrain" type="Node3D" parent="." unique_id=228306031]
 
+[node name="Road" parent="Terrain" unique_id=1494225728 instance=ExtResource("1_yjxuc")]
+transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 1.5, -17.89755, 0.001, 15.718)
+
+[node name="Road2" parent="Terrain/Road" unique_id=2111861441 instance=ExtResource("1_yjxuc")]
+transform = Transform3D(1.0000002, 0, 0, 0, 1, 0, 0, 0, 1, -4.518381, 0, -7.7891994)
+
+[node name="Road3" parent="Terrain/Road" unique_id=1650244305 instance=ExtResource("1_yjxuc")]
+transform = Transform3D(0.15, -1.7484552e-07, 1.7484555e-06, 2.6226832e-08, 1, -1.7484556e-06, -2.6226827e-08, 1.7484558e-07, 10, -6.052024, -0.00182724, 24.086899)
+
 [node name="Floor" type="Node3D" parent="Terrain" unique_id=451926683]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Terrain/Floor" unique_id=718336070]
@@ -25341,7 +25353,7 @@ metadata/extras = {
 }
 
 [node name="Build10_grp2" type="Node3D" parent="Terrain/Section1" unique_id=377529200]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -90.649994, 0, 10.649996)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -90.649994, 0, 71.01794)
 metadata/extras = {
 "M3": {
 "group_size": 0.2,
@@ -26162,7 +26174,7 @@ metadata/extras = {
 }
 
 [node name="Build9_grp2" type="Node3D" parent="Terrain/Section1" unique_id=1130067977]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -70.2, 0, 12.699999)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -91.65764, 0, 81.35433)
 metadata/extras = {
 "M3": {
 "group_size": 0.2,
@@ -29405,7 +29417,7 @@ metadata/extras = {
 }
 
 [node name="Build9_grp3" type="Node3D" parent="Terrain/Section1" unique_id=1379923559]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.7, 0, 24.399998)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.7, 0, 27.888721)
 metadata/extras = {
 "M3": {
 "group_size": 0.2,
@@ -45741,6 +45753,12 @@ metadata/extras = {
 }
 }
 
+[node name="MedicalSign" parent="Terrain/Section2/Build11_grp4" unique_id=183614627 instance=ExtResource("23_hvubb")]
+transform = Transform3D(-3.278354e-08, 0, 0.75, 0, 0.75, 0, -0.75, 0, -3.278354e-08, -51.329636, 10.880145, -30.548473)
+
+[node name="MedicalSign2" parent="Terrain/Section2/Build11_grp4" unique_id=1008981707 instance=ExtResource("23_hvubb")]
+transform = Transform3D(0.75, 0, -1.3113416e-07, 0, 0.75, 0, 1.3113416e-07, 0, 0.75, -46.86451, 10.688485, -22.928381)
+
 [node name="Window5_grp_031" type="Node3D" parent="Terrain/Section2/Build11_grp4" unique_id=768104469]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 9, -2)
 metadata/extras = {
@@ -45793,7 +45811,11 @@ transform = Transform3D(0.9995744, 0.02543953, 0.014284939, -0.024348319, 0.9971
 [node name="Car8_1" parent="KrankenIt" unique_id=850104837 instance=ExtResource("23_u3yai")]
 transform = Transform3D(-0.98480755, -0.059391137, 0.16317597, 0.13302214, 0.34600076, 0.9287565, -0.11161888, 0.93635267, -0.3328437, 0.45487404, 1.3577099, -18.52161)
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=568209535]
+[node name="SirenAudioStreamPlayer" type="AudioStreamPlayer" parent="KrankenIt" unique_id=512134523]
+stream = ExtResource("26_aoqsc")
+bus = &"SFX"
+
+[node name="MusicAudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=568209535]
 stream = ExtResource("24_u3yai")
 volume_db = -20.0
 bus = &"Music"
