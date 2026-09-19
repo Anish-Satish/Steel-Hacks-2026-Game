@@ -1,0 +1,185 @@
+[gd_scene format=3 uid="uid://bkr4krr43wdc8"]
+
+[ext_resource type="Theme" uid="uid://daiwgbycmhybt" path="res://Themes/MainMenue.tres" id="2_v3770"]
+[ext_resource type="Script" uid="uid://tp3ad1mvro0o" path="res://UI/Button.cs" id="3_26mu7"]
+
+[sub_resource type="CSharpScript" id="CSharpScript_y0kxn"]
+script/source = "using Godot;
+using System;
+
+public partial class AnimationPlayer : Godot.AnimationPlayer
+{
+	// Called when the node enters the scene tree for the first time.
+	public override void _Ready()
+	{
+		
+	}
+
+	// Called every frame. 'delta' is the elapsed time since the previous frame.
+	public override void _Process(double delta)
+	{
+	}
+}
+"
+
+[sub_resource type="Animation" id="Animation_q427x"]
+resource_name = "Michael Jackson"
+length = 8.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset_transform_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2, 4, 6, 8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.7, 0.7), Vector2(1, 1), Vector2(0.7, 0.7), Vector2(1, 1), Vector2(0.7, 0.7)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:offset_transform_rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.7778, 3.5556, 5.3333, 7.1111, 8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.30543261909900765, 0.30543261909900765, -0.30543261909900765, 0.30543261909900765, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_cw4yn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset_transform_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:offset_transform_rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_05tgr"]
+_data = {
+&"Michael Jackson": SubResource("Animation_q427x"),
+&"RESET": SubResource("Animation_cw4yn")
+}
+
+[node name="MainMenue" type="Control" unique_id=1049352216]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=404987231]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_v3770")
+color = Color(0.18029219, 0.65237856, 0.8492325, 1)
+
+[node name="Panel" type="Panel" parent="." unique_id=510257801]
+custom_minimum_size = Vector2(300, 0)
+custom_maximum_size = Vector2(-1, 300)
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -150.0
+offset_top = 325.0
+offset_right = 150.0
+offset_bottom = -23.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=1949338191]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -125.0
+offset_top = 25.0
+offset_right = 125.0
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_v3770")
+script = ExtResource("3_26mu7")
+
+[node name="Drive" type="Button" parent="Panel/VBoxContainer" unique_id=1751629629]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+size_flags_vertical = 2
+theme = ExtResource("2_v3770")
+text = "DRIVE"
+
+[node name="Options" type="Button" parent="Panel/VBoxContainer" unique_id=1590687092]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+size_flags_vertical = 6
+theme = ExtResource("2_v3770")
+text = "OPTIONS"
+
+[node name="Quit" type="Button" parent="Panel/VBoxContainer" unique_id=164728059]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_vertical = 10
+theme = ExtResource("2_v3770")
+action_mode = 0
+text = "QUIT
+"
+
+[node name="Label" type="Label" parent="." unique_id=1151855840]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -413.5
+offset_top = 100.0
+offset_right = 413.5
+offset_bottom = 209.0
+grow_horizontal = 2
+offset_transform_enabled = true
+theme = ExtResource("2_v3770")
+text = "Panzerkrankenwagen"
+script = SubResource("CSharpScript_y0kxn")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Label" unique_id=280751103]
+libraries/ = SubResource("AnimationLibrary_05tgr")
+autoplay = &"Michael Jackson"
+script = SubResource("CSharpScript_y0kxn")
+libraries/ = SubResource("AnimationLibrary_05tgr")
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=1364218326]
+position = Vector2(77, 572)
+
+[connection signal="pressed" from="Panel/VBoxContainer/Drive" to="Panel/VBoxContainer" method="_on_drive_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/Options" to="Panel/VBoxContainer" method="_on_options_pressed"]

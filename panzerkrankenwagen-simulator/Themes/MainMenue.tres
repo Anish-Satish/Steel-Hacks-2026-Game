@@ -1,0 +1,39 @@
+[gd_resource type="Theme" format=3 uid="uid://daiwgbycmhybt"]
+
+[ext_resource type="FontFile" uid="uid://bnbej77on1gtb" path="res://Text Font/Lora-Bold.ttf" id="1_2bak4"]
+[ext_resource type="StyleBox" uid="uid://cprf8ghiqoua2" path="res://Themes/Drive.tres" id="2_t40ss"]
+[ext_resource type="FontFile" uid="uid://rhvjxovrcxk3" path="res://Text Font/Lora-BoldItalic.ttf" id="3_4jo4v"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n8cey"]
+bg_color = Color(1, 0.09803922, 0.09803922, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3pgpo"]
+bg_color = Color(1, 0.19607843, 0.19607843, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_djj3j"]
+bg_color = Color(0, 0.35748592, 0.8406482, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+corner_detail = 20
+
+[resource]
+Button/font_sizes/font_size = 48
+Button/fonts/font = ExtResource("1_2bak4")
+Button/styles/hover = SubResource("StyleBoxFlat_n8cey")
+Button/styles/normal = ExtResource("2_t40ss")
+Button/styles/pressed = SubResource("StyleBoxFlat_3pgpo")
+Label/font_sizes/font_size = 84
+Label/fonts/font = ExtResource("3_4jo4v")
+Panel/styles/panel = SubResource("StyleBoxFlat_djj3j")
