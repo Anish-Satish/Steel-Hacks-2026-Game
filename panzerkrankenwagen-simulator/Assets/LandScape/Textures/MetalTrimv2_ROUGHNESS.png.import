@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dh0sokmfybxby"
-path.s3tc="res://.godot/imported/MetalTrimv2_ROUGHNESS.png-6425f6b4b32e3ee87f2ff553ed274c89.s3tc.ctex"
+path.s3tc="res://.godot/imported/MetalTrimv2_ROUGHNESS.png-cf6d84881b40098f21e10d66c9f454af.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/LandScape/textures/MetalTrimv2_ROUGHNESS.png"
-dest_files=["res://.godot/imported/MetalTrimv2_ROUGHNESS.png-6425f6b4b32e3ee87f2ff553ed274c89.s3tc.ctex"]
+source_file="res://Assets/LandScape/Textures/MetalTrimv2_ROUGHNESS.png"
+dest_files=["res://.godot/imported/MetalTrimv2_ROUGHNESS.png-cf6d84881b40098f21e10d66c9f454af.s3tc.ctex"]
 
 [params]
 
