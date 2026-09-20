@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brortudukcugm"
-path.s3tc="res://.godot/imported/BaseWallv2_Base Color 3.png-2eba97a4657587b95a8a1faf62d19de1.s3tc.ctex"
+uid="uid://beojjuvo33e70"
+path.s3tc="res://.godot/imported/BaseWallv2_Base Color 3.png-a65aef3a97e64461033c3e4a8ede6bc4.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/LandScape/Textures/BaseWallv2_Base Color 3.png"
-dest_files=["res://.godot/imported/BaseWallv2_Base Color 3.png-2eba97a4657587b95a8a1faf62d19de1.s3tc.ctex"]
+source_file="res://Assets/LandScape/textures/BaseWallv2_Base Color 3.png"
+dest_files=["res://.godot/imported/BaseWallv2_Base Color 3.png-a65aef3a97e64461033c3e4a8ede6bc4.s3tc.ctex"]
 
 [params]
 

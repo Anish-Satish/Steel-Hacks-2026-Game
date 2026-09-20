@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://biyic7ovhrqia"
-path.s3tc="res://.godot/imported/BrickGrid_NORMAL.png-5ef3346e99d90e0454e59ed30d9e4900.s3tc.ctex"
+uid="uid://qhk8r0s73ti8"
+path.s3tc="res://.godot/imported/BrickGrid_NORMAL.png-a063fbbc1735d06e7bbb8711bcce0dec.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/LandScape/Textures/BrickGrid_NORMAL.png"
-dest_files=["res://.godot/imported/BrickGrid_NORMAL.png-5ef3346e99d90e0454e59ed30d9e4900.s3tc.ctex"]
+source_file="res://Assets/LandScape/textures/BrickGrid_NORMAL.png"
+dest_files=["res://.godot/imported/BrickGrid_NORMAL.png-a063fbbc1735d06e7bbb8711bcce0dec.s3tc.ctex"]
 
 [params]
 

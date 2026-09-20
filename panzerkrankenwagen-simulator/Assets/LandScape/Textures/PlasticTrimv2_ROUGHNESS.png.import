@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://de01fha1nwp84"
-path.s3tc="res://.godot/imported/PlasticTrimv2_ROUGHNESS.png-9217aedfcb93d4c4418de929ace3f5af.s3tc.ctex"
+uid="uid://ca6vjsx81pcmw"
+path.s3tc="res://.godot/imported/PlasticTrimv2_ROUGHNESS.png-2fa375673fc6f99f017922f764375cf1.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/LandScape/Textures/PlasticTrimv2_ROUGHNESS.png"
-dest_files=["res://.godot/imported/PlasticTrimv2_ROUGHNESS.png-9217aedfcb93d4c4418de929ace3f5af.s3tc.ctex"]
+source_file="res://Assets/LandScape/textures/PlasticTrimv2_ROUGHNESS.png"
+dest_files=["res://.godot/imported/PlasticTrimv2_ROUGHNESS.png-2fa375673fc6f99f017922f764375cf1.s3tc.ctex"]
 
 [params]
 

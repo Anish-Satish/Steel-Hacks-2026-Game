@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bx2gehw0lj77o"
-path.s3tc="res://.godot/imported/StonePavement_ROUGHNESS.png-f489a5dd55a6d5cc506e96b8aa618994.s3tc.ctex"
+uid="uid://dj63m6o2xgjwg"
+path.s3tc="res://.godot/imported/StonePavement_ROUGHNESS.png-2b060ebf2d7a210d7dd9881107cfdeb6.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/LandScape/Textures/StonePavement_ROUGHNESS.png"
-dest_files=["res://.godot/imported/StonePavement_ROUGHNESS.png-f489a5dd55a6d5cc506e96b8aa618994.s3tc.ctex"]
+source_file="res://Assets/LandScape/textures/StonePavement_ROUGHNESS.png"
+dest_files=["res://.godot/imported/StonePavement_ROUGHNESS.png-2b060ebf2d7a210d7dd9881107cfdeb6.s3tc.ctex"]
 
 [params]
 

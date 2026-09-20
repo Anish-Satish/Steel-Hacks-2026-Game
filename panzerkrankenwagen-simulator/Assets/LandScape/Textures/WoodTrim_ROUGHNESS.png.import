@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dh58v8edkhbsp"
-path.s3tc="res://.godot/imported/WoodTrim_ROUGHNESS.png-586c28d784b03c6c65ea632328c47afa.s3tc.ctex"
+uid="uid://b61pb6kerv3m"
+path.s3tc="res://.godot/imported/WoodTrim_ROUGHNESS.png-630c211c674e9761ffaf7f61e82e854c.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/LandScape/Textures/WoodTrim_ROUGHNESS.png"
-dest_files=["res://.godot/imported/WoodTrim_ROUGHNESS.png-586c28d784b03c6c65ea632328c47afa.s3tc.ctex"]
+source_file="res://Assets/LandScape/textures/WoodTrim_ROUGHNESS.png"
+dest_files=["res://.godot/imported/WoodTrim_ROUGHNESS.png-630c211c674e9761ffaf7f61e82e854c.s3tc.ctex"]
 
 [params]
 

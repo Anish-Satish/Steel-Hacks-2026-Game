@@ -1,60 +1,61 @@
 [gd_scene format=3 uid="uid://c5hg16t152gqq"]
 
-[ext_resource type="Script" uid="uid://cnnotgalln2rr" path="res://UI/PauseMenue.cs" id="1_mdrnr"]
+[ext_resource type="Script" uid="uid://cnnotgalln2rr" path="res://UI/Pause Menu/PauseMenue.cs" id="1_mdrnr"]
 [ext_resource type="FontFile" uid="uid://bnbej77on1gtb" path="res://Text Font/Lora-Bold.ttf" id="2_feebj"]
 [ext_resource type="FontFile" uid="uid://rhvjxovrcxk3" path="res://Text Font/Lora-BoldItalic.ttf" id="3_hbxfq"]
 [ext_resource type="Theme" uid="uid://bijfgyw6b5srj" path="res://Themes/PauseMenue.tres" id="4_hjhe4"]
 [ext_resource type="Texture2D" uid="uid://mrpqejkvibq8" path="res://Test/icon.svg" id="5_02nia"]
 [ext_resource type="AudioStream" uid="uid://biu7wxnbai2mb" path="res://Assets/Audio/SFX/By the GODS There's a Psychopath on the Lose.mp3" id="6_wwtp4"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cyyxd"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mdrnr"]
 bg_color = Color(0, 0, 0, 0.49019608)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nnijs"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_feebj"]
 bg_color = Color(0, 0, 0, 0.19607843)
 border_color = Color(0.8, 0.8, 0.8, 0)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v1clv"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hbxfq"]
 bg_color = Color(0, 0, 0, 0.78431374)
 
 [sub_resource type="Theme" id="Theme_qo4bq"]
 Button/colors/font_color = Color(0.9067628, 0.5386255, 0.4879586, 1)
 Button/font_sizes/font_size = 64
 Button/fonts/font = ExtResource("2_feebj")
-Button/styles/hover = SubResource("StyleBoxFlat_cyyxd")
-Button/styles/normal = SubResource("StyleBoxFlat_nnijs")
-Button/styles/pressed = SubResource("StyleBoxFlat_v1clv")
+Button/styles/hover = SubResource("StyleBoxFlat_mdrnr")
+Button/styles/normal = SubResource("StyleBoxFlat_feebj")
+Button/styles/pressed = SubResource("StyleBoxFlat_hbxfq")
 Label/colors/font_color = Color(0.21052638, 0.6449666, 0.87122655, 1)
 Label/font_sizes/font_size = 108
 Label/fonts/font = ExtResource("3_hbxfq")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1biq3"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hjhe4"]
 bg_color = Color(0, 0, 0, 0.49019608)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ia116"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_02nia"]
 bg_color = Color(0, 0, 0, 0.19607843)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qvvui"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wwtp4"]
 
 [sub_resource type="Theme" id="Theme_lcv0e"]
 Button/colors/font_color = Color(0.84313726, 0.039215688, 0.039215688, 1)
 Button/font_sizes/font_size = 64
 Button/fonts/font = ExtResource("2_feebj")
-Button/styles/hover = SubResource("StyleBoxFlat_cyyxd")
-Button/styles/normal = SubResource("StyleBoxFlat_nnijs")
-Button/styles/pressed = SubResource("StyleBoxFlat_v1clv")
+Button/styles/hover = SubResource("StyleBoxFlat_mdrnr")
+Button/styles/normal = SubResource("StyleBoxFlat_feebj")
+Button/styles/pressed = SubResource("StyleBoxFlat_hbxfq")
 Label/colors/font_color = Color(0.21052638, 0.6449666, 0.87122655, 1)
 Label/font_sizes/font_size = 108
 Label/fonts/font = ExtResource("3_hbxfq")
 MenuButton/font_sizes/font_size = 64
-MenuButton/styles/hover = SubResource("StyleBoxFlat_1biq3")
-MenuButton/styles/normal = SubResource("StyleBoxFlat_ia116")
-MenuButton/styles/pressed = SubResource("StyleBoxFlat_qvvui")
+MenuButton/styles/hover = SubResource("StyleBoxFlat_hjhe4")
+MenuButton/styles/normal = SubResource("StyleBoxFlat_02nia")
+MenuButton/styles/pressed = SubResource("StyleBoxFlat_wwtp4")
 
 [sub_resource type="Theme" id="Theme_ia116"]
 Button/icons/icon = ExtResource("5_02nia")
 
 [node name="PauseMenue" type="Control" unique_id=432328082]
+process_mode = 3
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -62,6 +63,16 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_mdrnr")
+metadata/_edit_use_anchors_ = true
+
+[node name="Background" type="ColorRect" parent="." unique_id=1833866424]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.19607843)
 metadata/_edit_use_anchors_ = true
 
 [node name="Button Container" type="HSplitContainer" parent="." unique_id=1677250741]

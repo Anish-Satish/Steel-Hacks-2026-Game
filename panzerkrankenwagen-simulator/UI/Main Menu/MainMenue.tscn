@@ -1,7 +1,11 @@
 [gd_scene format=3 uid="uid://bkr4krr43wdc8"]
 
 [ext_resource type="Theme" uid="uid://daiwgbycmhybt" path="res://Themes/MainMenue.tres" id="2_v3770"]
+<<<<<<< Updated upstream:panzerkrankenwagen-simulator/UI/MainMenue.tscn
 [ext_resource type="Script" uid="uid://tp3ad1mvro0o" path="res://UI/MainMenuButtons.cs" id="3_26mu7"]
+=======
+[ext_resource type="Script" uid="uid://tp3ad1mvro0o" path="res://UI/Main Menu/Button.cs" id="3_26mu7"]
+>>>>>>> Stashed changes:panzerkrankenwagen-simulator/UI/Main Menu/MainMenue.tscn
 
 [sub_resource type="CSharpScript" id="CSharpScript_y0kxn"]
 script/source = "using Godot;

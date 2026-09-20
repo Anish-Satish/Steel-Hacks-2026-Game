@@ -1,0 +1,192 @@
+[gd_scene format=3 uid="uid://c51ubcfph3txc"]
+
+[ext_resource type="Script" uid="uid://bb65ctkavgy8g" path="res://UI/Game Over/GameOver.cs" id="1_kn312"]
+[ext_resource type="FontFile" uid="uid://rhvjxovrcxk3" path="res://Text Font/Lora-BoldItalic.ttf" id="2_bfyvh"]
+[ext_resource type="FontFile" uid="uid://bnbej77on1gtb" path="res://Text Font/Lora-Bold.ttf" id="3_gi24p"]
+[ext_resource type="Script" uid="uid://dlrndf0nsjspc" path="res://UI/Game Over/Score.cs" id="4_q3fab"]
+[ext_resource type="Script" uid="uid://cwqyeebbsoee2" path="res://UI/Game Over/Saved.cs" id="5_kinxx"]
+[ext_resource type="Script" uid="uid://bne358ajag8t" path="res://UI/Game Over/Killed.cs" id="6_kn312"]
+[ext_resource type="Script" uid="uid://dt1i5v4ck6xxm" path="res://UI/Game Over/Buttons.cs" id="7_2rusb"]
+[ext_resource type="Theme" uid="uid://bijfgyw6b5srj" path="res://Themes/PauseMenue.tres" id="8_vx5wk"]
+
+[sub_resource type="Theme" id="Theme_ia116"]
+Label/colors/font_color = Color(1, 1, 1, 1)
+Label/font_sizes/font_size = 68
+Label/fonts/font = ExtResource("2_bfyvh")
+
+[sub_resource type="Theme" id="Theme_1biq3"]
+Label/colors/font_color = Color(1, 1, 1, 1)
+Label/font_sizes/font_size = 48
+Label/fonts/font = ExtResource("3_gi24p")
+
+[sub_resource type="Theme" id="Theme_fasss"]
+Label/colors/font_color = Color(0.29411766, 1, 0.29411766, 1)
+Label/font_sizes/font_size = 48
+Label/fonts/font = ExtResource("3_gi24p")
+
+[sub_resource type="Theme" id="Theme_5wsev"]
+Label/colors/font_color = Color(1, 0.29411766, 0.29411766, 1)
+Label/font_sizes/font_size = 48
+Label/fonts/font = ExtResource("3_gi24p")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cyyxd"]
+bg_color = Color(0, 0, 0, 0.49019608)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nnijs"]
+bg_color = Color(0, 0, 0, 0.19607843)
+border_color = Color(0.8, 0.8, 0.8, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v1clv"]
+bg_color = Color(0, 0, 0, 0.78431374)
+
+[sub_resource type="Theme" id="Theme_0m8h5"]
+Button/colors/font_color = Color(0.9067628, 0.5386255, 0.4879586, 1)
+Button/font_sizes/font_size = 64
+Button/fonts/font = ExtResource("3_gi24p")
+Button/styles/hover = SubResource("StyleBoxFlat_cyyxd")
+Button/styles/normal = SubResource("StyleBoxFlat_nnijs")
+Button/styles/pressed = SubResource("StyleBoxFlat_v1clv")
+Label/colors/font_color = Color(0.21052638, 0.6449666, 0.87122655, 1)
+Label/font_sizes/font_size = 108
+Label/fonts/font = ExtResource("2_bfyvh")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1biq3"]
+bg_color = Color(0, 0, 0, 0.49019608)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ia116"]
+bg_color = Color(0, 0, 0, 0.19607843)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qvvui"]
+
+[sub_resource type="Theme" id="Theme_cp6d1"]
+Button/colors/font_color = Color(0.84313726, 0.039215688, 0.039215688, 1)
+Button/font_sizes/font_size = 64
+Button/fonts/font = ExtResource("3_gi24p")
+Button/styles/hover = SubResource("StyleBoxFlat_cyyxd")
+Button/styles/normal = SubResource("StyleBoxFlat_nnijs")
+Button/styles/pressed = SubResource("StyleBoxFlat_v1clv")
+Label/colors/font_color = Color(0.21052638, 0.6449666, 0.87122655, 1)
+Label/font_sizes/font_size = 108
+Label/fonts/font = ExtResource("2_bfyvh")
+MenuButton/font_sizes/font_size = 64
+MenuButton/styles/hover = SubResource("StyleBoxFlat_1biq3")
+MenuButton/styles/normal = SubResource("StyleBoxFlat_ia116")
+MenuButton/styles/pressed = SubResource("StyleBoxFlat_qvvui")
+
+[node name="GameOver" type="Control" unique_id=947844392]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kn312")
+metadata/_edit_use_anchors_ = true
+
+[node name="Background" type="ColorRect" parent="." unique_id=1778993231]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.39215687)
+metadata/_edit_use_anchors_ = true
+
+[node name="Dead" type="Label" parent="." unique_id=1238259552]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.32248265
+anchor_top = 0.11574074
+anchor_right = 0.67751735
+anchor_bottom = 0.25154322
+offset_bottom = -1.5258789e-05
+grow_horizontal = 2
+theme = SubResource("Theme_ia116")
+text = "GAME OVER"
+metadata/_edit_use_anchors_ = true
+
+[node name="Score" type="Label" parent="." unique_id=897573535]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.4340278
+anchor_top = 0.54012346
+anchor_right = 0.5954861
+anchor_bottom = 0.6373457
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_1biq3")
+text = "SCORE: "
+script = ExtResource("4_q3fab")
+metadata/_edit_use_anchors_ = true
+
+[node name="Saved" type="Label" parent="." unique_id=1494522191]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1736111
+anchor_top = 0.38580248
+anchor_right = 0.33506945
+anchor_bottom = 0.4830247
+grow_vertical = 2
+theme = SubResource("Theme_fasss")
+text = "SAVED: "
+script = ExtResource("5_kinxx")
+metadata/_edit_use_anchors_ = true
+
+[node name="Killed" type="Label" parent="." unique_id=44319931]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.6623264
+anchor_top = 0.38580248
+anchor_right = 0.8263889
+anchor_bottom = 0.4830247
+grow_horizontal = 0
+grow_vertical = 2
+theme = SubResource("Theme_5wsev")
+text = "KILLED:"
+script = ExtResource("6_kn312")
+metadata/_edit_use_anchors_ = true
+
+[node name="Buttons" type="HSplitContainer" parent="." unique_id=890172035]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.13020833
+anchor_top = 0.77160496
+anchor_right = 0.859375
+anchor_bottom = 0.8740741
+offset_left = -20.0
+offset_right = 190.0
+offset_bottom = 16.599976
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.8, 0.8)
+split_offsets = PackedInt32Array(106, 212)
+split_offset = 106
+script = ExtResource("7_2rusb")
+metadata/_edit_use_anchors_ = true
+
+[node name="Restart" type="Button" parent="Buttons" unique_id=2055947752]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 10
+theme = SubResource("Theme_0m8h5")
+text = "RESTART"
+
+[node name="MainMenue" type="Button" parent="Buttons" unique_id=457077561]
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 6
+theme = ExtResource("8_vx5wk")
+text = "MAIN MENU"
+
+[node name="Quit" type="Button" parent="Buttons" unique_id=1871117492]
+layout_mode = 2
+size_flags_horizontal = 10
+size_flags_vertical = 10
+theme = SubResource("Theme_cp6d1")
+text = "QUIT
+"
+
+[connection signal="pressed" from="Buttons/Restart" to="Buttons" method="_on_restart_pressed"]
+[connection signal="pressed" from="Buttons/MainMenue" to="Buttons" method="_on_main_menue_pressed"]
+[connection signal="pressed" from="Buttons/Quit" to="Buttons" method="_on_quit_pressed"]

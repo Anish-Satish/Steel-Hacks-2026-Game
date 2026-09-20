@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ds1kqpv4fxt5b"
-path.s3tc="res://.godot/imported/StoneTrimv2_NORMAL.png-0d993d1a43ca3327946e7d084dd30440.s3tc.ctex"
+uid="uid://ccvom4uh607x2"
+path.s3tc="res://.godot/imported/StoneTrimv2_NORMAL.png-5b6a299a7c8508db44b3774f70e5bc6c.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/LandScape/Textures/StoneTrimv2_NORMAL.png"
-dest_files=["res://.godot/imported/StoneTrimv2_NORMAL.png-0d993d1a43ca3327946e7d084dd30440.s3tc.ctex"]
+source_file="res://Assets/LandScape/textures/StoneTrimv2_NORMAL.png"
+dest_files=["res://.godot/imported/StoneTrimv2_NORMAL.png-5b6a299a7c8508db44b3774f70e5bc6c.s3tc.ctex"]
 
 [params]
 
