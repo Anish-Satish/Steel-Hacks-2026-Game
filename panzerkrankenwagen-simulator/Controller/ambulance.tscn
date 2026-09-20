@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://d07xuaapnq4h4"]
+
+[ext_resource type="Script" uid="uid://bbhuci2yxbttx" path="res://addons/M.A.V.S/Scripts/advanced_vehicle_controller.gd" id="1_uaml6"]
+[ext_resource type="Script" uid="uid://cpjgp3i88r4b8" path="res://Controller/follow_camera.gd" id="1_xtgqx"]
+[ext_resource type="PackedScene" uid="uid://nokiyvye0f71" path="res://Assets/Cars/Car 08/Car8_1.blend" id="3_uaml6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1qdkp"]
+size = Vector3(2.4580078, 2.729248, 6.566681)
+
+[node name="Ambulance" type="VehicleBody3D" unique_id=211440186]
+mass = 1200.0
+script = ExtResource("1_uaml6")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2032244691]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.021777362, 1.8298097, 0.3067413)
+shape = SubResource("BoxShape3D_1qdkp")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=778096428]
+current = true
+script = ExtResource("1_xtgqx")
+distance = 6.0
+height = 3.0
+
+[node name="WheelFrontLeft" type="VehicleWheel3D" parent="." unique_id=1835111489]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -1.15, 0.45, -2.1)
+use_as_steering = true
+wheel_radius = 0.4
+wheel_friction_slip = 4.0
+
+[node name="WheelFrontRight" type="VehicleWheel3D" parent="." unique_id=394380325]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 1.15, 0.45, -2.1)
+use_as_steering = true
+wheel_radius = 0.4
+wheel_friction_slip = 4.0
+
+[node name="WheelRearLeft" type="VehicleWheel3D" parent="." unique_id=1593976634]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -1.15, 0.45, 1.9)
+use_as_traction = true
+wheel_radius = 0.4
+wheel_friction_slip = 4.0
+
+[node name="WheelRearRight" type="VehicleWheel3D" parent="." unique_id=1091695858]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 1.15, 0.45, 1.9)
+use_as_traction = true
+wheel_radius = 0.4
+wheel_friction_slip = 4.0
+
+[node name="Car8_1" parent="." unique_id=1033553711 instance=ExtResource("3_uaml6")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
