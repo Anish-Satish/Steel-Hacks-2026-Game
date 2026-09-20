@@ -3,11 +3,11 @@ using System;
 
 public partial class Level : Node3D
 {
-	// Timer timer;
+	Timer timer;
 	public override void _Ready()
 	{
-		// timer = GetNode<Timer>("Timer");
-		// timer.setCountdownTime(0.7f, 3);
+		timer = GetNode<Timer>("Timer");
+		timer.setCountdownTime(0.7f, 3);
 	}
 
 

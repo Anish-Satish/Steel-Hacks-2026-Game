@@ -89524,7 +89524,6 @@ transform = Transform3D(1.1550006, -1.7484557e-06, 2.2030541e-05, 2.0194673e-08,
 transform = Transform3D(125, 0, 0, 0, 1, 0, 0, 0, 150, 28.255943, -0.19333076, -34.79955)
 
 [node name="GameTimer" type="Label" parent="." unique_id=1865082587]
-visible = false
 anchors_preset = -1
 anchor_left = 0.4796007
 anchor_top = 0.41589507
@@ -89535,16 +89534,17 @@ grow_vertical = 2
 size_flags_horizontal = 6
 size_flags_vertical = 6
 theme = SubResource("Theme_3skxm")
+text = "3"
 script = ExtResource("40_7rjfw")
 metadata/_edit_use_anchors_ = true
 
 [node name="Countdown" type="Label" parent="." unique_id=242191886]
-visible = false
 offset_right = 40.0
 offset_bottom = 23.0
 size_flags_horizontal = 2
 size_flags_vertical = 6
 theme = SubResource("Theme_3skxm")
+text = "300"
 script = ExtResource("41_l3wbc")
 
 [node name="Timer" type="Timer" parent="." unique_id=311637699]
