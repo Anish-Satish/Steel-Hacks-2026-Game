@@ -1,100 +1,55 @@
 [gd_scene format=3 uid="uid://d07xuaapnq4h4"]
-[ext_resource type="Script" uid="uid://djsvmcwcn07gv" path="res://vehicle_controller.gd" id="1_eria1"]
-[ext_resource type="Script" uid="uid://cpjgp3i88r4b8" path="res://follow_camera.gd" id="1_xtgqx"]
 
+[ext_resource type="Script" uid="uid://bbhuci2yxbttx" path="res://addons/M.A.V.S/Scripts/advanced_vehicle_controller.gd" id="1_uaml6"]
+[ext_resource type="Script" uid="uid://cpjgp3i88r4b8" path="res://Controller/follow_camera.gd" id="1_xtgqx"]
+[ext_resource type="PackedScene" uid="uid://nokiyvye0f71" path="res://Assets/Cars/Car 08/Car8_1.blend" id="3_uaml6"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_1qdkp"]
-size = Vector3(1.6, 1.2, 3.2)
-
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ppyta"]
-albedo_color = Color(1, 0, 0, 1)
-
-
-[sub_resource type="BoxMesh" id="BoxMesh_gt21u"]
-material = SubResource("StandardMaterial3D_ppyta")
-size = Vector3(1.6, 1.2, 3.2)
-
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wheel"]
-albedo_color = Color(0.1, 0.1, 0.1, 1)
-
-
-[sub_resource type="CylinderMesh" id="CylinderMesh_wheel"]
-material = SubResource("StandardMaterial3D_wheel")
-top_radius = 0.4
-bottom_radius = 0.4
-height = 0.3
-
+size = Vector3(2.4580078, 2.729248, 6.566681)
 
 [node name="Ambulance" type="VehicleBody3D" unique_id=211440186]
-script = ExtResource("1_eria1")
-
+mass = 120.0
+script = ExtResource("1_uaml6")
+veh_name = "Ambulance"
+is_current_veh = true
+key_accelerate = "ui_up"
+key_brake = "ui_down"
+key_turn_left = "ui_left"
+key_turn_right = "ui_right"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2032244691]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.021777362, 1.8298097, 0.3067413)
 shape = SubResource("BoxShape3D_1qdkp")
-
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=2059021352]
-mesh = SubResource("BoxMesh_gt21u")
-
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=778096428]
 current = true
 script = ExtResource("1_xtgqx")
+distance = 6.0
+height = 3.0
 
-
-[node name="WheelFrontLeft" type="VehicleWheel3D" parent="."]
-position = Vector3(-0.8, -0.4, -1.1)
-rotation = Vector3(0, 3.14159265, 0)
+[node name="WheelFrontLeft" type="VehicleWheel3D" parent="." unique_id=1835111489]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.15, 0.45, -2.1)
 use_as_steering = true
-use_as_traction = false
 wheel_radius = 0.4
-wheel_rest_length = 0.2
 wheel_friction_slip = 4.0
 
-[node name="Wheel" type="MeshInstance3D" parent="WheelFrontLeft"]
-rotation = Vector3(0, 0, -1.5708)
-mesh = SubResource("CylinderMesh_wheel")
-
-
-[node name="WheelFrontRight" type="VehicleWheel3D" parent="."]
-position = Vector3(0.8, -0.4, -1.1)
-rotation = Vector3(0, 3.14159265, 0)
+[node name="WheelFrontRight" type="VehicleWheel3D" parent="." unique_id=394380325]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15, 0.45, -2.1)
 use_as_steering = true
-use_as_traction = false
 wheel_radius = 0.4
-wheel_rest_length = 0.2
 wheel_friction_slip = 4.0
 
-[node name="Wheel" type="MeshInstance3D" parent="WheelFrontRight"]
-rotation = Vector3(0, 0, -1.5708)
-mesh = SubResource("CylinderMesh_wheel")
-
-
-[node name="WheelRearLeft" type="VehicleWheel3D" parent="."]
-position = Vector3(-0.8, -0.4, 1.1)
-rotation = Vector3(0, 3.14159265, 0)
-use_as_steering = false
+[node name="WheelRearLeft" type="VehicleWheel3D" parent="." unique_id=1593976634]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.15, 0.45, 1.9)
 use_as_traction = true
 wheel_radius = 0.4
-wheel_rest_length = 0.2
 wheel_friction_slip = 4.0
 
-[node name="Wheel" type="MeshInstance3D" parent="WheelRearLeft"]
-rotation = Vector3(0, 0, -1.5708)
-mesh = SubResource("CylinderMesh_wheel")
-
-
-[node name="WheelRearRight" type="VehicleWheel3D" parent="."]
-position = Vector3(0.8, -0.4, 1.1)
-rotation = Vector3(0, 3.14159265, 0)
-use_as_steering = false
+[node name="WheelRearRight" type="VehicleWheel3D" parent="." unique_id=1091695858]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15, 0.45, 1.9)
 use_as_traction = true
 wheel_radius = 0.4
-wheel_rest_length = 0.2
 wheel_friction_slip = 4.0
 
-[node name="Wheel" type="MeshInstance3D" parent="WheelRearRight"]
-rotation = Vector3(0, 0, -1.5708)
-mesh = SubResource("CylinderMesh_wheel")
+[node name="Car8_1" parent="." unique_id=1033553711 instance=ExtResource("3_uaml6")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)

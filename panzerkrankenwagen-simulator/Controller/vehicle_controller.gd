@@ -4,10 +4,13 @@ extends VehicleBody3D
 const STEER_SPEED = 1.5
 const STEER_LIMIT = 0.4
 
-@export var engine_force_value = 450
+@export var engine_force_value = 1800
 
 var steer_target = 0
 
+func _ready():
+	center_of_mass_mode = RigidBody3D.CENTER_OF_MASS_MODE_CUSTOM
+	center_of_mass = Vector3(0, -0.8, 0)
 
 func _physics_process(delta):
 	steer_target = Input.get_action_strength("turn_left") - Input.get_action_strength("turn_right")
