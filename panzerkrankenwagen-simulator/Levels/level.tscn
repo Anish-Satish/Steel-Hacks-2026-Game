@@ -39,8 +39,6 @@
 [ext_resource type="PackedScene" uid="uid://nx7ewx1r1v0n" path="res://Assets/Nature/Campfire.FBX" id="34_07udg"]
 [ext_resource type="PackedScene" uid="uid://3xm2n5pfmh1o" path="res://Assets/LandScape/Grass.blend" id="39_4wtct"]
 [ext_resource type="PackedScene" uid="uid://cqn2wwojb0ncf" path="res://Assets/MapPieces/patient.tscn" id="39_41m28"]
-[ext_resource type="PackedScene" uid="uid://xqlygjd71dby" path="res://Pedestrian.blend" id="40_21k0g"]
-[ext_resource type="Script" uid="uid://cte8bia4qffej" path="res://UI/Pedestrian.cs" id="41_3skxm"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_fj6e6"]
 size = Vector3(0.7, 1, 0.7)
@@ -89517,7 +89515,3 @@ transform = Transform3D(125, 0, 0, 0, 1, 0, 0, 0, 150, 28.255943, -0.19333076, -
 
 [node name="Patient" parent="." unique_id=178158218 instance=ExtResource("39_41m28")]
 transform = Transform3D(1.7274716, 0, 0, 0, 1.6100001, 0, 0, 0, 1.6899178, 0.18052197, 0.65062, 16.445837)
-
-[node name="Pedestrian" parent="." unique_id=241791336 instance=ExtResource("40_21k0g")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 10.536, 0.1789726, -1.3091106)
-script = ExtResource("41_3skxm")
