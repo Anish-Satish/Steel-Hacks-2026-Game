@@ -69,11 +69,9 @@ func _ready() -> void:
 	center_of_mass_mode = RigidBody3D.CENTER_OF_MASS_MODE_CUSTOM
 	center_of_mass = center_of_mass_offset
 
-	# IMPORTANT:
-	# Start in first gear instead of neutral.
 	current_gear = 1
 
-	print("Ambulance ready. Gear: ", current_gear)
+	#print("Ambulance ready. Gear: ", current_gear)
 
 
 func _physics_process(delta: float) -> void:
@@ -84,12 +82,12 @@ func _physics_process(delta: float) -> void:
 	# INPUT
 	# ------------------------------------------------------------
 
-	var throttle := Input.get_action_strength("ui_up")
-	var reverse := Input.get_action_strength("ui_down")
+	var throttle := Input.get_action_strength("accelerate")
+	var reverse := Input.get_action_strength("reverse")
 
 	var steer_input := (
-		Input.get_action_strength("ui_left")
-		- Input.get_action_strength("ui_right")
+		Input.get_action_strength("turn_left")
+		- Input.get_action_strength("turn_right")
 	)
 
 	# ------------------------------------------------------------
