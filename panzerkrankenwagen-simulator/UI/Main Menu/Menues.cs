@@ -4,17 +4,6 @@ using System;
 public partial class Main : Node
 {
 	// Called when the node enters the scene tree for the first time.
-<<<<<<<< Updated upstream:panzerkrankenwagen-simulator/UI/Main.cs
-	public static PackedScene driveScene;
-	public static PackedScene optionsScene;
-	public static PackedScene mainScene;
-	public static PackedScene pauseScene;
-	public override void _Ready()
-	{
-		//todo assign the scenes to the correct command directory
-		driveScene = ResourceLoader.Load<PackedScene>("res://Levels/level.tscn");
-		mainScene = ResourceLoader.Load<PackedScene>("res://UI/MainMenue.tscn");
-========
 	public static Node driveScene;
 	public static Node optionsScene;
 	public static Node mainScene;
@@ -34,22 +23,21 @@ public partial class Main : Node
 
 		volume = 80;
 		MAX_NPC_COUNT = 60;
->>>>>>>> Stashed changes:panzerkrankenwagen-simulator/UI/Main Menu/Menues.cs
 	}
 
-	public static PackedScene getDriveScene
+	public static Node getDriveScene
 	{
 		get { return driveScene; }
 	}
-	public static PackedScene getOptionsScene
+	public static Node getOptionsScene
 	{
 		get { return optionsScene; }
 	}
-	public static PackedScene getMainScene
+	public static Node getMainScene
 	{
 		get { return mainScene; }
 	}
-	public static PackedScene getPauseScene
+	public static Node getPauseScene
 	{
 		get { return pauseScene; }
 	}
