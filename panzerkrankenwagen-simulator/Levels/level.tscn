@@ -38,7 +38,7 @@
 [ext_resource type="PackedScene" uid="uid://drebsb563akun" path="res://Assets/Nature/RockWall.FBX" id="33_na3no"]
 [ext_resource type="PackedScene" uid="uid://nx7ewx1r1v0n" path="res://Assets/Nature/Campfire.FBX" id="34_07udg"]
 [ext_resource type="PackedScene" uid="uid://3xm2n5pfmh1o" path="res://Assets/LandScape/Grass.blend" id="39_4wtct"]
-[ext_resource type="PackedScene" uid="uid://cqn2wwojb0ncf" path="res://Assets/MapPieces/patient.tscn" id="39_41m28"]
+[ext_resource type="Script" uid="uid://bpgrkk6inv8ot" path="res://Levels/3dspawn.gd" id="39_41m28"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_fj6e6"]
 size = Vector3(0.7, 1, 0.7)
@@ -24665,8 +24665,18 @@ size = Vector3(0.68725586, 0.48876953, 0.30218506)
 [sub_resource type="BoxShape3D" id="BoxShape3D_44x3u"]
 size = Vector3(1.8510742, 0.8018799, 0.22357178)
 
-[sub_resource type="CylinderShape3D" id="CylinderShape3D_ehfxi"]
-radius = 0.14208984
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_41m28"]
+albedo_color = Color(0.012617188, 0.012617188, 0.012617188, 0)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8o51m"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8ubkt"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_33l6c"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tbobr"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y0u31"]
 
 [node name="Level" type="Node3D" unique_id=367471579]
 
@@ -24675,7 +24685,7 @@ transform = Transform3D(-0.859294, -0.4950922, 0.12844276, -0.059391182, 0.34600
 script = ExtResource("22_y3bce")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="KrankenIt" unique_id=1302358547]
-transform = Transform3D(1.7004352, -0.13256122, 3.2481894, 9.678425, 0.7722737, -0.43874443, -3.4685102, 2.08994, 0.36815184, 0.29133892, 1.2815399, -17.222258)
+transform = Transform3D(1.7004356, -0.13256127, 3.2481904, 9.678428, 0.7722739, -0.43874466, -3.4685113, 2.0899405, 0.36815196, 0.29133606, 1.2815409, -17.22226)
 shape = SubResource("BoxShape3D_fj6e6")
 
 [node name="Viewer" type="Node3D" parent="KrankenIt" unique_id=677651250]
@@ -24717,8 +24727,11 @@ metadata/extras = {
 }
 
 [node name="RigidBody3D" type="RigidBody3D" parent="Terrain/Floor/CSGBox3D" unique_id=1625616996]
+transform = Transform3D(0.9999998, 0, 0, 0, 1, 0, 0, 0, 1, 0.024278, 0.09050679, 0)
 axis_lock_linear_y = true
 gravity_scale = 0.0
+can_sleep = false
+freeze = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/Floor/CSGBox3D/RigidBody3D" unique_id=837486618]
 transform = Transform3D(1.1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -47666,209 +47679,61 @@ transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 50.280575, 1.1976042, 71.8713
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7578669, -0.25561523, -7.6314793)
 shape = SubResource("BoxShape3D_uwa5t")
 
-[node name="Terrain_TreesN\'At_Bushes and Trees31_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2044881967]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
+[node name="Wall" type="Node3D" parent="." unique_id=239074043]
 
-[node name="Terrain_TreesN\'At_Bushes and Trees31_Tree05#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=6307476]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
+[node name="CSGBox3D" type="CSGBox3D" parent="Wall" unique_id=2074399382]
+transform = Transform3D(250.35622, 0, 0, 0, 24.900381, 0, 0, 0, 1, 28.412231, 9.043823, 115.16742)
+material = SubResource("StandardMaterial3D_41m28")
 
-[node name="Terrain_TreesN\'At_Bushes and Trees30_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=160849510]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
+[node name="RigidBody3D" type="RigidBody3D" parent="Wall/CSGBox3D" unique_id=1075274702]
+can_sleep = false
+lock_rotation = true
+freeze = true
 
-[node name="Terrain_TreesN\'At_Bushes and Trees30_Tree05#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2031224484]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall/CSGBox3D/RigidBody3D" unique_id=1976288268]
+transform = Transform3D(0.9999999, 0, 0, 0, 0.9999999, 0, 0, 0, 1, 0, -0.0060421526, 0)
+shape = SubResource("BoxShape3D_8o51m")
 
-[node name="Terrain_TreesN\'At_Bushes and Trees29_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2078895551]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
+[node name="CSGBox3D2" type="CSGBox3D" parent="Wall" unique_id=1067494965]
+transform = Transform3D(250.35622, 0, 0, 0, 24.900381, 0, 0, 0, 1, 28.412231, 10.752594, -182.26971)
 
-[node name="Terrain_TreesN\'At_Bushes and Trees29_Tree05#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=312219047]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
+[node name="RigidBody3D" type="RigidBody3D" parent="Wall/CSGBox3D2" unique_id=1728494442]
+axis_lock_linear_y = true
+can_sleep = false
+lock_rotation = true
+freeze = true
 
-[node name="Terrain_TreesN\'At_Bushes and Trees28_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=3845082]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall/CSGBox3D2/RigidBody3D" unique_id=453628065]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("BoxShape3D_8ubkt")
 
-[node name="Terrain_TreesN\'At_Bushes and Trees28_Tree05#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1955937697]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
+[node name="CSGBox3D3" type="CSGBox3D" parent="Wall" unique_id=668492816]
+transform = Transform3D(2.836206, 0, -1.0020323, 0, 24.90038, 0, 306.4857, 0, 0.009272767, 151.87341, 9.579876, -33.321503)
+material = SubResource("StandardMaterial3D_33l6c")
 
-[node name="Terrain_TreesN\'At_Bushes and Trees27_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1694400497]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
+[node name="RigidBody3D" type="RigidBody3D" parent="Wall/CSGBox3D3" unique_id=1026286096]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 2.3841858e-07, 0, 1, 4.8704445e-05, 0, -1.6099243)
+axis_lock_linear_y = true
+can_sleep = false
+lock_rotation = true
+freeze = true
 
-[node name="Terrain_TreesN\'At_Bushes and Trees27_Tree05#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1897486008]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall/CSGBox3D3/RigidBody3D" unique_id=553352362]
+transform = Transform3D(0.9999998, 0, 0, 0, 0.9999999, 0, 0, 0, 1, -5.1654875e-05, 0, 1.7071381)
+shape = SubResource("BoxShape3D_tbobr")
 
-[node name="Terrain_TreesN\'At_Bushes and Trees26_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=832350932]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
+[node name="CSGBox3D4" type="CSGBox3D" parent="Wall" unique_id=1184337493]
+transform = Transform3D(2.836206, 0, -1.0020323, 0, 24.90038, 0, 306.4857, 0, 0.009272767, -96.75668, 11.648602, -33.321503)
 
-[node name="Terrain_TreesN\'At_Bushes and Trees26_Tree05#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=740626610]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
+[node name="RigidBody3D" type="RigidBody3D" parent="Wall/CSGBox3D4" unique_id=367022453]
+axis_lock_linear_y = true
+can_sleep = false
+lock_rotation = true
+freeze = true
 
-[node name="Terrain_TreesN\'At_Bushes and Trees25_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1714869383]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees25_Tree05#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=248396699]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees24_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=904745169]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees24_Tree05#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=468212132]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees23_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1074090594]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees23_Tree05#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1413251937]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees22_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1006960313]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees22_Tree05#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=934649947]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees21_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2134713505]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees21_Tree05#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=85627971]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees20_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1831080389]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees20_Tree05#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=264252249]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees19_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=213732728]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees19_Tree05#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=589650469]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees18_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1067866427]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees18_Tree05#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1208707916]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees17_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=814294729]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees17_Tree05#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=463053987]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees16_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=421355508]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees16_Tree05#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=447546036]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees15_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2047405328]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees15_Tree05#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1626756018]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees14_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1693576377]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees14_Tree05#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=851306424]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees13_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=319202532]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees13_Tree05#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1888485535]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees12_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1583022273]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees12_Tree05#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=18722645]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees11_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1108642913]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees10_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1507777260]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees9_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=29147046]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees8_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=934665671]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees7_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=564544048]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees6_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1060632281]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees5_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=347191661]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees4_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=561435422]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees3_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=661266934]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees2_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1560208981]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
-
-[node name="Terrain_TreesN\'At_Bushes and Trees(OG)_Tree01#CollisionShape3D" type="CollisionShape3D" parent="." unique_id=520835129]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.593508, 0.5172398, -7.762301)
-shape = SubResource("CylinderShape3D_ehfxi")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall/CSGBox3D4/RigidBody3D" unique_id=1565101886]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("BoxShape3D_y0u31")
 
 [node name="MusicAudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=568209535]
 stream = ExtResource("24_u3yai")
@@ -47894,6 +47759,8 @@ metadata/extras = {
 [node name="RigidBody3D" type="RigidBody3D" parent="Terrain2/Floor/CSGBox3D" unique_id=1240504657]
 axis_lock_linear_y = true
 gravity_scale = 0.0
+can_sleep = false
+freeze = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain2/Floor/CSGBox3D/RigidBody3D" unique_id=1639108053]
 transform = Transform3D(1.1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -68756,6 +68623,8 @@ metadata/extras = {
 [node name="RigidBody3D" type="RigidBody3D" parent="Terrain3/Floor/CSGBox3D" unique_id=449506570]
 axis_lock_linear_y = true
 gravity_scale = 0.0
+can_sleep = false
+freeze = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain3/Floor/CSGBox3D/RigidBody3D" unique_id=463832307]
 transform = Transform3D(1.1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -89513,5 +89382,100 @@ transform = Transform3D(1.1550006, -1.7484557e-06, 2.2030541e-05, 2.0194673e-08,
 [node name="Grass" parent="." unique_id=701079013 instance=ExtResource("39_4wtct")]
 transform = Transform3D(125, 0, 0, 0, 1, 0, 0, 0, 150, 28.255943, -0.19333076, -34.79955)
 
-[node name="Patient" parent="." unique_id=178158218 instance=ExtResource("39_41m28")]
-transform = Transform3D(1.7274716, 0, 0, 0, 1.6100001, 0, 0, 0, 1.6899178, 0.18052197, 0.65062, 16.445837)
+[node name="PatientSpawn" type="Node3D" parent="." unique_id=695713811]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.162365, 0, 0)
+script = ExtResource("39_41m28")
+max_numP = 50
+
+[node name="Visualizer3D" type="Node3D" parent="PatientSpawn" unique_id=881750413]
+
+[node name="Point1" type="Node3D" parent="PatientSpawn/Visualizer3D" unique_id=399848090]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.631676, 0.57940674, -39.992126)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PatientSpawn/Visualizer3D/Point1" unique_id=1960781291]
+
+[node name="Point2" type="Node3D" parent="PatientSpawn/Visualizer3D" unique_id=654028861]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 148.89975, -0.4041443, 112.62201)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PatientSpawn/Visualizer3D/Point2" unique_id=1221399609]
+
+[node name="PatientSpawn2" type="Node3D" parent="." unique_id=80904547]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -95.51194, 0, -9.163202)
+script = ExtResource("39_41m28")
+max_numP = 100
+
+[node name="Visualizer3D" type="Node3D" parent="PatientSpawn2" unique_id=1345373258]
+
+[node name="Point1" type="Node3D" parent="PatientSpawn2/Visualizer3D" unique_id=951667592]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.81980133, 0.57940674, -38.082527)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PatientSpawn2/Visualizer3D/Point1" unique_id=1991832015]
+
+[node name="Point2" type="Node3D" parent="PatientSpawn2/Visualizer3D" unique_id=1626222206]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 246.74893, -0.4041443, -8.566587)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PatientSpawn2/Visualizer3D/Point2" unique_id=1808997071]
+
+[node name="PatientSpawn3" type="Node3D" parent="." unique_id=907608339]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.68761, 0, -57.538246)
+script = ExtResource("39_41m28")
+
+[node name="Visualizer3D" type="Node3D" parent="PatientSpawn3" unique_id=525283315]
+
+[node name="Point1" type="Node3D" parent="PatientSpawn3/Visualizer3D" unique_id=1920173220]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.81980133, 0.57940674, -38.082527)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PatientSpawn3/Visualizer3D/Point1" unique_id=179042346]
+
+[node name="Point2" type="Node3D" parent="PatientSpawn3/Visualizer3D" unique_id=1285224276]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53.48014, -0.4041443, -8.566587)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PatientSpawn3/Visualizer3D/Point2" unique_id=2086921167]
+
+[node name="PatientSpawn4" type="Node3D" parent="." unique_id=1430338065]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -69.337906, 0, -123.86297)
+script = ExtResource("39_41m28")
+
+[node name="Visualizer3D" type="Node3D" parent="PatientSpawn4" unique_id=676417887]
+
+[node name="Point1" type="Node3D" parent="PatientSpawn4/Visualizer3D" unique_id=569530783]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.81980133, 0.57940674, -38.082527)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PatientSpawn4/Visualizer3D/Point1" unique_id=517337758]
+
+[node name="Point2" type="Node3D" parent="PatientSpawn4/Visualizer3D" unique_id=779000855]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.812428, -0.4041443, -11.052284)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PatientSpawn4/Visualizer3D/Point2" unique_id=2090820939]
+
+[node name="PatientSpawn5" type="Node3D" parent="." unique_id=840195837]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 121.90108, 0, -112.72265)
+script = ExtResource("39_41m28")
+
+[node name="Visualizer3D" type="Node3D" parent="PatientSpawn5" unique_id=1119950904]
+
+[node name="Point1" type="Node3D" parent="PatientSpawn5/Visualizer3D" unique_id=299024148]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.81980133, 0.57940674, -38.082527)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PatientSpawn5/Visualizer3D/Point1" unique_id=1647487115]
+
+[node name="Point2" type="Node3D" parent="PatientSpawn5/Visualizer3D" unique_id=1645635651]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.812428, -0.4041443, -11.052284)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PatientSpawn5/Visualizer3D/Point2" unique_id=758022599]
+
+[node name="PatientSpawn6" type="Node3D" parent="." unique_id=367079999]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -81.925835, 0, 101.14396)
+script = ExtResource("39_41m28")
+
+[node name="Visualizer3D" type="Node3D" parent="PatientSpawn6" unique_id=238027822]
+
+[node name="Point1" type="Node3D" parent="PatientSpawn6/Visualizer3D" unique_id=1737650323]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.81980133, 0.57940674, -38.082527)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PatientSpawn6/Visualizer3D/Point1" unique_id=1794908456]
+
+[node name="Point2" type="Node3D" parent="PatientSpawn6/Visualizer3D" unique_id=1838470352]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.812428, -0.4041443, -11.052284)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PatientSpawn6/Visualizer3D/Point2" unique_id=1039384509]
