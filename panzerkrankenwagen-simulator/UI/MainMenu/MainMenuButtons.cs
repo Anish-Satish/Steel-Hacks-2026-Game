@@ -16,15 +16,14 @@ public partial class MainMenuButtons : Godot.VBoxContainer
 	{
 		// GetTree().Root.AddChild(Main.getDriveScene);
 		// GetTree().Root.RemoveChild(Main.getMainScene);
-		GetTree().Root.AddChild(Main.getDriveScene);
-		GetTree().Root.RemoveChild(Main.getMainScene);
+		GetTree().ChangeSceneToPacked(Main.driveScene);
 		Console.WriteLine("Drive pressed");
 		
 	}
 
 	public void _on_options_pressed()
 	{
-		GetTree().Root.AddChild(Main.getOptionsScene);
+		GetTree().Root.AddChild(Main.optionsScene.Instantiate());
 	}
 	public void _on_quit_pressed()
 	{

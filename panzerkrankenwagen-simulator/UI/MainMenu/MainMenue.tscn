@@ -1,26 +1,8 @@
 [gd_scene format=3 uid="uid://bkr4krr43wdc8"]
 
 [ext_resource type="Theme" uid="uid://daiwgbycmhybt" path="res://Themes/MainMenue.tres" id="1_d3r4t"]
+[ext_resource type="Script" uid="uid://cilb55h5ngoo7" path="res://UI/MainMenu/Main.cs" id="1_tbapb"]
 [ext_resource type="Script" uid="uid://tp3ad1mvro0o" path="res://UI/MainMenu/MainMenuButtons.cs" id="2_tbapb"]
-
-[sub_resource type="CSharpScript" id="CSharpScript_y0kxn"]
-script/source = "using Godot;
-using System;
-
-public partial class AnimationPlayer : Godot.AnimationPlayer
-{
-	// Called when the node enters the scene tree for the first time.
-	public override void _Ready()
-	{
-		
-	}
-
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
-	public override void _Process(double delta)
-	{
-	}
-}
-"
 
 [sub_resource type="Animation" id="Animation_q427x"]
 resource_name = "Michael Jackson"
@@ -93,6 +75,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource("1_tbapb")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=404987231]
 layout_mode = 1
@@ -170,13 +153,10 @@ grow_horizontal = 2
 offset_transform_enabled = true
 theme = ExtResource("1_d3r4t")
 text = "Panzerkrankenwagen"
-script = SubResource("CSharpScript_y0kxn")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Label" unique_id=280751103]
 libraries/ = SubResource("AnimationLibrary_05tgr")
 autoplay = &"Michael Jackson"
-script = SubResource("CSharpScript_y0kxn")
-libraries/ = SubResource("AnimationLibrary_05tgr")
 
 [node name="Icon" type="Sprite2D" parent="." unique_id=1364218326]
 position = Vector2(77, 572)

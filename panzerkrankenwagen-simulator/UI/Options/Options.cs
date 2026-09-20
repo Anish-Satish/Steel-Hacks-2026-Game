@@ -1,21 +1,21 @@
 using Godot;
 using System;
 
-public partial class Sliders : VBoxContainer
+public partial class Options : Control
 {
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
 	}
 
-	public void on_sound_value_changed(float num)
+	public override void _Process(double delta)
 	{
-		Main.volume += (int)num;
-	}
-	public void on_npc_count_value_changed(float num)
-	{
-		Main.MAX_NPC_COUNT += (int)num;
+		if (Input.IsActionJustPressed("ui_cancel"))
+		{
+			QueueFree();
+		}
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
+	
 }

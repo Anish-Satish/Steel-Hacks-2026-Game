@@ -14,7 +14,7 @@ public partial class PauseMenue : Control
 	public void _on_resume_pressed()
 	{
 		GetTree().Paused = false;
-		GetTree().Root.RemoveChild(Main.getPauseScene);
+		QueueFree();
 	}
 
 	public void _on_restart_pressed()
@@ -23,10 +23,15 @@ public partial class PauseMenue : Control
 	}
 	public void _on_options_pressed()
 	{
-		GetTree().Root.AddChild(Main.getOptionsScene);
+		GetTree().Root.AddChild(Main.optionsScene.Instantiate());
 	}
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
+		if (Input.IsActionJustPressed("ui_cancel") || Input.IsActionJustPressed("P"))
+		{
+			GetTree().Paused = false;
+			QueueFree();
+		}
 	}
 }

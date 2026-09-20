@@ -14,10 +14,10 @@ public partial class Level : Node3D
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-		if (Input.IsKeyPressed(Key.Escape) || Input.IsKeyPressed(Key.P))
+		if (Input.IsActionJustPressed("ui_cancel") || Input.IsActionJustPressed("P"))
 		{
 			GetTree().Paused = true;
-			GetTree().Root.AddChild(Main.getPauseScene);
+			GetTree().Root.AddChild(Main.pauseScene.Instantiate());
 
 		}
 	}

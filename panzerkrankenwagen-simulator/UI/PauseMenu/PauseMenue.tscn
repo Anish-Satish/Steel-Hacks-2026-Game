@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c5hg16t152gqq"]
 
-[ext_resource type="Script" uid="uid://cnnotgalln2rr" path="res://UI/Pause Menu/PauseMenue.cs" id="1_mdrnr"]
+[ext_resource type="Script" uid="uid://cnnotgalln2rr" path="res://UI/PauseMenu/PauseMenue.cs" id="1_mdrnr"]
 [ext_resource type="FontFile" uid="uid://bnbej77on1gtb" path="res://Text Font/Lora-Bold.ttf" id="2_feebj"]
 [ext_resource type="FontFile" uid="uid://rhvjxovrcxk3" path="res://Text Font/Lora-BoldItalic.ttf" id="3_hbxfq"]
 [ext_resource type="Theme" uid="uid://bijfgyw6b5srj" path="res://Themes/PauseMenue.tres" id="4_hjhe4"]

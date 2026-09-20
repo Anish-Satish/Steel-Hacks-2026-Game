@@ -20,8 +20,7 @@ public partial class Buttons : HSplitContainer
 
 	public void _on_main_menue_pressed()
 	{
-		GetTree().Root.AddChild(Main.getMainScene);
-		GetTree().Root.RemoveChild(Main.getGameOverScene);
+		GetTree().ChangeSceneToPacked(Main.mainScene);
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
