@@ -7,6 +7,7 @@ public partial class Pedestrian : Node
 	public override void _Ready()
 	{
 	}
+///IGNOREME
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
