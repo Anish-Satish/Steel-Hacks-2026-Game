@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://2wnyfog0d5sv"
-path="res://.godot/imported/Pedestrian.blend-e9604ff9b0964f145c97ceee6a312038.scn"
+uid="uid://d1gfg54di3bt0"
+path="res://.godot/imported/Pedestrian.blend-679d31743caaf59bba995edda1f75106.scn"
 
 [deps]
 
-source_file="res://Pedestrian.blend"
-dest_files=["res://.godot/imported/Pedestrian.blend-e9604ff9b0964f145c97ceee6a312038.scn"]
+source_file="res://GarbageForFuckGit/Pedestrian.blend"
+dest_files=["res://.godot/imported/Pedestrian.blend-679d31743caaf59bba995edda1f75106.scn"]
 
 [params]
 
