@@ -40,8 +40,10 @@
 [ext_resource type="PackedScene" uid="uid://nx7ewx1r1v0n" path="res://Assets/Nature/Campfire.FBX" id="34_07udg"]
 [ext_resource type="PackedScene" uid="uid://3xm2n5pfmh1o" path="res://Assets/LandScape/Grass.blend" id="39_4wtct"]
 [ext_resource type="Script" uid="uid://cdd2deqe8q3qu" path="res://Levels/GameTimer.cs" id="40_7rjfw"]
+[ext_resource type="FontFile" uid="uid://bnbej77on1gtb" path="res://Text Font/Lora-Bold.ttf" id="40_l3wbc"]
 [ext_resource type="Script" uid="uid://ilms8hjy4f76" path="res://Levels/Countdown.cs" id="41_l3wbc"]
 [ext_resource type="Script" uid="uid://caxcoauowh6tm" path="res://Levels/Timer.cs" id="42_6yn0q"]
+[ext_resource type="Script" uid="uid://caqshk5kkycod" path="res://Levels/GameClock.cs" id="44_l3wbc"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_fj6e6"]
 size = Vector3(0.7, 1, 0.7)
@@ -24670,6 +24672,10 @@ size = Vector3(1.8510742, 0.8018799, 0.22357178)
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_ehfxi"]
 radius = 0.14208984
+
+[sub_resource type="Theme" id="Theme_3skxm"]
+Label/font_sizes/font_size = 84
+Label/fonts/font = ExtResource("40_l3wbc")
 
 [node name="Level" type="Node3D" unique_id=367471579]
 script = ExtResource("1_3skxm")
@@ -89518,14 +89524,34 @@ transform = Transform3D(1.1550006, -1.7484557e-06, 2.2030541e-05, 2.0194673e-08,
 transform = Transform3D(125, 0, 0, 0, 1, 0, 0, 0, 150, 28.255943, -0.19333076, -34.79955)
 
 [node name="GameTimer" type="Label" parent="." unique_id=1865082587]
-offset_right = 40.0
-offset_bottom = 23.0
+anchors_preset = -1
+anchor_left = 0.4796007
+anchor_top = 0.41589507
+anchor_right = 0.52039933
+anchor_bottom = 0.58410496
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme = SubResource("Theme_3skxm")
+text = "3"
 script = ExtResource("40_7rjfw")
+metadata/_edit_use_anchors_ = true
 
 [node name="Countdown" type="Label" parent="." unique_id=242191886]
 offset_right = 40.0
 offset_bottom = 23.0
+size_flags_horizontal = 2
+size_flags_vertical = 6
+theme = SubResource("Theme_3skxm")
+text = "300"
 script = ExtResource("41_l3wbc")
 
 [node name="Timer" type="Timer" parent="." unique_id=311637699]
 script = ExtResource("42_6yn0q")
+
+[node name="GameClock" type="Timer" parent="." unique_id=2101090037]
+script = ExtResource("44_l3wbc")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="GameClock" to="." method="_on_game_clock_timeout"]

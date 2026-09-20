@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class Timer : Godot.Timer
+public partial class GameClock : Godot.Timer
 {
 	// Called when the node enters the scene tree for the first time.
 	Timer countdown;
@@ -9,10 +9,10 @@ public partial class Timer : Godot.Timer
 	int count = 0;
 	float time = 0.0f;
 	//text for timer
-	Countdown c;
+	GameTimer c;
 	public override void _Ready()
 	{
-		c = GetNode<Countdown>("../Countdown");
+		c = GetNode<GameTimer>("../GameTimer");
 		Timeout += on_countdown_timeout;
 	}
 
@@ -28,7 +28,7 @@ public partial class Timer : Godot.Timer
 	public void on_countdown_timeout()
 	{
 		countdown.Stop();
-		Console.WriteLine(time.ToString() + "Second Countdown finished");
+		Console.WriteLine(time.ToString() + "Seconds Countdown finished");
 		if (count < 1)
 		{
 			timer_done();
@@ -52,7 +52,7 @@ public partial class Timer : Godot.Timer
 		countdown.Stop();
 		Console.WriteLine("Attempting to Remove Countdown");
 		GetTree().Root.RemoveChild(c);
-		GetNode<GameClock>("GameClock").setCountdownTime(360, 360);
+		GetTree().ChangeSceneToPacked(Main.gameOverScene);
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
