@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b2gjdein2wd50"
-path="res://.godot/imported/ModularBulding_2.blend-8b92667ca27443bed6e3796233ef4a0d.scn"
+valid=false
 
 [deps]
 
 source_file="res://Assets/LandScape/ModularBulding_2.blend"
-dest_files=["res://.godot/imported/ModularBulding_2.blend-8b92667ca27443bed6e3796233ef4a0d.scn"]
 
 [params]
 

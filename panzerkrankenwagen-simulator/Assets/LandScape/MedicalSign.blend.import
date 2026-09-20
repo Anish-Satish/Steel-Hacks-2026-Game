@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b6f3ri7jukrti"
-path="res://.godot/imported/MedicalSign.blend-cf172878e085f3bad44d5140bd8c7f53.scn"
+valid=false
 
 [deps]
 
 source_file="res://Assets/LandScape/MedicalSign.blend"
-dest_files=["res://.godot/imported/MedicalSign.blend-cf172878e085f3bad44d5140bd8c7f53.scn"]
 
 [params]
 

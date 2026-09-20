@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bn6mj68m8ucy4"
-path="res://.godot/imported/Car6.blend-a4d2ebde8fe85c37dded9334c0a5310c.scn"
+valid=false
 
 [deps]
 
 source_file="res://Assets/Cars/Car 06/Car6.blend"
-dest_files=["res://.godot/imported/Car6.blend-a4d2ebde8fe85c37dded9334c0a5310c.scn"]
 
 [params]
 

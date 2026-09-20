@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://fkriycdiyuud"
-path="res://.godot/imported/Road.blend-ef9dd31c90fd2688491027b266587ec5.scn"
+valid=false
 
 [deps]
 
 source_file="res://Assets/LandScape/Road.blend"
-dest_files=["res://.godot/imported/Road.blend-ef9dd31c90fd2688491027b266587ec5.scn"]
 
 [params]
 
