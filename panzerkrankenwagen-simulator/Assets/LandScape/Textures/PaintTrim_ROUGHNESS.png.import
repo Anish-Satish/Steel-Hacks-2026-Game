@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5ufpo7emr7qs"
+<<<<<<< HEAD
 path="res://.godot/imported/PaintTrim_ROUGHNESS.png-9fa2febd1f25c6ff867a27a2e24d34e3.ctex"
+=======
+path.s3tc="res://.godot/imported/PaintTrim_ROUGHNESS.png-9fa2febd1f25c6ff867a27a2e24d34e3.s3tc.ctex"
+>>>>>>> parent of f50f0c7 (time t okill)
 metadata={
 "vram_texture": false
 }
@@ -11,7 +15,11 @@ metadata={
 [deps]
 
 source_file="res://Assets/LandScape/Textures/PaintTrim_ROUGHNESS.png"
+<<<<<<< HEAD
 dest_files=["res://.godot/imported/PaintTrim_ROUGHNESS.png-9fa2febd1f25c6ff867a27a2e24d34e3.ctex"]
+=======
+dest_files=["res://.godot/imported/PaintTrim_ROUGHNESS.png-9fa2febd1f25c6ff867a27a2e24d34e3.s3tc.ctex"]
+>>>>>>> parent of f50f0c7 (time t okill)
 
 [params]
 

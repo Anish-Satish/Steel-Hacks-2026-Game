@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cyvelhaj1465u"
+<<<<<<< HEAD
 path="res://.godot/imported/StoneTrimv2_Base Color 2.png-a111184d0bffcf67b784e0931314b3c8.ctex"
+=======
+path.s3tc="res://.godot/imported/StoneTrimv2_Base Color 2.png-a111184d0bffcf67b784e0931314b3c8.s3tc.ctex"
+>>>>>>> parent of f50f0c7 (time t okill)
 metadata={
 "vram_texture": false
 }
@@ -11,7 +15,11 @@ metadata={
 [deps]
 
 source_file="res://Assets/LandScape/Textures/StoneTrimv2_Base Color 2.png"
+<<<<<<< HEAD
 dest_files=["res://.godot/imported/StoneTrimv2_Base Color 2.png-a111184d0bffcf67b784e0931314b3c8.ctex"]
+=======
+dest_files=["res://.godot/imported/StoneTrimv2_Base Color 2.png-a111184d0bffcf67b784e0931314b3c8.s3tc.ctex"]
+>>>>>>> parent of f50f0c7 (time t okill)
 
 [params]
 

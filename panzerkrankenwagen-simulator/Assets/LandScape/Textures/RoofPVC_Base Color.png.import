@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cggcjhjjpjgjy"
+<<<<<<< HEAD
 path="res://.godot/imported/RoofPVC_Base Color.png-2d9db47ad35a23078ddd117beb3a5116.ctex"
+=======
+path.s3tc="res://.godot/imported/RoofPVC_Base Color.png-2d9db47ad35a23078ddd117beb3a5116.s3tc.ctex"
+>>>>>>> parent of f50f0c7 (time t okill)
 metadata={
 "vram_texture": false
 }
@@ -11,7 +15,11 @@ metadata={
 [deps]
 
 source_file="res://Assets/LandScape/Textures/RoofPVC_Base Color.png"
+<<<<<<< HEAD
 dest_files=["res://.godot/imported/RoofPVC_Base Color.png-2d9db47ad35a23078ddd117beb3a5116.ctex"]
+=======
+dest_files=["res://.godot/imported/RoofPVC_Base Color.png-2d9db47ad35a23078ddd117beb3a5116.s3tc.ctex"]
+>>>>>>> parent of f50f0c7 (time t okill)
 
 [params]
 

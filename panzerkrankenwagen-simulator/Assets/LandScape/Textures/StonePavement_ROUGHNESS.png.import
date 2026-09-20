@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bx2gehw0lj77o"
+<<<<<<< HEAD
 path="res://.godot/imported/StonePavement_ROUGHNESS.png-f489a5dd55a6d5cc506e96b8aa618994.ctex"
+=======
+path.s3tc="res://.godot/imported/StonePavement_ROUGHNESS.png-f489a5dd55a6d5cc506e96b8aa618994.s3tc.ctex"
+>>>>>>> parent of f50f0c7 (time t okill)
 metadata={
 "vram_texture": false
 }
@@ -11,7 +15,11 @@ metadata={
 [deps]
 
 source_file="res://Assets/LandScape/Textures/StonePavement_ROUGHNESS.png"
+<<<<<<< HEAD
 dest_files=["res://.godot/imported/StonePavement_ROUGHNESS.png-f489a5dd55a6d5cc506e96b8aa618994.ctex"]
+=======
+dest_files=["res://.godot/imported/StonePavement_ROUGHNESS.png-f489a5dd55a6d5cc506e96b8aa618994.s3tc.ctex"]
+>>>>>>> parent of f50f0c7 (time t okill)
 
 [params]
 

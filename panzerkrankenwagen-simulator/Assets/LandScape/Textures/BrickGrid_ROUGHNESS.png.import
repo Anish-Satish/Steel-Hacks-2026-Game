@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dgdb4fyajypju"
+<<<<<<< HEAD
 path="res://.godot/imported/BrickGrid_ROUGHNESS.png-06bb689b424bc49c8ea2dc6cda19b370.ctex"
+=======
+path.s3tc="res://.godot/imported/BrickGrid_ROUGHNESS.png-06bb689b424bc49c8ea2dc6cda19b370.s3tc.ctex"
+>>>>>>> parent of f50f0c7 (time t okill)
 metadata={
 "vram_texture": false
 }
@@ -11,7 +15,11 @@ metadata={
 [deps]
 
 source_file="res://Assets/LandScape/Textures/BrickGrid_ROUGHNESS.png"
+<<<<<<< HEAD
 dest_files=["res://.godot/imported/BrickGrid_ROUGHNESS.png-06bb689b424bc49c8ea2dc6cda19b370.ctex"]
+=======
+dest_files=["res://.godot/imported/BrickGrid_ROUGHNESS.png-06bb689b424bc49c8ea2dc6cda19b370.s3tc.ctex"]
+>>>>>>> parent of f50f0c7 (time t okill)
 
 [params]
 

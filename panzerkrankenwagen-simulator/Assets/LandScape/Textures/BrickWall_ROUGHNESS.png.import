@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmpv127bdd1lx"
+<<<<<<< HEAD
 path="res://.godot/imported/BrickWall_ROUGHNESS.png-f9d928cb8678a17667977ac9f2423f36.ctex"
+=======
+path.s3tc="res://.godot/imported/BrickWall_ROUGHNESS.png-f9d928cb8678a17667977ac9f2423f36.s3tc.ctex"
+>>>>>>> parent of f50f0c7 (time t okill)
 metadata={
 "vram_texture": false
 }
@@ -11,7 +15,11 @@ metadata={
 [deps]
 
 source_file="res://Assets/LandScape/Textures/BrickWall_ROUGHNESS.png"
+<<<<<<< HEAD
 dest_files=["res://.godot/imported/BrickWall_ROUGHNESS.png-f9d928cb8678a17667977ac9f2423f36.ctex"]
+=======
+dest_files=["res://.godot/imported/BrickWall_ROUGHNESS.png-f9d928cb8678a17667977ac9f2423f36.s3tc.ctex"]
+>>>>>>> parent of f50f0c7 (time t okill)
 
 [params]
 

@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6e8t1o4cihis"
+<<<<<<< HEAD
 path="res://.godot/imported/MetalTrimv2_Base Color.png-a09ba0fe3289445a3ba0bb7095c10643.ctex"
+=======
+path.s3tc="res://.godot/imported/MetalTrimv2_Base Color.png-a09ba0fe3289445a3ba0bb7095c10643.s3tc.ctex"
+>>>>>>> parent of f50f0c7 (time t okill)
 metadata={
 "vram_texture": false
 }
@@ -11,7 +15,11 @@ metadata={
 [deps]
 
 source_file="res://Assets/LandScape/Textures/MetalTrimv2_Base Color.png"
+<<<<<<< HEAD
 dest_files=["res://.godot/imported/MetalTrimv2_Base Color.png-a09ba0fe3289445a3ba0bb7095c10643.ctex"]
+=======
+dest_files=["res://.godot/imported/MetalTrimv2_Base Color.png-a09ba0fe3289445a3ba0bb7095c10643.s3tc.ctex"]
+>>>>>>> parent of f50f0c7 (time t okill)
 
 [params]
 

@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b74q6lfpebwjy"
+<<<<<<< HEAD
 path="res://.godot/imported/BrickWall_Base Color 2.png-0de4d0af7fad6d6c250718dde0a2128f.ctex"
+=======
+path.s3tc="res://.godot/imported/BrickWall_Base Color 2.png-0de4d0af7fad6d6c250718dde0a2128f.s3tc.ctex"
+>>>>>>> parent of f50f0c7 (time t okill)
 metadata={
 "vram_texture": false
 }
@@ -11,7 +15,11 @@ metadata={
 [deps]
 
 source_file="res://Assets/LandScape/Textures/BrickWall_Base Color 2.png"
+<<<<<<< HEAD
 dest_files=["res://.godot/imported/BrickWall_Base Color 2.png-0de4d0af7fad6d6c250718dde0a2128f.ctex"]
+=======
+dest_files=["res://.godot/imported/BrickWall_Base Color 2.png-0de4d0af7fad6d6c250718dde0a2128f.s3tc.ctex"]
+>>>>>>> parent of f50f0c7 (time t okill)
 
 [params]
 

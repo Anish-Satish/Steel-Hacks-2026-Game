@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3h3h258giuqm"
+<<<<<<< HEAD
 path="res://.godot/imported/DoorSet_ROUGHNESS.png-05f863c8a4b516d88bafdb4fe04fae5d.ctex"
+=======
+path.s3tc="res://.godot/imported/DoorSet_ROUGHNESS.png-05f863c8a4b516d88bafdb4fe04fae5d.s3tc.ctex"
+>>>>>>> parent of f50f0c7 (time t okill)
 metadata={
 "vram_texture": false
 }
@@ -11,7 +15,11 @@ metadata={
 [deps]
 
 source_file="res://Assets/LandScape/Textures/DoorSet_ROUGHNESS.png"
+<<<<<<< HEAD
 dest_files=["res://.godot/imported/DoorSet_ROUGHNESS.png-05f863c8a4b516d88bafdb4fe04fae5d.ctex"]
+=======
+dest_files=["res://.godot/imported/DoorSet_ROUGHNESS.png-05f863c8a4b516d88bafdb4fe04fae5d.s3tc.ctex"]
+>>>>>>> parent of f50f0c7 (time t okill)
 
 [params]
 

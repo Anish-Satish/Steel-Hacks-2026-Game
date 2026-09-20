@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5iv455lpfb0s"
+<<<<<<< HEAD
 path="res://.godot/imported/PlasticTrimv2_NORMAL.png-ec72a40e67691ca7799478fb29849002.ctex"
+=======
+path.s3tc="res://.godot/imported/PlasticTrimv2_NORMAL.png-ec72a40e67691ca7799478fb29849002.s3tc.ctex"
+>>>>>>> parent of f50f0c7 (time t okill)
 metadata={
 "vram_texture": false
 }
@@ -11,7 +15,11 @@ metadata={
 [deps]
 
 source_file="res://Assets/LandScape/Textures/PlasticTrimv2_NORMAL.png"
+<<<<<<< HEAD
 dest_files=["res://.godot/imported/PlasticTrimv2_NORMAL.png-ec72a40e67691ca7799478fb29849002.ctex"]
+=======
+dest_files=["res://.godot/imported/PlasticTrimv2_NORMAL.png-ec72a40e67691ca7799478fb29849002.s3tc.ctex"]
+>>>>>>> parent of f50f0c7 (time t okill)
 
 [params]
 

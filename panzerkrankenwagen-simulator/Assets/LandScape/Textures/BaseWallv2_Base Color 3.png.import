@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brortudukcugm"
+<<<<<<< HEAD
 path="res://.godot/imported/BaseWallv2_Base Color 3.png-2eba97a4657587b95a8a1faf62d19de1.ctex"
+=======
+path.s3tc="res://.godot/imported/BaseWallv2_Base Color 3.png-2eba97a4657587b95a8a1faf62d19de1.s3tc.ctex"
+>>>>>>> parent of f50f0c7 (time t okill)
 metadata={
 "vram_texture": false
 }
@@ -11,7 +15,11 @@ metadata={
 [deps]
 
 source_file="res://Assets/LandScape/Textures/BaseWallv2_Base Color 3.png"
+<<<<<<< HEAD
 dest_files=["res://.godot/imported/BaseWallv2_Base Color 3.png-2eba97a4657587b95a8a1faf62d19de1.ctex"]
+=======
+dest_files=["res://.godot/imported/BaseWallv2_Base Color 3.png-2eba97a4657587b95a8a1faf62d19de1.s3tc.ctex"]
+>>>>>>> parent of f50f0c7 (time t okill)
 
 [params]
 

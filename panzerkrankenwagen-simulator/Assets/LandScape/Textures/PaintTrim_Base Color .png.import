@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://blixxdo6v1up"
+<<<<<<< HEAD
 path="res://.godot/imported/PaintTrim_Base Color .png-05c0c181339ee5ff4eda5b9726cc0a38.ctex"
+=======
+path.s3tc="res://.godot/imported/PaintTrim_Base Color .png-05c0c181339ee5ff4eda5b9726cc0a38.s3tc.ctex"
+>>>>>>> parent of f50f0c7 (time t okill)
 metadata={
 "vram_texture": false
 }
@@ -11,7 +15,11 @@ metadata={
 [deps]
 
 source_file="res://Assets/LandScape/Textures/PaintTrim_Base Color .png"
+<<<<<<< HEAD
 dest_files=["res://.godot/imported/PaintTrim_Base Color .png-05c0c181339ee5ff4eda5b9726cc0a38.ctex"]
+=======
+dest_files=["res://.godot/imported/PaintTrim_Base Color .png-05c0c181339ee5ff4eda5b9726cc0a38.s3tc.ctex"]
+>>>>>>> parent of f50f0c7 (time t okill)
 
 [params]
 

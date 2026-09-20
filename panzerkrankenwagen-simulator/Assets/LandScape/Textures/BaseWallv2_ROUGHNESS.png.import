@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmsbieh174ih8"
+<<<<<<< HEAD
 path="res://.godot/imported/BaseWallv2_ROUGHNESS.png-cedc595e911507c7effd7a124a7287a4.ctex"
+=======
+path.s3tc="res://.godot/imported/BaseWallv2_ROUGHNESS.png-cedc595e911507c7effd7a124a7287a4.s3tc.ctex"
+>>>>>>> parent of f50f0c7 (time t okill)
 metadata={
 "vram_texture": false
 }
@@ -11,7 +15,11 @@ metadata={
 [deps]
 
 source_file="res://Assets/LandScape/Textures/BaseWallv2_ROUGHNESS.png"
+<<<<<<< HEAD
 dest_files=["res://.godot/imported/BaseWallv2_ROUGHNESS.png-cedc595e911507c7effd7a124a7287a4.ctex"]
+=======
+dest_files=["res://.godot/imported/BaseWallv2_ROUGHNESS.png-cedc595e911507c7effd7a124a7287a4.s3tc.ctex"]
+>>>>>>> parent of f50f0c7 (time t okill)
 
 [params]
 

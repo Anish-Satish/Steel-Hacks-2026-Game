@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmvlm42uxib0o"
+<<<<<<< HEAD
 path="res://.godot/imported/WoodTrim_NORMAL.png-13e57b6a4e19653ea51ff775a93f4945.ctex"
+=======
+path.s3tc="res://.godot/imported/WoodTrim_NORMAL.png-13e57b6a4e19653ea51ff775a93f4945.s3tc.ctex"
+>>>>>>> parent of f50f0c7 (time t okill)
 metadata={
 "vram_texture": false
 }
@@ -11,7 +15,11 @@ metadata={
 [deps]
 
 source_file="res://Assets/LandScape/Textures/WoodTrim_NORMAL.png"
+<<<<<<< HEAD
 dest_files=["res://.godot/imported/WoodTrim_NORMAL.png-13e57b6a4e19653ea51ff775a93f4945.ctex"]
+=======
+dest_files=["res://.godot/imported/WoodTrim_NORMAL.png-13e57b6a4e19653ea51ff775a93f4945.s3tc.ctex"]
+>>>>>>> parent of f50f0c7 (time t okill)
 
 [params]
 

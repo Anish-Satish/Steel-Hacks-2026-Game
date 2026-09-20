@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfysgr6s3byae"
+<<<<<<< HEAD
 path="res://.godot/imported/MetalTrimv2_NORMAL.png-fd65b838b4f10124713ebe6e5cf1ffe0.ctex"
+=======
+path.s3tc="res://.godot/imported/MetalTrimv2_NORMAL.png-fd65b838b4f10124713ebe6e5cf1ffe0.s3tc.ctex"
+>>>>>>> parent of f50f0c7 (time t okill)
 metadata={
 "vram_texture": false
 }
@@ -11,7 +15,11 @@ metadata={
 [deps]
 
 source_file="res://Assets/LandScape/Textures/MetalTrimv2_NORMAL.png"
+<<<<<<< HEAD
 dest_files=["res://.godot/imported/MetalTrimv2_NORMAL.png-fd65b838b4f10124713ebe6e5cf1ffe0.ctex"]
+=======
+dest_files=["res://.godot/imported/MetalTrimv2_NORMAL.png-fd65b838b4f10124713ebe6e5cf1ffe0.s3tc.ctex"]
+>>>>>>> parent of f50f0c7 (time t okill)
 
 [params]
 

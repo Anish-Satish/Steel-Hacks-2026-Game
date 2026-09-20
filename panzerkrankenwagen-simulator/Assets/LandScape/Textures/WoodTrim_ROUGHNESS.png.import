@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dh58v8edkhbsp"
+<<<<<<< HEAD
 path="res://.godot/imported/WoodTrim_ROUGHNESS.png-586c28d784b03c6c65ea632328c47afa.ctex"
+=======
+path.s3tc="res://.godot/imported/WoodTrim_ROUGHNESS.png-586c28d784b03c6c65ea632328c47afa.s3tc.ctex"
+>>>>>>> parent of f50f0c7 (time t okill)
 metadata={
 "vram_texture": false
 }
@@ -11,7 +15,11 @@ metadata={
 [deps]
 
 source_file="res://Assets/LandScape/Textures/WoodTrim_ROUGHNESS.png"
+<<<<<<< HEAD
 dest_files=["res://.godot/imported/WoodTrim_ROUGHNESS.png-586c28d784b03c6c65ea632328c47afa.ctex"]
+=======
+dest_files=["res://.godot/imported/WoodTrim_ROUGHNESS.png-586c28d784b03c6c65ea632328c47afa.s3tc.ctex"]
+>>>>>>> parent of f50f0c7 (time t okill)
 
 [params]
 

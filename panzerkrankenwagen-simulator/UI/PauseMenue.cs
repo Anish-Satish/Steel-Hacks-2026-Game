@@ -9,6 +9,7 @@ public partial class PauseMenue : Control
 	}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:panzerkrankenwagen-simulator/UI/Main Menu/Button.cs
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -32,6 +33,8 @@ public partial class PauseMenue : Control
 	}
 =======
 >>>>>>> parent of f50f0c7 (time t okill):panzerkrankenwagen-simulator/UI/PauseMenue.cs
+=======
+>>>>>>> parent of f50f0c7 (time t okill)
 =======
 >>>>>>> parent of f50f0c7 (time t okill)
 =======

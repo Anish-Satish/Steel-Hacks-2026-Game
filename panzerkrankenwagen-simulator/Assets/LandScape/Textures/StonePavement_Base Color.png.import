@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dsceb20klb6v6"
+<<<<<<< HEAD
 path="res://.godot/imported/StonePavement_Base Color.png-d26faae2da98f3db21abb9e599169a61.ctex"
+=======
+path.s3tc="res://.godot/imported/StonePavement_Base Color.png-d26faae2da98f3db21abb9e599169a61.s3tc.ctex"
+>>>>>>> parent of f50f0c7 (time t okill)
 metadata={
 "vram_texture": false
 }
@@ -11,7 +15,11 @@ metadata={
 [deps]
 
 source_file="res://Assets/LandScape/Textures/StonePavement_Base Color.png"
+<<<<<<< HEAD
 dest_files=["res://.godot/imported/StonePavement_Base Color.png-d26faae2da98f3db21abb9e599169a61.ctex"]
+=======
+dest_files=["res://.godot/imported/StonePavement_Base Color.png-d26faae2da98f3db21abb9e599169a61.s3tc.ctex"]
+>>>>>>> parent of f50f0c7 (time t okill)
 
 [params]
 

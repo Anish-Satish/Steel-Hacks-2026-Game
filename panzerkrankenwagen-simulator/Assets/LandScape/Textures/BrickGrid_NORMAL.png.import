@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://biyic7ovhrqia"
+<<<<<<< HEAD
 path="res://.godot/imported/BrickGrid_NORMAL.png-5ef3346e99d90e0454e59ed30d9e4900.ctex"
+=======
+path.s3tc="res://.godot/imported/BrickGrid_NORMAL.png-5ef3346e99d90e0454e59ed30d9e4900.s3tc.ctex"
+>>>>>>> parent of f50f0c7 (time t okill)
 metadata={
 "vram_texture": false
 }
@@ -11,7 +15,11 @@ metadata={
 [deps]
 
 source_file="res://Assets/LandScape/Textures/BrickGrid_NORMAL.png"
+<<<<<<< HEAD
 dest_files=["res://.godot/imported/BrickGrid_NORMAL.png-5ef3346e99d90e0454e59ed30d9e4900.ctex"]
+=======
+dest_files=["res://.godot/imported/BrickGrid_NORMAL.png-5ef3346e99d90e0454e59ed30d9e4900.s3tc.ctex"]
+>>>>>>> parent of f50f0c7 (time t okill)
 
 [params]
 

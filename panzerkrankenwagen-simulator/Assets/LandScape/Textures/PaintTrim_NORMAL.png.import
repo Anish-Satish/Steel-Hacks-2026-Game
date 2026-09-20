@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwyld5y36vjtd"
+<<<<<<< HEAD
 path="res://.godot/imported/PaintTrim_NORMAL.png-93e67c5133945b5ad34ff54922394abf.ctex"
+=======
+path.s3tc="res://.godot/imported/PaintTrim_NORMAL.png-93e67c5133945b5ad34ff54922394abf.s3tc.ctex"
+>>>>>>> parent of f50f0c7 (time t okill)
 metadata={
 "vram_texture": false
 }
@@ -11,7 +15,11 @@ metadata={
 [deps]
 
 source_file="res://Assets/LandScape/Textures/PaintTrim_NORMAL.png"
+<<<<<<< HEAD
 dest_files=["res://.godot/imported/PaintTrim_NORMAL.png-93e67c5133945b5ad34ff54922394abf.ctex"]
+=======
+dest_files=["res://.godot/imported/PaintTrim_NORMAL.png-93e67c5133945b5ad34ff54922394abf.s3tc.ctex"]
+>>>>>>> parent of f50f0c7 (time t okill)
 
 [params]
 

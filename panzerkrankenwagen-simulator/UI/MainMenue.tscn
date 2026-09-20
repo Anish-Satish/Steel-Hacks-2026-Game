@@ -3,11 +3,15 @@
 [ext_resource type="Theme" uid="uid://daiwgbycmhybt" path="res://Themes/MainMenue.tres" id="2_v3770"]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:panzerkrankenwagen-simulator/UI/Main Menu/MainMenue.tscn
 [ext_resource type="Script" uid="uid://tp3ad1mvro0o" path="res://UI/Main Menu/Button.cs" id="3_26mu7"]
 =======
 [ext_resource type="Script" uid="uid://tp3ad1mvro0o" path="res://UI/MainMenuButtons.cs" id="3_26mu7"]
 >>>>>>> parent of f50f0c7 (time t okill):panzerkrankenwagen-simulator/UI/MainMenue.tscn
+=======
+[ext_resource type="Script" uid="uid://tp3ad1mvro0o" path="res://UI/MainMenuButtons.cs" id="3_26mu7"]
+>>>>>>> parent of f50f0c7 (time t okill)
 =======
 [ext_resource type="Script" uid="uid://tp3ad1mvro0o" path="res://UI/MainMenuButtons.cs" id="3_26mu7"]
 >>>>>>> parent of f50f0c7 (time t okill)

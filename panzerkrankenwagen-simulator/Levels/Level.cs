@@ -7,6 +7,7 @@ public partial class Level : Node3D
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	Timer timer;
 	public override void _Ready()
 	{
@@ -28,6 +29,8 @@ public partial class Level : Node3D
 >>>>>>> parent of f50f0c7 (time t okill)
 =======
 >>>>>>> parent of f50f0c7 (time t okill)
+=======
+>>>>>>> parent of f50f0c7 (time t okill)
 	public override void _Ready()
 	{
 	}
@@ -37,6 +40,9 @@ public partial class Level : Node3D
 	{
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of f50f0c7 (time t okill)
+=======
 >>>>>>> parent of f50f0c7 (time t okill)
 =======
 >>>>>>> parent of f50f0c7 (time t okill)

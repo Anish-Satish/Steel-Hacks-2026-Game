@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://3hnrny3g4726"
+<<<<<<< HEAD
 path="res://.godot/imported/DoorSet_Base Color.png-01074298316aa66664f360ff7a08dd2f.ctex"
+=======
+path.s3tc="res://.godot/imported/DoorSet_Base Color.png-01074298316aa66664f360ff7a08dd2f.s3tc.ctex"
+>>>>>>> parent of f50f0c7 (time t okill)
 metadata={
 "vram_texture": false
 }
@@ -11,7 +15,11 @@ metadata={
 [deps]
 
 source_file="res://Assets/LandScape/Textures/DoorSet_Base Color.png"
+<<<<<<< HEAD
 dest_files=["res://.godot/imported/DoorSet_Base Color.png-01074298316aa66664f360ff7a08dd2f.ctex"]
+=======
+dest_files=["res://.godot/imported/DoorSet_Base Color.png-01074298316aa66664f360ff7a08dd2f.s3tc.ctex"]
+>>>>>>> parent of f50f0c7 (time t okill)
 
 [params]
 

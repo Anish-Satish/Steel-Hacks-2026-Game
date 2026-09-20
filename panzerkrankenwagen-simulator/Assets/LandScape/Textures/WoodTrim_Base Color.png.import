@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ovyju253l8lk"
+<<<<<<< HEAD
 path="res://.godot/imported/WoodTrim_Base Color.png-88cb0c3e44dddfb18460c139e6a6a20f.ctex"
+=======
+path.s3tc="res://.godot/imported/WoodTrim_Base Color.png-88cb0c3e44dddfb18460c139e6a6a20f.s3tc.ctex"
+>>>>>>> parent of f50f0c7 (time t okill)
 metadata={
 "vram_texture": false
 }
@@ -11,7 +15,11 @@ metadata={
 [deps]
 
 source_file="res://Assets/LandScape/Textures/WoodTrim_Base Color.png"
+<<<<<<< HEAD
 dest_files=["res://.godot/imported/WoodTrim_Base Color.png-88cb0c3e44dddfb18460c139e6a6a20f.ctex"]
+=======
+dest_files=["res://.godot/imported/WoodTrim_Base Color.png-88cb0c3e44dddfb18460c139e6a6a20f.s3tc.ctex"]
+>>>>>>> parent of f50f0c7 (time t okill)
 
 [params]
 
