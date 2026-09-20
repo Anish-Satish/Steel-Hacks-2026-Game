@@ -33,7 +33,7 @@ func spawn_Paitent():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	while(numPaitent < max_numP):
+	if(numPaitent < max_numP):
 		spawn_Paitent()
 		numPaitent+=1
 	
