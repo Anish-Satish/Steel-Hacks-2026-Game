@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dkj581i3jvhrn"
-path.s3tc="res://.godot/imported/BrickWall_NORMAL.png-85e386debc72773e5abdf9b275c7c8c5.s3tc.ctex"
+path.s3tc="res://.godot/imported/BrickWall_NORMAL.png-6048c41eca65c7d603c5402134fa5fa7.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/LandScape/textures/BrickWall_NORMAL.png"
-dest_files=["res://.godot/imported/BrickWall_NORMAL.png-85e386debc72773e5abdf9b275c7c8c5.s3tc.ctex"]
+source_file="res://Assets/LandScape/Textures/BrickWall_NORMAL.png"
+dest_files=["res://.godot/imported/BrickWall_NORMAL.png-6048c41eca65c7d603c5402134fa5fa7.s3tc.ctex"]
 
 [params]
 

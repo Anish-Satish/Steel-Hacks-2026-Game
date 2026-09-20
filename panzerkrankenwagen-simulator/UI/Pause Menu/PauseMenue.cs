@@ -13,12 +13,8 @@ public partial class PauseMenue : Control
 	}
 	public void _on_resume_pressed()
 	{
-<<<<<<< Updated upstream:panzerkrankenwagen-simulator/UI/PauseMenue.cs
-		GetTree().ChangeSceneToPacked(Main.getDriveScene);
-=======
 		GetTree().Paused = false;
 		GetTree().Root.RemoveChild(Main.getPauseScene);
->>>>>>> Stashed changes:panzerkrankenwagen-simulator/UI/Pause Menu/PauseMenue.cs
 	}
 
 	public void _on_restart_pressed()
@@ -27,10 +23,15 @@ public partial class PauseMenue : Control
 	}
 	public void _on_options_pressed()
 	{
-		GetTree().ChangeSceneToPacked(Main.getOptionsScene);
+		GetTree().Root.AddChild(Main.getOptionsScene);
 	}
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
+		if (Input.IsKeyPressed(Key.Escape))
+		{
+			GetTree().Paused = false;
+			GetTree().Root.RemoveChild(Main.getPauseScene);
+		}
 	}
 }

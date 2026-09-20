@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjwjlq7rsu82b"
-path.s3tc="res://.godot/imported/DoorSet_ROUGHNESS.png-fda2471ea61e94250086680bdcee5089.s3tc.ctex"
+path.s3tc="res://.godot/imported/DoorSet_ROUGHNESS.png-05f863c8a4b516d88bafdb4fe04fae5d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/LandScape/textures/DoorSet_ROUGHNESS.png"
-dest_files=["res://.godot/imported/DoorSet_ROUGHNESS.png-fda2471ea61e94250086680bdcee5089.s3tc.ctex"]
+source_file="res://Assets/LandScape/Textures/DoorSet_ROUGHNESS.png"
+dest_files=["res://.godot/imported/DoorSet_ROUGHNESS.png-05f863c8a4b516d88bafdb4fe04fae5d.s3tc.ctex"]
 
 [params]
 

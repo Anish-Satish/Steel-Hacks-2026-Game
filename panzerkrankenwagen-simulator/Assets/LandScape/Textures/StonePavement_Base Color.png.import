@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dcrqa1owmydwh"
-path.s3tc="res://.godot/imported/StonePavement_Base Color.png-d49f7856bc8a99a776358a059c34bb80.s3tc.ctex"
+path.s3tc="res://.godot/imported/StonePavement_Base Color.png-d26faae2da98f3db21abb9e599169a61.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/LandScape/textures/StonePavement_Base Color.png"
-dest_files=["res://.godot/imported/StonePavement_Base Color.png-d49f7856bc8a99a776358a059c34bb80.s3tc.ctex"]
+source_file="res://Assets/LandScape/Textures/StonePavement_Base Color.png"
+dest_files=["res://.godot/imported/StonePavement_Base Color.png-d26faae2da98f3db21abb9e599169a61.s3tc.ctex"]
 
 [params]
 
