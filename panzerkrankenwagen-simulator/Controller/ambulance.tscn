@@ -8,14 +8,8 @@
 size = Vector3(2.4580078, 2.729248, 6.566681)
 
 [node name="Ambulance" type="VehicleBody3D" unique_id=211440186]
-mass = 120.0
+mass = 1200.0
 script = ExtResource("1_uaml6")
-veh_name = "Ambulance"
-is_current_veh = true
-key_accelerate = "ui_up"
-key_brake = "ui_down"
-key_turn_left = "ui_left"
-key_turn_right = "ui_right"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2032244691]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.021777362, 1.8298097, 0.3067413)
@@ -28,25 +22,25 @@ distance = 6.0
 height = 3.0
 
 [node name="WheelFrontLeft" type="VehicleWheel3D" parent="." unique_id=1835111489]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.15, 0.45, -2.1)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -1.15, 0.45, -2.1)
 use_as_steering = true
 wheel_radius = 0.4
 wheel_friction_slip = 4.0
 
 [node name="WheelFrontRight" type="VehicleWheel3D" parent="." unique_id=394380325]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15, 0.45, -2.1)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 1.15, 0.45, -2.1)
 use_as_steering = true
 wheel_radius = 0.4
 wheel_friction_slip = 4.0
 
 [node name="WheelRearLeft" type="VehicleWheel3D" parent="." unique_id=1593976634]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.15, 0.45, 1.9)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -1.15, 0.45, 1.9)
 use_as_traction = true
 wheel_radius = 0.4
 wheel_friction_slip = 4.0
 
 [node name="WheelRearRight" type="VehicleWheel3D" parent="." unique_id=1091695858]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15, 0.45, 1.9)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 1.15, 0.45, 1.9)
 use_as_traction = true
 wheel_radius = 0.4
 wheel_friction_slip = 4.0
