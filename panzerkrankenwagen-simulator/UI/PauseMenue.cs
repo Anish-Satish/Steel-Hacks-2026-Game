@@ -13,13 +13,11 @@ public partial class PauseMenue : Control
 	}
 	public void _on_resume_pressed()
 	{
-		GetTree().Root.AddChild(Main.getDriveScene);
-		GetTree().Root.RemoveChild(Main.getPauseScene);
+		GetTree().ChangeSceneToPacked(Main.getDriveScene);
 	}
 	public void _on_options_pressed()
 	{
-		GetTree().Root.AddChild(Main.getOptionsScene);
-		GetTree().Root.RemoveChild(Main.getPauseScene);
+		GetTree().ChangeSceneToPacked(Main.getOptionsScene);
 	}
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
