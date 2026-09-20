@@ -5,6 +5,9 @@ public partial class GameClock : Godot.Timer
 {
 	// Called when the node enters the scene tree for the first time.
 	Timer countdown;
+	[Signal] public delegate void FinishedEventHandler();
+
+    [Export] public Label Display;
 	//how many times to loop timer
 	int count = 0;
 	float time = 0.0f;
