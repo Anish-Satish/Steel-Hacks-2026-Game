@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cv6lyu1q3mjvd"]
 
 [ext_resource type="Script" uid="uid://drbqn3ugmbesd" path="res://UI/Options/Sliders.cs" id="1_kfgdk"]
+[ext_resource type="Script" uid="uid://bbgd507kn1v60" path="res://UI/Options/Options.cs" id="1_lcktm"]
 [ext_resource type="FontFile" uid="uid://bnbej77on1gtb" path="res://Text Font/Lora-Bold.ttf" id="2_lcktm"]
 
 [sub_resource type="Theme" id="Theme_ia116"]
@@ -14,6 +15,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_lcktm")
 
 [node name="Background" type="ColorRect" parent="." unique_id=1031070995]
 layout_mode = 1
