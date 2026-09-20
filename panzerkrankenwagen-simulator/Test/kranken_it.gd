@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
 
-const SPEED = 100.0
+const SPEED = 10.0
 
 
 func _physics_process(delta: float) -> void:

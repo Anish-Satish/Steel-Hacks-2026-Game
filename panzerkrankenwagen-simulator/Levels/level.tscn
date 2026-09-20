@@ -24727,11 +24727,8 @@ metadata/extras = {
 }
 
 [node name="RigidBody3D" type="RigidBody3D" parent="Terrain/Floor/CSGBox3D" unique_id=1625616996]
-transform = Transform3D(0.9999998, 0, 0, 0, 1, 0, 0, 0, 1, 0.024278, 0.09050679, 0)
 axis_lock_linear_y = true
 gravity_scale = 0.0
-can_sleep = false
-freeze = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/Floor/CSGBox3D/RigidBody3D" unique_id=837486618]
 transform = Transform3D(1.1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -45818,7 +45815,6 @@ metadata/extras = {
 
 [node name="MedicalSign" parent="Terrain/Section2/Build11_grp4" unique_id=183614627 instance=ExtResource("23_hvubb")]
 transform = Transform3D(-3.278354e-08, 0, 0.75, 0, 0.75, 0, -0.75, 0, -3.278354e-08, -51.00364, 10.873233, -30.601635)
-transform = Transform3D(-3.278354e-08, 0, 0.75, 0, 0.75, 0, -0.75, 0, -3.278354e-08, -51.00364, 10.873233, -30.601635)
 
 [node name="MedicalSign2" parent="Terrain/Section2/Build11_grp4" unique_id=1008981707 instance=ExtResource("23_hvubb")]
 transform = Transform3D(0.75, 0, -1.3113416e-07, 0, 0.75, 0, 1.3113416e-07, 0, 0.75, -46.86451, 10.688485, -22.928381)
@@ -47908,8 +47904,6 @@ metadata/extras = {
 [node name="RigidBody3D" type="RigidBody3D" parent="Terrain2/Floor/CSGBox3D" unique_id=1240504657]
 axis_lock_linear_y = true
 gravity_scale = 0.0
-can_sleep = false
-freeze = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain2/Floor/CSGBox3D/RigidBody3D" unique_id=1639108053]
 transform = Transform3D(1.1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -68772,8 +68766,6 @@ metadata/extras = {
 [node name="RigidBody3D" type="RigidBody3D" parent="Terrain3/Floor/CSGBox3D" unique_id=449506570]
 axis_lock_linear_y = true
 gravity_scale = 0.0
-can_sleep = false
-freeze = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain3/Floor/CSGBox3D/RigidBody3D" unique_id=463832307]
 transform = Transform3D(1.1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -89532,7 +89524,6 @@ transform = Transform3D(1.1550006, -1.7484557e-06, 2.2030541e-05, 2.0194673e-08,
 transform = Transform3D(125, 0, 0, 0, 1, 0, 0, 0, 150, 28.255943, -0.19333076, -34.79955)
 
 [node name="GameTimer" type="Label" parent="." unique_id=1865082587]
-visible = false
 anchors_preset = -1
 anchor_left = 0.4796007
 anchor_top = 0.41589507
@@ -89543,16 +89534,17 @@ grow_vertical = 2
 size_flags_horizontal = 6
 size_flags_vertical = 6
 theme = SubResource("Theme_3skxm")
+text = "3"
 script = ExtResource("40_7rjfw")
 metadata/_edit_use_anchors_ = true
 
 [node name="Countdown" type="Label" parent="." unique_id=242191886]
-visible = false
 offset_right = 40.0
 offset_bottom = 23.0
 size_flags_horizontal = 2
 size_flags_vertical = 6
 theme = SubResource("Theme_3skxm")
+text = "300"
 script = ExtResource("41_l3wbc")
 
 [node name="Timer" type="Timer" parent="." unique_id=311637699]
