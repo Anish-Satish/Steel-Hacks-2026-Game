@@ -24705,9 +24705,6 @@ bus = &"SFX"
 transform = Transform3D(-0.9848076, -0.05939115, 0.16317597, 0.13302219, 0.3460008, 0.92875654, -0.11161888, 0.93635285, -0.33284372, 0.45487309, 1.3577104, -18.521614)
 
 [node name="Area3D" type="Area3D" parent="KrakenIt" unique_id=1040564878]
-transform = Transform3D(-0.98792815, 4.604583, -0.5269321, -7.01713, -0.3322966, 1.3102055, 2.592339, 0.855314, 3.3457544, 0.22080421, 1.5885897, -16.738955)
-collision_layer = 0
-collision_mask = 2
 script = ExtResource("4_33l6c")
 
 [node name="HurtBox" type="CollisionShape3D" parent="KrakenIt/Area3D" unique_id=307574881]
@@ -89492,5 +89489,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.81980133, 0.57940674, -38.
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.812428, -0.4041443, -11.052284)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="PatientSpawn6/Visualizer3D/Point2" unique_id=1039384509]
-
-[connection signal="area_entered" from="KrakenIt/Area3D" to="KrakenIt/Area3D" method="_on_area_entered"]
