@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://c51ubcfph3txc"]
 
-[ext_resource type="Script" uid="uid://bb65ctkavgy8g" path="res://UI/Game Over/GameOver.cs" id="1_kn312"]
+[ext_resource type="Script" uid="uid://bb65ctkavgy8g" path="res://UI/GameOver/GameOver.cs" id="1_kn312"]
 [ext_resource type="FontFile" uid="uid://rhvjxovrcxk3" path="res://Text Font/Lora-BoldItalic.ttf" id="2_bfyvh"]
 [ext_resource type="FontFile" uid="uid://bnbej77on1gtb" path="res://Text Font/Lora-Bold.ttf" id="3_gi24p"]
-[ext_resource type="Script" uid="uid://dlrndf0nsjspc" path="res://UI/Game Over/Score.cs" id="4_q3fab"]
-[ext_resource type="Script" uid="uid://cwqyeebbsoee2" path="res://UI/Game Over/Saved.cs" id="5_kinxx"]
-[ext_resource type="Script" uid="uid://bne358ajag8t" path="res://UI/Game Over/Killed.cs" id="6_kn312"]
-[ext_resource type="Script" uid="uid://dt1i5v4ck6xxm" path="res://UI/Game Over/Buttons.cs" id="7_2rusb"]
+[ext_resource type="Script" uid="uid://dlrndf0nsjspc" path="res://UI/GameOver/Score.cs" id="4_q3fab"]
+[ext_resource type="Script" uid="uid://cwqyeebbsoee2" path="res://UI/GameOver/Saved.cs" id="5_kinxx"]
+[ext_resource type="Script" uid="uid://bne358ajag8t" path="res://UI/GameOver/Killed.cs" id="6_kn312"]
+[ext_resource type="Script" uid="uid://dt1i5v4ck6xxm" path="res://UI/GameOver/Buttons.cs" id="7_2rusb"]
 [ext_resource type="Theme" uid="uid://bijfgyw6b5srj" path="res://Themes/PauseMenue.tres" id="8_vx5wk"]
 
 [sub_resource type="Theme" id="Theme_ia116"]

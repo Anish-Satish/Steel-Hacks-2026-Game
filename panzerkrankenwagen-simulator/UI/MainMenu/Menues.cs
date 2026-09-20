@@ -16,10 +16,10 @@ public partial class Main : Node
 	{
 		//todo assign the scenes to the correct command directory
 		driveScene = ResourceLoader.Load<PackedScene>("res://Levels/level.tscn").Instantiate();
-		optionsScene = ResourceLoader.Load<PackedScene>("res://scene/options.tscn").Instantiate();
-		mainScene = ResourceLoader.Load<PackedScene>("res://UI/Main Menu/MainMenue.tscn").Instantiate();
-		pauseScene = ResourceLoader.Load<PackedScene>("res://UI/Pause Menu/PauseMenue.tscn").Instantiate();
-		gameOverScene = ResourceLoader.Load<PackedScene>("res://UI/Game Over/game_over.tscn").Instantiate();
+		optionsScene = ResourceLoader.Load<PackedScene>("res://UI/Options/Options.tscn").Instantiate();
+		mainScene = ResourceLoader.Load<PackedScene>("res://UI/MainMenu/MainMenue.tscn").Instantiate();
+		pauseScene = ResourceLoader.Load<PackedScene>("res://UI/PauseMenu/PauseMenue.tscn").Instantiate();
+		gameOverScene = ResourceLoader.Load<PackedScene>("res://UI/GameOver/game_over.tscn").Instantiate();
 
 		volume = 80;
 		MAX_NPC_COUNT = 60;

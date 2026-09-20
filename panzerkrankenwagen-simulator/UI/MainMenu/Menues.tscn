@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://ceymnv4ovftff"]
+
+[ext_resource type="Script" uid="uid://cilb55h5ngoo7" path="res://UI/MainMenu/Menues.cs" id="1_q8bu4"]
+[ext_resource type="PackedScene" uid="uid://bkr4krr43wdc8" path="res://UI/MainMenu/MainMenue.tscn" id="2_rw704"]
+[ext_resource type="PackedScene" uid="uid://c5hg16t152gqq" path="res://UI/PauseMenu/PauseMenue.tscn" id="3_1f4uu"]
+
+[node name="Menues" type="Node" unique_id=1792151765]
+script = ExtResource("1_q8bu4")
+
+[node name="MainMenue" parent="." unique_id=1049352216 instance=ExtResource("2_rw704")]
+
+[node name="PauseMenue" parent="." unique_id=432328082 instance=ExtResource("3_1f4uu")]

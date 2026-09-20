@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bkr4krr43wdc8"]
 
-[ext_resource type="Theme" uid="uid://daiwgbycmhybt" path="res://Themes/MainMenue.tres" id="2_v3770"]
-[ext_resource type="Script" uid="uid://tp3ad1mvro0o" path="res://UI/Main Menu/MainMenuButtons.cs" id="3_26mu7"]
+[ext_resource type="Theme" uid="uid://daiwgbycmhybt" path="res://Themes/MainMenue.tres" id="1_d3r4t"]
+[ext_resource type="Script" uid="uid://tp3ad1mvro0o" path="res://UI/MainMenu/MainMenuButtons.cs" id="2_tbapb"]
 
 [sub_resource type="CSharpScript" id="CSharpScript_y0kxn"]
 script/source = "using Godot;
@@ -101,7 +101,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("2_v3770")
+theme = ExtResource("1_d3r4t")
 color = Color(0.18029219, 0.65237856, 0.8492325, 1)
 
 [node name="Panel" type="Panel" parent="." unique_id=510257801]
@@ -119,7 +119,7 @@ offset_bottom = -23.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=1949338191]
+[node name="MainMenuButtons" type="VBoxContainer" parent="Panel" unique_id=1949338191]
 layout_mode = 1
 anchors_preset = 13
 anchor_left = 0.5
@@ -131,28 +131,28 @@ offset_right = 125.0
 offset_bottom = -25.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("2_v3770")
-script = ExtResource("3_26mu7")
+theme = ExtResource("1_d3r4t")
+script = ExtResource("2_tbapb")
 
-[node name="Drive" type="Button" parent="Panel/VBoxContainer" unique_id=1751629629]
+[node name="Drive" type="Button" parent="Panel/MainMenuButtons" unique_id=1751629629]
 custom_minimum_size = Vector2(250, 0)
 layout_mode = 2
 size_flags_vertical = 2
-theme = ExtResource("2_v3770")
+theme = ExtResource("1_d3r4t")
 text = "DRIVE"
 
-[node name="Options" type="Button" parent="Panel/VBoxContainer" unique_id=1590687092]
+[node name="Options" type="Button" parent="Panel/MainMenuButtons" unique_id=1590687092]
 custom_minimum_size = Vector2(250, 0)
 layout_mode = 2
 size_flags_vertical = 6
-theme = ExtResource("2_v3770")
+theme = ExtResource("1_d3r4t")
 text = "OPTIONS"
 
-[node name="Quit" type="Button" parent="Panel/VBoxContainer" unique_id=164728059]
+[node name="Quit" type="Button" parent="Panel/MainMenuButtons" unique_id=164728059]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 size_flags_vertical = 10
-theme = ExtResource("2_v3770")
+theme = ExtResource("1_d3r4t")
 action_mode = 0
 text = "QUIT
 "
@@ -168,7 +168,7 @@ offset_right = 413.5
 offset_bottom = 209.0
 grow_horizontal = 2
 offset_transform_enabled = true
-theme = ExtResource("2_v3770")
+theme = ExtResource("1_d3r4t")
 text = "Panzerkrankenwagen"
 script = SubResource("CSharpScript_y0kxn")
 
@@ -181,5 +181,6 @@ libraries/ = SubResource("AnimationLibrary_05tgr")
 [node name="Icon" type="Sprite2D" parent="." unique_id=1364218326]
 position = Vector2(77, 572)
 
-[connection signal="pressed" from="Panel/VBoxContainer/Options" to="Panel/VBoxContainer" method="_on_options_pressed"]
-[connection signal="pressed" from="Panel/VBoxContainer/Quit" to="Panel/VBoxContainer" method="_on_quit_pressed"]
+[connection signal="pressed" from="Panel/MainMenuButtons/Drive" to="Panel/MainMenuButtons" method="_on_drive_pressed"]
+[connection signal="pressed" from="Panel/MainMenuButtons/Options" to="Panel/MainMenuButtons" method="_on_options_pressed"]
+[connection signal="pressed" from="Panel/MainMenuButtons/Quit" to="Panel/MainMenuButtons" method="_on_quit_pressed"]
