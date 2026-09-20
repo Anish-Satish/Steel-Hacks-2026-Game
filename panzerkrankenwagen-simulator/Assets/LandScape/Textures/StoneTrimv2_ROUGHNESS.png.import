@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://diqyy4ruvenwd"
-path.s3tc="res://.godot/imported/StoneTrimv2_ROUGHNESS.png-bdce1991dcd91313a27a4e143fb93193.s3tc.ctex"
+path.s3tc="res://.godot/imported/StoneTrimv2_ROUGHNESS.png-07911ab77c9e8abe266194abc2be42ee.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/LandScape/textures/StoneTrimv2_ROUGHNESS.png"
-dest_files=["res://.godot/imported/StoneTrimv2_ROUGHNESS.png-bdce1991dcd91313a27a4e143fb93193.s3tc.ctex"]
+source_file="res://Assets/LandScape/Textures/StoneTrimv2_ROUGHNESS.png"
+dest_files=["res://.godot/imported/StoneTrimv2_ROUGHNESS.png-07911ab77c9e8abe266194abc2be42ee.s3tc.ctex"]
 
 [params]
 

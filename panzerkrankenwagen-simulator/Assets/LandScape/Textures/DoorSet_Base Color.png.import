@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ydbea1o2y6en"
-path.s3tc="res://.godot/imported/DoorSet_Base Color.png-9e11448cf270cc79b4ad1192d50b31be.s3tc.ctex"
+path.s3tc="res://.godot/imported/DoorSet_Base Color.png-01074298316aa66664f360ff7a08dd2f.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/LandScape/textures/DoorSet_Base Color.png"
-dest_files=["res://.godot/imported/DoorSet_Base Color.png-9e11448cf270cc79b4ad1192d50b31be.s3tc.ctex"]
+source_file="res://Assets/LandScape/Textures/DoorSet_Base Color.png"
+dest_files=["res://.godot/imported/DoorSet_Base Color.png-01074298316aa66664f360ff7a08dd2f.s3tc.ctex"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtchsir6thke3"
-path.s3tc="res://.godot/imported/BrickGrid_Base Color .png-2b792ef9ed70f872daec713ecd5a61dc.s3tc.ctex"
+path.s3tc="res://.godot/imported/BrickGrid_Base Color .png-15656eb3e03254930b6114e1f57510a7.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/LandScape/textures/BrickGrid_Base Color .png"
-dest_files=["res://.godot/imported/BrickGrid_Base Color .png-2b792ef9ed70f872daec713ecd5a61dc.s3tc.ctex"]
+source_file="res://Assets/LandScape/Textures/BrickGrid_Base Color .png"
+dest_files=["res://.godot/imported/BrickGrid_Base Color .png-15656eb3e03254930b6114e1f57510a7.s3tc.ctex"]
 
 [params]
 

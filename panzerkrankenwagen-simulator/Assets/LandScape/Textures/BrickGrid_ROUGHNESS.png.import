@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://byegqod8djy4s"
-path.s3tc="res://.godot/imported/BrickGrid_ROUGHNESS.png-4fadf07e5e6da1e7bd3d40e765ab026d.s3tc.ctex"
+path.s3tc="res://.godot/imported/BrickGrid_ROUGHNESS.png-06bb689b424bc49c8ea2dc6cda19b370.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/LandScape/textures/BrickGrid_ROUGHNESS.png"
-dest_files=["res://.godot/imported/BrickGrid_ROUGHNESS.png-4fadf07e5e6da1e7bd3d40e765ab026d.s3tc.ctex"]
+source_file="res://Assets/LandScape/Textures/BrickGrid_ROUGHNESS.png"
+dest_files=["res://.godot/imported/BrickGrid_ROUGHNESS.png-06bb689b424bc49c8ea2dc6cda19b370.s3tc.ctex"]
 
 [params]
 

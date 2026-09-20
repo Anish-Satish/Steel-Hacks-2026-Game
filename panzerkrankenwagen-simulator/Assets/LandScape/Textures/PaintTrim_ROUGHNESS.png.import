@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bynes2wehx7i3"
-path.s3tc="res://.godot/imported/PaintTrim_ROUGHNESS.png-bd9020c4cd26ce1b080637e8e7573d9f.s3tc.ctex"
+path.s3tc="res://.godot/imported/PaintTrim_ROUGHNESS.png-9fa2febd1f25c6ff867a27a2e24d34e3.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/LandScape/textures/PaintTrim_ROUGHNESS.png"
-dest_files=["res://.godot/imported/PaintTrim_ROUGHNESS.png-bd9020c4cd26ce1b080637e8e7573d9f.s3tc.ctex"]
+source_file="res://Assets/LandScape/Textures/PaintTrim_ROUGHNESS.png"
+dest_files=["res://.godot/imported/PaintTrim_ROUGHNESS.png-9fa2febd1f25c6ff867a27a2e24d34e3.s3tc.ctex"]
 
 [params]
 

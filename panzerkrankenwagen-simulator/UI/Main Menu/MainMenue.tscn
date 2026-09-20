@@ -1,11 +1,7 @@
 [gd_scene format=3 uid="uid://bkr4krr43wdc8"]
 
 [ext_resource type="Theme" uid="uid://daiwgbycmhybt" path="res://Themes/MainMenue.tres" id="2_v3770"]
-<<<<<<< Updated upstream:panzerkrankenwagen-simulator/UI/MainMenue.tscn
-[ext_resource type="Script" uid="uid://tp3ad1mvro0o" path="res://UI/MainMenuButtons.cs" id="3_26mu7"]
-=======
-[ext_resource type="Script" uid="uid://tp3ad1mvro0o" path="res://UI/Main Menu/Button.cs" id="3_26mu7"]
->>>>>>> Stashed changes:panzerkrankenwagen-simulator/UI/Main Menu/MainMenue.tscn
+[ext_resource type="Script" uid="uid://tp3ad1mvro0o" path="res://UI/Main Menu/MainMenuButtons.cs" id="3_26mu7"]
 
 [sub_resource type="CSharpScript" id="CSharpScript_y0kxn"]
 script/source = "using Godot;
@@ -185,6 +181,5 @@ libraries/ = SubResource("AnimationLibrary_05tgr")
 [node name="Icon" type="Sprite2D" parent="." unique_id=1364218326]
 position = Vector2(77, 572)
 
-[connection signal="pressed" from="Panel/VBoxContainer/Drive" to="Panel/VBoxContainer" method="_on_drive_pressed"]
 [connection signal="pressed" from="Panel/VBoxContainer/Options" to="Panel/VBoxContainer" method="_on_options_pressed"]
 [connection signal="pressed" from="Panel/VBoxContainer/Quit" to="Panel/VBoxContainer" method="_on_quit_pressed"]

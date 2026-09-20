@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://6qc0vaa3oui2"
-path.s3tc="res://.godot/imported/WoodTrim_NORMAL.png-7441bd69cd1ed7af01eef6c89756eadc.s3tc.ctex"
+path.s3tc="res://.godot/imported/WoodTrim_NORMAL.png-13e57b6a4e19653ea51ff775a93f4945.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/LandScape/textures/WoodTrim_NORMAL.png"
-dest_files=["res://.godot/imported/WoodTrim_NORMAL.png-7441bd69cd1ed7af01eef6c89756eadc.s3tc.ctex"]
+source_file="res://Assets/LandScape/Textures/WoodTrim_NORMAL.png"
+dest_files=["res://.godot/imported/WoodTrim_NORMAL.png-13e57b6a4e19653ea51ff775a93f4945.s3tc.ctex"]
 
 [params]
 
