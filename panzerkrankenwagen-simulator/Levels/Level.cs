@@ -6,8 +6,11 @@ public partial class Level : Node3D
 	Timer timer;
 	public override void _Ready()
 	{
+<<<<<<< Updated upstream
 		timer = GetNode<Timer>("Timer");
 		timer.setCountdownTime(0.7f, 3);
+=======
+>>>>>>> Stashed changes
 	}
 
 
